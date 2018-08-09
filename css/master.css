@@ -1,0 +1,125 @@
+/******** DEFAULT *********/
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ce0000;
+}
+
+body {
+	background: linear-gradient(#b9b9b9, #e9e9e9, #b9b9b9);
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+}
+
+li {
+	font-size: 14px;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-right: 30px;
+}
+
+/********** DIVS **********/
+
+#site {
+	width: 600px;
+	height: 100%;
+	margin: 0px auto;
+}
+
+#header {
+	width: 100%;
+	height: 250px;
+	background-color: #000000;
+	border-radius: 15px;
+	box-shadow: 5px 5px #b0b0b0;
+	display: table;
+}
+
+#cover {
+	height: 150px;
+	background-image: url('../img/cover.png'); 
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#photo {
+	width: 100px;
+	height: 100px;
+	background-image: url('../img/photo.png'); 
+	margin: 100px 250px;
+	position: absolute;
+}
+
+#name {
+	width: 100%;
+	height: 100px;
+	display: table;
+}
+
+#content {
+	width: 100%;
+	height: 700px;
+	background-color: #b8d5e4;
+	border-radius: 15px;
+	box-shadow: 5px 5px #b0b0b0;
+	display: block;
+	margin-top: 5px;
+	text-align: center; 
+}
+
+#footer {
+	width: 100%;
+	height: 150px;
+	background-color: #000000;
+	border-radius: 15px;
+	box-shadow: 5px 5px #b0b0b0;	
+	display: block;
+	margin: 5px 0px;
+}
+
+/********* CLASS **********/
+
+.theTitle {
+	color: #ffffff;
+	display: table-cell;
+	font-size: 20px;
+	padding: 35px 0px 0px 0px;
+	text-align: center; 
+	vertical-align: middle;
+}
+
+.topic {
+	font-size: 16px;
+	padding: 15px 0px 0px;
+}
+
+.description {
+	font-size: 14px;
+	padding: 0px 30px 0px;
+	text-align: left;
+}
+
+.project {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.info {
+	color: #ffffff;
+	font-size: 10px;
+	text-align: center;
+}
+
+.social {
+	width: 35px;
+	height: 35px;
+	margin: 30px 5px 5px 5px;
+}
+
+.email {
+	color: #ffffff;
+}
