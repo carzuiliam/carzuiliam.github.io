@@ -42,7 +42,7 @@ li {
 
 #cover {
 	height: 150px;
-	background-image: url('../img/cover.png'); 
+	background-image: url('../img/photo-cover.png'); 
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
@@ -50,7 +50,7 @@ li {
 #photo {
 	width: 100px;
 	height: 100px;
-	background-image: url('../img/photo.png'); 
+	background-image: url('../img/photo-profile.png'); 
 	margin: 100px 250px;
 	position: absolute;
 }
