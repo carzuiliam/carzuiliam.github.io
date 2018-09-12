@@ -1,5 +1,5 @@
-// Loads the first DIV when the document loads
+// Loads only the first DIV after document loads
 $(document).ready(function() {
-	$('#info').first().removeClass('hide');
-	$('#info').first().addClass('show');
+	$('#content-hello-left').first().removeClass('boxHidden');
+	$('#content-hello-left').first().addClass('boxLoaded');
 });
