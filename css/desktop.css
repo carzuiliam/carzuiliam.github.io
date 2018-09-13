@@ -1,4 +1,4 @@
-/********** Elements ***********/
+/******************************* Elements ******************************/
 
 h1 {
 	font-weight: bold;
@@ -8,7 +8,7 @@ h1, h2 {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-/************ Div's ************/
+/********************************* DIV's *******************************/
 
 #site {
 	width: 100%;
@@ -45,7 +45,7 @@ h1, h2 {
 		height: 92vh;
 	}
 
-		#content-hello-left {
+		#content-hello-box {
 			width: 50%;
 			height: 100%;
 			background-color: #aaeeff;
@@ -54,16 +54,20 @@ h1, h2 {
 			transition: all 1s;
 		}
 
-		#content-hello-right {
+		#content-hello-text {
 			width: 50%;
 			height: 100%;
+			background-image: url('../img/content-hello-text.jpg');	/** Photo by NESA by Makers on Unsplash **/
+			background-position: left top; 
+			background-repeat: no-repeat;
 			float: right;
+			transition: all 1s;
 		}
 
 	#content-info {
 		width: 100%;
 		height: 92vh;
-		background-color: #cecece;
+		background-color: #efefef;
 		display: inline-block;
 	}
 
@@ -84,7 +88,7 @@ h1, h2 {
 		text-align: center;
 	}
 
-/*********** Classes ***********/
+/******************************** Classes ******************************/
 
 .boxHidden {
 	transform: scaleX(0);
@@ -113,4 +117,10 @@ h1, h2 {
 
 .textShow {
 	opacity: 1;
+}
+
+/******************************** Hovers *******************************/
+
+.darker:hover {
+	filter: brightness(0.4);
 }
