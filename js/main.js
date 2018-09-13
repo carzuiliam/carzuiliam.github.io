@@ -16,11 +16,4 @@ $(document).ready(function() {
 /** Loads DIV's on scroll down */
 $(window).on('scroll', function() {
 
-	var scrollHeight = $(document).height();
-	var scrollPosition = $(window).height() + $(window).scrollTop();
-
-	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-		alert('Testing...');
-	}
-
 });
