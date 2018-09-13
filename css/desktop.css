@@ -5,21 +5,22 @@ h1 {
 }
 
 h1, h2 {
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 /********************************* DIV's *******************************/
 
 #site {
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #000000;
+	color: #ffffff;
 	margin: auto;
 }
 
 #header {	
 	width: 100%;
 	height: 50px;	
-	background-color: #ffffff;
+	background-color: #000000;
 	display: table;
 	position: fixed;
 	z-index: 1;
@@ -36,19 +37,21 @@ h1, h2 {
 #content {
 	width: 95%;
 	margin: auto;
-	background-color: #ffffff;
+	background-color: #000000;
 	display: table;
 }
 
 	#content-hello {
 		width: 100%;
 		height: 92vh;
+		overflow: hidden;
 	}
 
 		#content-hello-box {
 			width: 50%;
 			height: 100%;
-			background-color: #aaeeff;
+			background-color: #005669;
+			border: none;
 			float: left;
 			transform-origin: left;
 			transition: all 1s;
@@ -60,6 +63,7 @@ h1, h2 {
 			background-image: url('../img/content-hello-text.jpg');	/** Photo by NESA by Makers on Unsplash **/
 			background-position: left top; 
 			background-repeat: no-repeat;
+			border: none;
 			float: right;
 			transition: all 1s;
 		}
@@ -67,7 +71,7 @@ h1, h2 {
 	#content-info {
 		width: 100%;
 		height: 92vh;
-		background-color: #efefef;
+		background-color: #000000;
 		display: inline-block;
 	}
 
@@ -76,7 +80,7 @@ h1, h2 {
 	height: 50px;
 	left: 0px;
 	bottom: 0px;
-	background-color: #ffffff;
+	background-color: #000000;
 	position: fixed;
 	z-index: 1;
 }
@@ -101,11 +105,12 @@ h1, h2 {
 .boxTitle {
 	top: 50%;
 	left: 50%;
-	color: #000000;
+	color: #ffffff;
 	float: left;
 	font-family: 'Amaranth', sans-serif;
 	font-size: 200px;
 	line-height: .8em;
+	opacity: .5;
 	position: relative;
 	transform: translate(-50%, -50%);
 	transition: all 1s;
@@ -115,12 +120,21 @@ h1, h2 {
 	opacity: 0;
 }
 
+.textAlpha {
+	opacity: .75;
+}
+
 .textShow {
 	opacity: 1;
 }
 
 /******************************** Hovers *******************************/
 
-.darker:hover {
-	filter: brightness(0.4);
+.textAlpha:hover {
+	opacity: 1;
+}
+
+.imageZoom:hover {
+	filter: brightness(.5);
+	transform: scale(1.01);
 }

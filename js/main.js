@@ -7,11 +7,12 @@ setTimeout(function() {
 
 // ...shows the "hello" message...
 setTimeout(function() {
-	$('#content-hello-box').find('.boxTitle').removeClass('textHidden').addClass('textShow');
+	$('#content-hello-box').find('.boxTitle').removeClass('textHidden').addClass('textAlpha');
 }, 1000);
 
 // ...and the "hello" image.
 setTimeout(function() {
+	$('#content-hello-box').removeClass('boxHidden').addClass('boxLoaded');
 	$('#content-hello-text').removeClass('textHidden').addClass('textShow');
 }, 1000);
 
@@ -19,9 +20,11 @@ setTimeout(function() {
 
 $(window).on('scroll', function() {
 
-	if ($('#content-info').hasClass('unloaded') && $('#content-info').isHalfVisible()) {
-		$('#content-info').removeClass('unloaded');
-		alert("Removed!");
-	}
+	setTimeout(function () {
+		if ($('#content-info').hasClass('unloaded') && $('#content-info').isHalfVisible()) {
+			$('#content-info').removeClass('unloaded');
+			//TODO
+		}
+	}, 1000);
 
 });
