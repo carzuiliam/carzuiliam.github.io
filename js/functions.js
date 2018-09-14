@@ -3,13 +3,13 @@
 // Verifies if the element (DIV) is half visible on screen.
 $.fn.isHalfVisible = function() {
 
-	var documentTop = $(window).scrollTop();
-    var documentBottom = documentTop + $(window).height();
-
     var divTop = $(this).offset().top;
-    var divBottom = divTop + $(this).height();    
+    var divBottom = $(this).offset().top + $(this).height();
+    var docMiddle = $(window).scrollTop(); + ($(window).height() / 2);
+    var docBottom = $(window).scrollTop() + $(window).height();
 
-    if ((divTop <= documentBottom) && (divBottom >= documentTop)) 
+    if ((divTop <= docMiddle) || 
+    	((divTop > docMiddle) && (divBottom <= docBottom))) 
     	return true;
     else
     	return false;
