@@ -7,12 +7,14 @@ setTimeout(function () { $('#content-hello-box').replaceClass('boxHidden', 'boxL
 setTimeout(function () { $('#content-hello-image').replaceClass('imageHidden', 'imageShow'); }, 1000);
 
 // ...and the labels.
-setTimeout(function () {	
-	$('#header-menu').find('.barLeft').replaceClass('textHidden', 'textShow');
+setTimeout(function () {
+	
 	$('#header-menu').find('img').replaceClass('imageHidden', 'imageShow');
-	$('#footer-contact').find('.barLeft').replaceClass('textHidden', 'textShow');
-	$('#footer-contact').find('.barRight').replaceClass('textHidden', 'textShow');
+	$('#footer-contact').find('h2').replaceClass('textHidden', 'textShow');
+	
+	$('#header-menu').find('.headerLeft').replaceClass('textHidden', 'textShow');
 	$('#content-hello-box').find('.boxTitle').replaceClass('textHidden', 'textShow');
+	
 }, 1000);
 
 /************************** Scrolling document *************************/

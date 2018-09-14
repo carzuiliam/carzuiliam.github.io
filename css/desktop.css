@@ -139,16 +139,18 @@ ul {
 
 /******************************** Classes ******************************/
 
-.barLeft {
+.headerLeft {
 	color: #727272;
 	float: left;
 	font-size: 14px;
+	margin-top: 15px;
 }
 
-.barRight {
+.headerRight {
 	color: #727272;
 	float: right;
 	font-size: 14px;
+	margin-top: 6px;
 }
 
 .boxHidden {
@@ -198,4 +200,9 @@ ul {
 	padding: 0 35px;
 	position: relative;
 	transition: all 1s;
+}
+
+.footerContent {
+	font-size: 12px;
+	margin-top: 16px;
 }
