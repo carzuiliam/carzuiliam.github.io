@@ -1,9 +1,11 @@
 /****************************** Functions ******************************/
 
-// Replaces a class in an element.
-$.fn.replaceClass = function (_old, _new) {	
+// Applies the parallax effect in a DIV.
+$.fn.applyParallax = function (_rate) {
+    
+    var offset = - ($(window).scrollTop() * _rate);
 
-	$(this).removeClass(_old).addClass(_new);
+    $(this).css('background-position', 'center ' + offset + 'px');
 
 }
 
@@ -19,22 +21,21 @@ $.fn.isHalfVisible = function () {
 
 }
 
-$.fn.showContentIfNeedeed = function () {
+// Replaces a class in an element.
+$.fn.replaceClass = function (_old, _new) { 
 
-    if ($(this).parent().isHalfVisible() && 
-        $(this).find('.labelTitle').hasClass('textHidden')) {
-
-            $(this).find('.labelTitle').removeClass('textHidden');         
-            $(this).find('.labelContent').removeClass('textHidden');
-
-    }
+    $(this).removeClass(_old).addClass(_new);
 
 }
 
-$.fn.applyParallax = function (_rate) {
-    
-    var offset = - ($(window).scrollTop() * _rate);
+// Shows an content if it appears on screen.
+$.fn.animateSection = function (_content, _canvas) {
 
-    $(this).css('background-position', 'center ' + offset + 'px');
+    if ($(_content).parent().isHalfVisible()) {
+
+        $(_content).find('.textHidden').removeClass('textHidden');
+        $(_canvas).find('.imageHidden').removeClass('imageHidden');
+
+    }
 
 }

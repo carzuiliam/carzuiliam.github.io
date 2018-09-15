@@ -4,7 +4,6 @@
 
 <!------------ Head -------------->
 <head>
-
 	<!-- Charset -->
 	<meta charset="utf-8">
 
@@ -19,65 +18,83 @@
 </head>
 
 <!------------ Body -------------->
-<body id="site">
-	
+<body id="site">	
 	<!-- Header -->
-	<div id="header">
-		<div id="header-menu">
-			<h1 class="headerLeft textHidden">Carlos Carvalho @ GitHub</h1>
-			<p class="headerRight">
-				<a href="https://www.facebook.com/carzuilha/" target="_blank">
-					<img class="imageHidden" src="img/social-facebook.png" alt="Facebook" width="35" height="35" /></a>
-				<a href="https://www.instagram.com/carzuilha/" target="_blank">
-					<img class="imageHidden" src="img/social-instagram.png" alt="Instagram" width="35" height="35" /></a>
-				<a href="https://twitter.com/carzuilha/" target="_blank">
-					<img class="imageHidden" src="img/social-twitter.png" alt="Twitter" width="35" height="35" /></a>
-				<a href="https://www.linkedin.com/in/carzuilha/" target="_blank">
-					<img class="imageHidden" src="img/social-linkedin.png" alt="LinkedIn" width="35" height="35" /></a>
-			</p>			
-		</div>
-	</div>
-
-	<!-- Content -->
-	<div id="content">
-
-		<!-- Hello -->
-		<div id="content-hello">
-			<div id="content-hello-box" class="boxHidden">
-				<h2 class="boxTitle textHidden">HE</br>LLO.</h2>
+	<header>
+		<!-- Menu -->
+		<section id="menu">
+			<!-- Left -->
+			<div id="menu-name">				
+				<h1 class="textHidden">Carlos Carvalho @ GitHub</h1>
 			</div>
+			<!-- Right -->
+			<aside id="menu-social">
+				<a href="https://www.facebook.com/carzuilha/" target="_blank">
+					<img class="imageHidden" src="icon/social-facebook.svg" alt="Facebook" width="30" height="30" /></a>
+				<a href="https://www.instagram.com/carzuilha/" target="_blank">
+					<img class="imageHidden" src="icon/social-instagram.svg" alt="Instagram" width="30" height="30" /></a>
+				<a href="https://twitter.com/carzuilha/" target="_blank">
+					<img class="imageHidden" src="icon/social-twitter.svg" alt="Twitter" width="30" height="30" /></a>
+				<a href="https://www.linkedin.com/in/carzuilha/" target="_blank">
+					<img class="imageHidden" src="icon/social-linkedin.svg" alt="LinkedIn" width="30" height="30" /></a>
+			</aside>			
+
+		</section>
+
+	</header>
+
+	<!-- Main content -->
+	<main>
+		<!-- Hello -->
+		<section id="hello">			
+			<!-- Left -->
+			<div id="hello-box" class="boxHidden">
+				<h2 class="boxTitle textHidden">HE</br>LLO.</h2>
+			</div>			
+			<!-- Right -->
+			<div id="hello-canvas" class="imageHidden"></div>		
 		
-			<div id="content-hello-image" class="imageHidden"></div>		
-		</div>
+		</section>
 		
 		<!-- Intro -->
-		<div id="content-intro">
-			<div id="content-intro-left">
-				<h2 class="labelTitle textHidden">Hi, I'm Carlos.</h2>
-				<p class="labelContent textHidden">This is my personal webpage. Here, you'll find a little bit about my carrer and skills.</p>
+		<section id="intro">		
+			<!-- Left -->
+			<div id="intro-content">
+				<h2 class="labelTitle textHidden">My name is Carlos.</h2>
+				<p class="labelContent textHidden">This is my personal webpage (or portfolio -- which one you think it's better). Here, you'll find a little bit about my carrer and skills.</p>
+			</div>		
+			<!-- Right -->
+			<div id="intro-canvas">
+				<img class="canvasContent imageHidden" src="icon/social-facebook.svg" alt="Facebook" width="50" height="50" />
+				<img class="canvasContent imageHidden" src="icon/social-instagram.svg" alt="Instagram" width="50" height="50" />
+				<img class="canvasContent imageHidden" src="icon/social-twitter.svg" alt="Twitter" width="50" height="50" />
+				<img class="canvasContent imageHidden" src="icon/social-linkedin.svg" alt="LinkedIn" width="50" height="50" />
 			</div>
-			<div id="content-intro-right"></div>
-		</div>
-	
-		<div id="content-study">
-			<div id="content-study-left"></div>
-			<div id="content-study-right">
+		
+		</section>
+		
+		<!-- Education -->
+		<section id="education">
+			<!-- Left -->
+			<div id="education-canvas"></div>			
+			<!-- Right -->
+			<div id="education-content">
 				<h2 class="labelTitle textHidden">Education</h2>
 				<ul class="labelContent textHidden">
-					<li>Federal University of Sao Carlos (UFSCar)</li>
-					<li>Sao Paulo State University (UNESP)</li>
+					<li><strong>Master's degree in computer science @ Federal University of Sao Carlos (UFSCar)</strong> since 2017. My master's thesis had an emphasis on digital image processing.</li>
+					<li><strong>Bachelor's degree in computer science @ Sao Paulo State University (UNESP)</strong> since 2013.</li>
 				</ul>
 			</div>
-		</div>
 
-	</div>
+		</section>
+
+	</main>
 
 	<!-- Footer -->
-	<div id="footer">
-		<div id="footer-contact">
-			<h2 class="footerContent textHidden">Developed by Carlos Carvalho, 2018.</h2>
-		</div>
-	</div>
+	<footer>
+		<!-- Contato -->
+		<div id="contact"><h2 class="footerContent textHidden">Developed by Carlos Carvalho, 2018.</h2></div>
+	</footer>
 
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>

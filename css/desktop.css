@@ -1,8 +1,4 @@
 /****************************** Components *****************************/
-a:hover {
-	text-decoration: none;
-	opacity: .5;
-}
 
 h1, h2, h3, h4 {
 	font-family: 'Amaranth', sans-serif;
@@ -12,19 +8,32 @@ li, p {
 	font-family: 'Questrial', sans-serif;
 }
 
+strong {
+	font-weight: bold;
+}
+
 ul {
 	list-style-type: circle;
 }
 
-/********************************* DIV's *******************************/
+a:hover {
+	text-decoration: none;
+	opacity: .5;
+}
 
-#site {
+img:hover {
+	transform: scale(1.05);
+}
+
+/*************************** Semantic elements *************************/
+
+body {
 	width: 100%;
 	color: #000000;
 	margin: auto;
 }
 
-#header {	
+header {
 	width: 100%;
 	height: 50px;
 	background-color: #ffffff;
@@ -33,14 +42,7 @@ ul {
 	z-index: 9;
 }
 
-	#header-menu {
-		width: 96%;
-		height: 100%;
-		padding: 0 2%;
-		transition: all 1s;
-	}
-
-#content {
+main {
 	width: 96%;
 	max-width: 1500px;
 	margin: auto;
@@ -48,77 +50,11 @@ ul {
 	display: table;
 }
 
-	#content-hello {
-		width: 100%;
-		height: 92vh;
-		max-height: 1000px;
-		overflow: hidden;
-	}
+section {
+	border-top: 1px solid #000000;
+}
 
-		#content-hello-box {
-			width: 50%;
-			height: 100%;
-			background-color: #005669;
-			border: none;
-			color: #ffffff;
-			float: left;
-			font-size: 150px;
-			transform-origin: left;
-			transition: all 1s;
-		}
-
-		#content-hello-image {
-			width: 50%;
-			height: 100%;
-			background-image: url('../img/content-hello.jpg');
-			background-position: center 0;
-			background-repeat: no-repeat;	
-			border: none;
-			float: right;
-			position: relative;
-			transform-origin: left;
-			transition: background-position 0s, transform 1s, opacity 1s;
-		}
-
-	#content-intro {
-		width: 100%;
-		height: 400px;
-		display: inline-block;
-		text-align: left;
-	}
-
-		#content-intro-left {
-			width: 50%;
-			height: 100%;
-			float: left;
-		}
-
-		#content-intro-right {
-			width: 50%;
-			height: 100%;
-			float: right;
-		}
-
-	#content-study {
-		width: 100%;
-		height: 400px;
-		display: inline-block;
-		text-align: left;
-	}
-
-		#content-study-left {
-			width: 50%;
-			height: 100%;
-			float: left;
-		}
-
-		#content-study-right {
-			width: 50%;
-			height: 100%;
-			float: right;
-		}
-
-#footer {
+footer {
 	width: 100%;
 	height: 50px;
 	left: 0;
@@ -128,38 +64,109 @@ ul {
 	z-index: 9;
 }
 
-	#footer-contact {
-		width: 96%;
+/********************************* DIV's *******************************/
+
+#menu {
+	width: 96%;
+	height: 100%;
+	padding: 0 2%;
+	transition: all 1s;
+}
+
+	#menu-name {
+		color: #727272;
+		float: left;
+		font-size: 14px;
+		margin-top: 15px;
+	}
+
+	#menu-social {
+		color: #727272;
+		float: right;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+
+#hello {
+	width: 100%;
+	height: 92vh;
+	max-height: 1000px;
+	overflow: hidden;
+}
+
+	#hello-box {
+		width: 50%;
 		height: 100%;
-		display: inline-block;
-		padding: 0 2%;
-		text-align: center;
+		background-color: #005669;
+		border: none;
+		color: #ffffff;
+		float: left;
+		font-size: 150px;
+		transform-origin: left;
 		transition: all 1s;
 	}
 
-/******************************** Classes ******************************/
+	#hello-canvas {
+		width: 50%;
+		height: 100%;
+		background-image: url('../img/content-hello.jpg');
+		background-position: center 0;
+		background-repeat: no-repeat;	
+		border: none;
+		float: right;
+		position: relative;
+		transform-origin: left;
+		transition: background-position 0s, transform 1s, opacity 1s;
+	}
 
-.headerLeft {
-	color: #727272;
-	float: left;
-	font-size: 14px;
-	margin-top: 15px;
+#intro {
+	width: 100%;
+	height: 310px;
+	display: inline-block;
+	text-align: left;
 }
 
-.headerRight {
-	color: #727272;
-	float: right;
-	font-size: 14px;
-	margin-top: 6px;
+	#intro-content {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	#intro-canvas {
+		width: 50%;
+		height: 100%;
+		float: right;
+	}
+
+#education {
+	width: 100%;
+	height: 500px;
+	display: inline-block;
+	text-align: left;
 }
 
-.boxHidden {
-	transform: scaleX(0);
+	#education-content {
+		width: 50%;
+		height: 100%;
+		float: right;
+	}
+
+	#education-canvas {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+#contact {
+	width: 96%;
+	height: 100%;
+	display: inline-block;
+	padding: 0 2%;
+	text-align: center;
+	transition: all 1s;
 }
 
-.boxLoaded {
-	transform: scaleX(1);
-}
+/***************************** Custom classes **************************/
 
 .boxTitle {
 	top: 50%;
@@ -171,21 +178,9 @@ ul {
 	transition: all 1s;
 }
 
-.imageHidden, .textHidden {
-	opacity: 0;
-}
-
-.imageShow, .textShow {
-	opacity: 1;
-}
-
-	.imageShow:hover {
-		transform: scale(1.05);
-	}
-
 .labelTitle {
 	width: 100%;
-	top: 100px;
+	top: 50px;
 	font-size: 48px;
 	font-weight: bold;
 	position: relative;
@@ -194,15 +189,33 @@ ul {
 }
 
 .labelContent {
-	top: 150px;
+	top: 100px;
 	display: block;
-	font-size: 30px;
-	padding: 0 35px;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
 	position: relative;
 	transition: all 1s;
 }
 
+.canvasContent {
+	transition: all 1s;
+}
+
 .footerContent {
+	color: #727272;
 	font-size: 12px;
 	margin-top: 16px;
 }
+
+/**************************** Effects classes **************************/
+
+.boxHidden { transform: scaleX(0); }
+.boxLoaded { transform: scaleX(1); }
+
+.textHidden { opacity: 0; }
+.textShow { opacity: 1; }
+
+.imageHidden { opacity: 0; transform: scale(.95); }
+.imageShow { opacity: 1; transform: scale(1); }
+	.imageShow:hover { transform: scale(1.05); }
