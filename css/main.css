@@ -21,16 +21,13 @@ a:hover {
 	opacity: .5;
 }
 
-img:hover {
-	transform: scale(1.05);
-}
-
 /*************************** Semantic elements *************************/
 
 body {
 	width: 100%;
 	color: #000000;
 	margin: auto;
+	transition: all 1s;
 }
 
 header {
@@ -70,7 +67,6 @@ footer {
 	width: 96%;
 	height: 100%;
 	padding: 0 2%;
-	transition: all 1s;
 }
 
 	#menu-name {
@@ -97,7 +93,7 @@ footer {
 	#hello-box {
 		width: 50%;
 		height: 100%;
-		background-color: #005669;
+		background-color: #003333;
 		border: none;
 		color: #ffffff;
 		float: left;
@@ -123,7 +119,6 @@ footer {
 	width: 100%;
 	height: 310px;
 	display: inline-block;
-	text-align: left;
 }
 
 	#intro-content {
@@ -136,14 +131,14 @@ footer {
 		width: 50%;
 		height: 100%;
 		float: right;
+		letter-spacing: 20px;
 		text-align: center;
 	}
 
 #education {
 	width: 100%;
-	height: 500px;
+	height: 420px;
 	display: inline-block;
-	text-align: left;
 }
 
 	#education-content {
@@ -156,7 +151,14 @@ footer {
 		width: 50%;
 		height: 100%;
 		float: left;
+		position: relative;
 	}
+
+#experience {
+	width: 100%;
+	height: 200px;
+	display: inline-block;
+}
 
 #contact {
 	width: 96%;
@@ -164,10 +166,13 @@ footer {
 	display: inline-block;
 	padding: 0 2%;
 	text-align: center;
-	transition: all 1s;
 }
 
 /***************************** Custom classes **************************/
+
+.ownerContent {
+	transition: all 1s;
+}
 
 .boxTitle {
 	top: 50%;
@@ -199,18 +204,46 @@ footer {
 	transition: all 1s;
 }
 
-.canvasIcon {
+.socialIcon {
+	width: 30px;
+	height: 30px;
+	transition: all 1s;
+}
+
+.introIcon {
 	width: 100px;
 	height: 100px;
-	top: 100px;
-	transition: all 1s;
+	top: 50px;
+	left: 20px;
 	position: relative;
+	transition: all 1s;
+}
+
+.unespImage {
+	width: 360px;
+	height: 240px;
+	top: 50px;
+	right: 20px;
+	box-shadow: 5px 5px #cecece;
+	position: absolute;
+	transition: all 1s;
+}
+
+.ufscarImage {
+	width: 360px;
+	height: 240px;
+	top: 120px;
+	left: 0;
+	box-shadow: 5px 5px #fefefe;
+	position: absolute;
+	transition: all 1s;
 }
 
 .footerContent {
 	color: #727272;
 	font-size: 12px;
 	margin-top: 16px;
+	transition: all 1s;
 }
 
 /**************************** Effects classes **************************/
@@ -224,3 +257,9 @@ footer {
 .imageHidden { opacity: 0; transform: scale(.95); }
 .imageShow { opacity: 1; transform: scale(1); }
 	.imageShow:hover { transform: scale(1.05); }
+
+.iconHidden { opacity: 0; }
+.iconShow { opacity: 1; margin-top: 50px; }
+	.iconShow:hover { transform: scale(1.25); }
+
+/*********************** Canvas elements positions *********************/

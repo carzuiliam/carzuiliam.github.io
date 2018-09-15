@@ -33,9 +33,9 @@ $.fn.animateSection = function (_content, _canvas) {
 
     if ($(_content).parent().isHalfVisible()) {
 
-        $(_content).find('.textHidden').removeClass('textHidden');
-        $(_canvas).find('.imageHidden').removeClass('imageHidden');
-
+        $(_content).find('.textHidden').replaceClass('textHidden', 'textShow');
+        $(_canvas).find('.imageHidden').replaceClass('imageHidden', 'imageShow');
+        $(_canvas).find('.iconHidden').replaceClass('iconHidden', 'iconShow');
     }
 
 }
