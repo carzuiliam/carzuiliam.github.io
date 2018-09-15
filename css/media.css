@@ -1,0 +1,17 @@
+/***************************** Media rules *****************************/
+
+@media screen and (max-width: 640px) {
+
+	main {
+		display: table;
+	}
+
+	#intro {
+		display: table-row;
+	}
+
+	#intro-content, #intro-canvas {
+		display: table-cell;
+	}
+
+}
