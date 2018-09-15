@@ -1,5 +1,22 @@
 @media only screen  and (max-width: 650px) {
 
+	#hello-box {
+		width: 100%;
+		font-size: 80px;
+	}
+
+	#hello-canvas {
+		display: none;
+	}
+
+	#intro-canvas {
+		letter-spacing: 10px;
+	}
+
+	.boxTitle {
+		top: 55%;
+	}
+
 	.introIcon {
 		width: 50px;
 		height: 50px;
