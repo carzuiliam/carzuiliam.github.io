@@ -1,124 +1,183 @@
-/*********************** Between 800px ads 1024px **********************/
+/********************** Default Windows Resolution *********************/
 
-@media screen and (min-width: 800px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
-/********************************* DIV's *******************************/
+	#intro { height: 310px; }
 
-	#intro {
-		height: 340px;
-	}
-
-	#education {
-		height: 500px;
-	}
-
-/***************************** Custom classes **************************/
+	#education { height: 445px; }
 
 	.introIcon {
 		width: 75px;
 		height: 75px;
-		top: 80px;
+		top: 75px;
 		left: 0;	
 	}
 
 	.unespImage {
-		top: 50px;
-		right: 50px;
+		width: 240px;
+		height: 180px;
+		top: 30px;
+		right: 30px;
 	}
 
 	.ufscarImage {
-		top: 210px;
+		width: 240px;
+		height: 180px;
+		top: 240px;
 		left: 50px;	
 	}
 
 }
 
-/****************************** Up to 800px ****************************/
+/**************************** IPad (default) ***************************/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
+	main { width: 100%; }
 
-/*************************** Semantic elements *************************/
+	#hello { height: 100vh; }
 
-	main {
-		width: 100%;
+		#hello-box { width: 100%; }
+
+		#hello-canvas { display: none; }
+
+	#intro { height: 340px; }
+
+		#intro-canvas { letter-spacing: 65px; }
+
+	#education { height: 510px;	}
+
+	.introIcon {
+		width: 80px;
+		height: 80px;
+		top: 15px;
+		left: 15px;
 	}
 
-/********************************* DIV's *******************************/
-
-	#hello {
-		height: 100vh;
+	.unespImage {		
+		width: 250px;
+		height: 188px;
+		top: 25px;
+		left: 50px;
+		right: 0;
 	}
 
-		#hello-box {
-			width: 100%;
-		}
-
-		#hello-canvas {
-			width: 100%;
-			display: none;
-			overflow: hidden;
-		}
-
-	#intro {
-		height: 420px;
+	.ufscarImage {
+		width: 250px;
+		height: 188px;
+		top: 305px;
 	}
+
+}
+
+/*************************** Iphone 6/7/8 Plus *************************/
+
+@media screen and (max-width: 414px) {
+
+	#hello-box { font-size: 100px; }
+
+	#intro { height: 470px;	}
 
 		#intro-content {
 			width: 100%;
-			height: 270px;
-			float: none;
+			height: 330px;
 		}
 
 		#intro-canvas {
 			width: 100%;
-			height: 150px;
-			float: none;
+			height: 140px;
+			letter-spacing: 20px;
+			text-align: center;
 		}
 
-	#education {
-		height: 620px;
-	}
+	#education { height: 940px;	}
 
 		#education-content {
 			width: 100%;
-			height: 400px;
-			float: none;
+			height: 580px;
 		}
 
 		#education-canvas {
 			width: 100%;
-			height: 220px;
-			float: none;
+			height: 360px;
 		}
-
-/***************************** Custom classes **************************/
 
 	.introIcon {
 		width: 60px;
 		height: 60px;
 		top: 0;
-		left: 0;	
-	}
-
-	.unespImage {
-		width: 250px;
-		height: 167px;
-		top: 40px;
-		right: 100px;
+		left: 0;
 	}
 
 	.ufscarImage {
-		width: 250px;
-		height: 167px;
-		top: 60px;
-		left: 100px;	
+		top: 210px;
+		left: 114px;
 	}
 
-/**************************** Effects classes **************************/
+	.iconShow { margin-top: 30px; }
 
-	.iconShow {
-		margin-top: 30px;
+}
+
+/**************************** Iphone 6/7/8/X ***************************/
+
+@media screen and (max-width: 375px) {
+
+	#intro { height: 500px;	}
+
+		#intro-content { height: 350px;	}
+
+		#intro-canvas {	height: 150px; }
+
+	#education { height: 970px;	}
+
+		#education-content { height: 610px;	}
+
+	.introIcon {
+		width: 50px;
+		height: 50px;
 	}
+
+	.ufscarImage {
+		top: 210px;
+		left: 75px;
+	}
+
+	.iconShow { margin-top: 45px; }
+
+}
+
+/************************** Iphone 5/5c/5s/SE **************************/
+
+@media screen and (max-width: 320px) {
+
+	#intro { height: 505px; }
+
+		#intro-content { height: 385px; }
+
+		#intro-canvas { height: 120px; }
+
+	#education { height: 1070px; }
+
+		#education-content { height: 755px; }
+
+		#education-canvas { height: 315px; }
+
+	.introIcon {
+		width: 35px;
+		height: 35px;
+	}
+
+	.unespImage {
+		width: 180px;
+		height: 135px;
+	}
+
+	.ufscarImage {
+		width: 180px;
+		height: 135px;
+		top: 220px;
+	}
+
+	.iconShow { margin-top: 40px; }
 
 }
