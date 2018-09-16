@@ -1,25 +1,124 @@
-@media only screen  and (max-width: 650px) {
+/*********************** Between 800px ads 1024px **********************/
 
-	#hello-box {
-		width: 100%;
-		font-size: 80px;
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+
+/********************************* DIV's *******************************/
+
+	#intro {
+		height: 340px;
 	}
 
-	#hello-canvas {
-		display: none;
+	#education {
+		height: 500px;
 	}
 
-	#intro-canvas {
-		letter-spacing: 10px;
-	}
-
-	.boxTitle {
-		top: 55%;
-	}
+/***************************** Custom classes **************************/
 
 	.introIcon {
-		width: 50px;
-		height: 50px;
+		width: 75px;
+		height: 75px;
+		top: 80px;
+		left: 0;	
+	}
+
+	.unespImage {
+		top: 50px;
+		right: 50px;
+	}
+
+	.ufscarImage {
+		top: 210px;
+		left: 50px;	
+	}
+
+}
+
+/****************************** Up to 800px ****************************/
+
+@media screen and (max-width: 800px) {
+
+
+/*************************** Semantic elements *************************/
+
+	main {
+		width: 100%;
+	}
+
+/********************************* DIV's *******************************/
+
+	#hello {
+		height: 100vh;
+	}
+
+		#hello-box {
+			width: 100%;
+		}
+
+		#hello-canvas {
+			width: 100%;
+			display: none;
+			overflow: hidden;
+		}
+
+	#intro {
+		height: 420px;
+	}
+
+		#intro-content {
+			width: 100%;
+			height: 270px;
+			float: none;
+		}
+
+		#intro-canvas {
+			width: 100%;
+			height: 150px;
+			float: none;
+		}
+
+	#education {
+		height: 620px;
+	}
+
+		#education-content {
+			width: 100%;
+			height: 400px;
+			float: none;
+		}
+
+		#education-canvas {
+			width: 100%;
+			height: 220px;
+			float: none;
+		}
+
+/***************************** Custom classes **************************/
+
+	.introIcon {
+		width: 60px;
+		height: 60px;
+		top: 0;
+		left: 0;	
+	}
+
+	.unespImage {
+		width: 250px;
+		height: 167px;
+		top: 40px;
+		right: 100px;
+	}
+
+	.ufscarImage {
+		width: 250px;
+		height: 167px;
+		top: 60px;
+		left: 100px;	
+	}
+
+/**************************** Effects classes **************************/
+
+	.iconShow {
+		margin-top: 30px;
 	}
 
 }
