@@ -48,7 +48,7 @@ main {
 }
 
 section {
-	border-top: 1px dashed #d2d2d2;
+	border-top: 1px solid #d2d2d2;
 }
 
 footer {
@@ -112,7 +112,7 @@ footer {
 		float: right;
 		position: relative;
 		transform-origin: left;
-		transition: background-position 0s, transform 1s, opacity 1s;
+		transition: background-position 0s, opacity 1s, transform 1s;
 	}
 
 #intro {
@@ -156,9 +156,73 @@ footer {
 
 #experience {
 	width: 100%;
-	height: 200px;
+	height: 720px;
 	display: inline-block;
 }
+
+	#experience-content {
+		width: 100%;
+		height: 100px;
+	}
+
+	#experience-canvas {
+		width: 100%;
+		height: 200px;
+		background-image: url('../img/experience-banner.jpg');
+		background-position: center -200px;
+		background-repeat: no-repeat;	
+		border: none;
+		position: relative;
+		transition: background-position 0s, opacity 1s;
+	}
+
+	#experience-content-a {
+		width: 55%;
+		height: 260px;
+		float: left;
+	}
+
+	#experience-content-b {
+		width: 55%;
+		height: 330px;
+		float: right;
+	}
+
+	#experience-content-c {
+		width: 55%;
+		height: 300px;
+		float: left;
+	}
+
+	#experience-content-d {
+		width: 55%;
+		height: 260px;
+		float: right;
+	}
+
+	#experience-canvas-a {
+		width: 45%;
+		height: 260px;
+		float: right;
+	}
+
+	#experience-canvas-b {
+		width: 45%;
+		height: 330px;
+		float: left;
+	}
+
+	#experience-canvas-c {
+		width: 45%;
+		height: 300px;
+		float: right;
+	}
+
+	#experience-canvas-d {
+		width: 45%;
+		height: 260px;
+		float: left;
+	}
 
 #contact {
 	width: 96%;
@@ -227,16 +291,26 @@ footer {
 	right: 20px;
 	box-shadow: 5px 5px #cecece;
 	position: absolute;
-	transition: all 1s;
+	transition: opacity 1s, transform 1s, top 0s;
 }
 
 .ufscarImage {
 	width: 300px;
 	height: 225px;
-	top: 130px;
+	top: 125px;
 	left: 30px;
 	box-shadow: 5px 5px #fefefe;
 	position: absolute;
+	transition: opacity 1s, transform 1s, top 0s;
+}
+
+.sublabelTitle {
+	width: 100%;
+	top: 50px;
+	font-size: 36px;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
 	transition: all 1s;
 }
 

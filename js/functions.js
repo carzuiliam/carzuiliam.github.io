@@ -23,7 +23,7 @@ $.fn.isHalfVisible = function () {
 
     var divTop = $(this).offset().top;
     var divBottom = $(this).offset().top + $(this).height();
-    var docMiddle = $(window).scrollTop() + ($(window).height() * .6);
+    var docMiddle = $(window).scrollTop() + ($(window).height() * .7);
 
     return (divTop <= docMiddle) ;
 
@@ -39,11 +39,12 @@ $.fn.replaceClass = function (_old, _new) {
 // Shows an content if it appears on screen.
 $.fn.animateSection = function (_content, _canvas) {
 
-    if ($(_content).parent().isHalfVisible()) {
+    if ($(_content).isHalfVisible()) {
 
         $(_content).find('.textHidden').replaceClass('textHidden', 'textShow');
-        $(_canvas).find('.imageHidden').replaceClass('imageHidden', 'imageShow');
         $(_canvas).find('.iconHidden').replaceClass('iconHidden', 'iconShow');
+        $(_canvas).find('.imageHidden').replaceClass('imageHidden', 'imageShow');
+
     }
 
 }
