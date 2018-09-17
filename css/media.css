@@ -6,7 +6,7 @@
 
 	#education { height: 445px; }
 
-	.introIcon {
+	.introIconTop {
 		width: 75px;
 		height: 75px;
 		top: 75px;
@@ -45,7 +45,7 @@
 
 	#education { height: 510px;	}
 
-	.introIcon {
+	.introIconTop {
 		width: 80px;
 		height: 80px;
 		top: 15px;
@@ -98,7 +98,7 @@
 			height: 260px;
 		}
 
-	.introIcon {
+	.introIconTop {
 		width: 60px;
 		height: 60px;
 		top: 0;
@@ -110,7 +110,7 @@
 		left: 300px;
 	}
 
-	.iconShow { margin-top: 50px; }
+	.iconShowTop { margin-top: 50px; }
 
 }
 
@@ -137,7 +137,7 @@
 		left: 114px;
 	}
 
-	.iconShow { margin-top: 30px; }
+	.iconShowTop { margin-top: 30px; }
 
 }
 
@@ -155,7 +155,7 @@
 
 		#education-content { height: 610px;	}
 
-	.introIcon {
+	.introIconTop {
 		width: 50px;
 		height: 50px;
 	}
@@ -165,7 +165,7 @@
 		left: 75px;
 	}
 
-	.iconShow { margin-top: 45px; }
+	.iconShowTop { margin-top: 45px; }
 
 }
 
@@ -187,7 +187,7 @@
 
 		#education-canvas { height: 315px; }
 
-	.introIcon {
+	.introIconTop {
 		width: 35px;
 		height: 35px;
 	}
@@ -203,6 +203,6 @@
 		top: 220px;
 	}
 
-	.iconShow { margin-top: 40px; }
+	.iconShowTop { margin-top: 40px; }
 
 }
