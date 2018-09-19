@@ -1,31 +1,12 @@
-/********************** Default Windows Resolution *********************/
+/**************************** IPad (default) ***************************/
+
+@media screen and (max-width: 1366px) {
+	
+}
+
+/******************** Old Default Windows Resolution *******************/
 
 @media screen and (max-width: 1024px) {
-
-	#intro { height: 310px; }
-
-	#education { height: 445px; }
-
-	.introIconTop {
-		width: 75px;
-		height: 75px;
-		top: 75px;
-		left: 0;	
-	}
-
-	.unespImage {
-		width: 240px;
-		height: 180px;
-		top: 30px;
-		right: 30px;
-	}
-
-	.ufscarImage {
-		width: 240px;
-		height: 180px;
-		top: 240px;
-		left: 50px;	
-	}
 
 }
 
@@ -33,84 +14,11 @@
 
 @media screen and (max-width: 768px) {
 
-	main { width: 100%; }
-
-		#hello-box { width: 100%; }
-
-		#hello-canvas { display: none; }
-
-	#intro { height: 340px; }
-
-		#intro-canvas { letter-spacing: 65px; }
-
-	#education { height: 510px;	}
-
-	.introIconTop {
-		width: 80px;
-		height: 80px;
-		top: 15px;
-		left: 15px;
-	}
-
-	.unespImage {		
-		width: 250px;
-		height: 188px;
-		top: 25px;
-		left: 50px;
-		right: 0;
-	}
-
-	.ufscarImage {
-		width: 250px;
-		height: 188px;
-		top: 305px;
-	}
-
 }
 
 /***************************** Galaxy Tab A ****************************/
 
 @media screen and (max-width: 601px) {
-
-	#intro { height: 425px;	}
-
-		#intro-content {
-			width: 100%;
-			height: 245px;
-		}
-
-		#intro-canvas {
-			width: 100%;
-			height: 180px;
-			letter-spacing: 20px;
-			text-align: center;
-		}
-
-	#education { height: 700px;	}
-
-		#education-content {
-			width: 100%;
-			height: 440px;
-		}
-
-		#education-canvas {
-			width: 100%;
-			height: 260px;
-		}
-
-	.introIconTop {
-		width: 60px;
-		height: 60px;
-		top: 0;
-		left: 0;
-	}
-
-	.ufscarImage {
-		top: 100px;
-		left: 300px;
-	}
-
-	.iconShowTop { margin-top: 50px; }
 
 }
 
@@ -118,91 +26,16 @@
 
 @media screen and (max-width: 414px) {
 
-		#hello-box { font-size: 100px; }
-
-	#intro { height: 470px;	}
-
-		#intro-content { height: 330px; }
-
-		#intro-canvas { height: 140px; }
-
-	#education { height: 940px;	}
-
-		#education-content { height: 580px; }
-
-		#education-canvas { height: 360px; }
-
-	.ufscarImage {
-		top: 210px;
-		left: 114px;
-	}
-
-	.iconShowTop { margin-top: 30px; }
-
 }
 
 /**************************** Iphone 6/7/8/X ***************************/
 
 @media screen and (max-width: 375px) {
 
-	#intro { height: 500px;	}
-
-		#intro-content { height: 350px;	}
-
-		#intro-canvas {	height: 150px; }
-
-	#education { height: 970px;	}
-
-		#education-content { height: 610px;	}
-
-	.introIconTop {
-		width: 50px;
-		height: 50px;
-	}
-
-	.ufscarImage {
-		top: 210px;
-		left: 75px;
-	}
-
-	.iconShowTop { margin-top: 45px; }
-
 }
 
 /************************** Iphone 5/5c/5s/SE **************************/
 
 @media screen and (max-width: 320px) {
-
-		#hello-box { font-size: 70px; }
-
-	#intro { height: 505px; }
-
-		#intro-content { height: 385px; }
-
-		#intro-canvas { height: 120px; }
-
-	#education { height: 1070px; }
-
-		#education-content { height: 755px; }
-
-		#education-canvas { height: 315px; }
-
-	.introIconTop {
-		width: 35px;
-		height: 35px;
-	}
-
-	.unespImage {
-		width: 180px;
-		height: 135px;
-	}
-
-	.ufscarImage {
-		width: 180px;
-		height: 135px;
-		top: 220px;
-	}
-
-	.iconShowTop { margin-top: 40px; }
 
 }

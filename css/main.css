@@ -1,29 +1,24 @@
 /****************************** Components *****************************/
 
-h1, h2, h3, h4 {
-	font-family: 'Amaranth', sans-serif;
-}
+h1, h2, h3, h4 { font-family: 'Amaranth', sans-serif; }
 
-li, p {
-	font-family: 'Questrial', sans-serif;
-}
+li, p { font-family: 'Questrial', sans-serif; }
 
-strong {
-	font-weight: bold;
-}
+strong { font-weight: bold; }
 
 table {
 	width: 100%;
 	height: 100%;
-}
-
-td {
+	display: table-cell;
+	line-height: 40px;
 	vertical-align: middle;
 }
 
-ul {
-	list-style-type: circle;
-}
+tr { height: 90px; }
+
+td { vertical-align: middle; }
+
+ul { list-style-type: circle; }
 
 a:hover {
 	text-decoration: none;
@@ -54,10 +49,6 @@ main {
 	margin: auto;
 	background-color: #f8f8f8;
 	display: table;
-}
-
-section {
-	border-top: 1px solid #d2d2d2;
 }
 
 footer {
@@ -127,6 +118,7 @@ footer {
 #intro {
 	width: 100%;
 	height: 270px;
+	border-bottom: 1px solid #b0b0b0;
 	display: inline-block;
 }
 
@@ -146,7 +138,7 @@ footer {
 
 #education {
 	width: 100%;
-	height: 380px;
+	height: 440px;
 	display: inline-block;
 }
 
@@ -165,72 +157,97 @@ footer {
 
 #experience {
 	width: 100%;
-	height: 1480px;
+	height: 1630px;
 	display: inline-block;
 }
 
 	#experience-content {
 		width: 100%;
 		height: 150px;
+		border-bottom: 1px dashed #ababab;
 	}
 
 	#experience-canvas {
 		width: 100%;
 		height: 200px;
 		background-image: url('../img/experience-banner.jpg');
-		background-position: center -100px;
-		background-repeat: no-repeat;	
-		border: none;
+		background-position: center -200px;
+		background-repeat: no-repeat;
 		position: relative;
-		transition: background-position 0s, opacity 1s;
+		transition: background-position 0s;
 	}
 
 	#experience-content-a {
 		width: 50%;
-		height: 260px;
+		height: 310px;
+		border-bottom: 1px dashed #ababab;
 		float: left;
+	}
+
+	#experience-canvas-a {
+		width: 50%;
+		height: 310px;
+		border-bottom: 1px dashed #ababab;
+		display: table;
+		float: right;
 	}
 
 	#experience-content-b {
 		width: 50%;
 		height: 330px;
-		float: right;
-	}
-
-	#experience-content-c {
-		width: 50%;
-		height: 300px;
+		border-bottom: 1px dotted #ababab;
 		float: left;
-	}
-
-	#experience-content-d {
-		width: 50%;
-		height: 260px;
-		float: right;
-	}
-
-	#experience-canvas-a {
-		width: 50%;
-		height: 260px;
-		float: right;
 	}
 
 	#experience-canvas-b {
 		width: 50%;
 		height: 330px;
+		display: table;
+		border-bottom: 1px dotted #ababab;
+		float: right;
+	}
+
+	#experience-content-c {
+		width: 50%;
+		height: 310px;
+		border-bottom: 1px dotted #ababab;
 		float: left;
 	}
 
 	#experience-canvas-c {
 		width: 50%;
-		height: 300px;
+		height: 310px;
+		border-bottom: 1px dotted #ababab;
+		display: table;
 		float: right;
+	}
+
+	#experience-content-d {
+		width: 50%;
+		height: 330px;		
+		float: left;
 	}
 
 	#experience-canvas-d {
 		width: 50%;
-		height: 260px;
-		float: left;
+		height: 330px;
+		display: table;
+		float: right;
+	}
+
+#awards {
+	width: 100%;
+	height: 200px;
+	display: inline-block;
+}
+
+	#awards-canvas {
+		width: 100%;
+		height: 200px;
+		background-image: url('../img/awards-banner.jpg');
+		background-position: center 0;
+		background-repeat: no-repeat;
+		transition: background-position 0s;		
 	}
 
 #contact {
@@ -306,7 +323,7 @@ footer {
 .ufscarImage {
 	width: 300px;
 	height: 225px;
-	top: 125px;
+	top: 185px;
 	left: 30px;
 	box-shadow: 5px 5px #fefefe;
 	position: absolute;
@@ -325,6 +342,7 @@ footer {
 
 .canvasContent {
 	font-size: 24px;
+	margin-left: 30px;
 	text-align: left;
 	transition: all 1s;	
 }
@@ -333,6 +351,7 @@ footer {
 	width: 70px;
 	height: 70px;
 	transition: all .5s;
+	vertical-align: bottom;
 }
 
 .footerContent {

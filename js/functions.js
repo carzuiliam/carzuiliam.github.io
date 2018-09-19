@@ -37,16 +37,20 @@ $.fn.replaceClass = function (_old, _new) {
 }
 
 // Shows an content if it appears on screen.
-$.fn.animateSection = function (_content, _canvas) {
+$.fn.animateSection = function (_content, _canvas = null) {
 
     if ($(_content).isHalfVisible()) {
 
         $(_content).find('.textHidden').replaceClass('textHidden', 'textShow');
-        $(_canvas).find('.textHidden').replaceClass('textHidden', 'textShow');
-        $(_canvas).find('.imageHidden').replaceClass('imageHidden', 'imageShow');
-        $(_canvas).find('.iconHiddenTop').replaceClass('iconHiddenTop', 'iconShowTop');
-        $(_canvas).find('.iconHiddenLeft').replaceClass('iconHiddenLeft', 'iconShowLeft');
-
+        
+        if (_canvas != null) {
+        
+            $(_canvas).find('.textHidden').replaceClass('textHidden', 'textShow');
+            $(_canvas).find('.imageHidden').replaceClass('imageHidden', 'imageShow');
+            $(_canvas).find('.iconHiddenTop').replaceClass('iconHiddenTop', 'iconShowTop');
+            $(_canvas).find('.iconHiddenLeft').replaceClass('iconHiddenLeft', 'iconShowLeft');
+   
+        }
     }
 
 }
