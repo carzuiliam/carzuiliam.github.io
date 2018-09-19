@@ -1,8 +1,8 @@
 /***************************** Static values ***************************/
 
-var helloCanvasY = parseInt($('#hello-canvas').css('background-position').split(' ')[1]) ;
-var experienceCanvasY = parseInt($('#experience-canvas').css('background-position').split(' ')[1]) ;
-var awardCanvasY = parseInt($('#awards-canvas').css('background-position').split(' ')[1]) ;
+var helloCanvasY = parseInt($('#hello-banner').css('background-position').split(' ')[1]) ;
+var experienceCanvasY = parseInt($('#experience-banner').css('background-position').split(' ')[1]) ;
+var awardCanvasY = parseInt($('#awards-banner').css('background-position').split(' ')[1]) ;
 
 var unespImageY = parseInt($('.unespImage').css('top')) ;
 var ufscarImageY = parseInt($('.ufscarImage').css('top')) ;
@@ -12,7 +12,7 @@ var ufscarImageY = parseInt($('.ufscarImage').css('top')) ;
 $(this).scrollTop(0);
 
 setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxLoaded'); }, 0);
-setTimeout(function () { $('#hello-canvas').replaceClass('imageHidden', 'imageShow'); }, 1000);
+setTimeout(function () { $('#hello-banner').replaceClass('imageHidden', 'imageShow'); }, 1000);
 
 setTimeout(function () { 
 	$('#hello-box').find('.textHidden').replaceClass('textHidden', 'textShow');
@@ -26,9 +26,9 @@ setTimeout(function () {
 $(window).on('scroll', function () {
 
 	setTimeout(function() { 
-		$('#hello-canvas').applyParallaxToDiv(.2, helloCanvasY); 
-		$('#experience-canvas').applyParallaxToDiv(.2, experienceCanvasY); 
-		$('#awards-canvas').applyParallaxToDiv(.2, awardCanvasY); 
+		$('#hello-banner').applyParallaxToDiv(.2, helloCanvasY); 
+		$('#experience-banner').applyParallaxToDiv(.2, experienceCanvasY); 
+		$('#awards-banner').applyParallaxToDiv(.2, awardCanvasY); 
 	}, 0);
 	
 	setTimeout(function() { 
@@ -43,7 +43,7 @@ $(window).on('scroll', function () {
 		$(this).animateSection('#experience-content-b', '#experience-canvas-b'); 
 		$(this).animateSection('#experience-content-c', '#experience-canvas-c'); 
 		$(this).animateSection('#experience-content-d', '#experience-canvas-d');
-		$(this).animateSection('#experience-content');		 
+		$(this).animateSection('#experience-title');		 
 	}, 100);
 
 });
