@@ -43,7 +43,9 @@ $(window).on('scroll', function () {
 		$(this).animateSection('#experience-content-b', '#experience-canvas-b'); 
 		$(this).animateSection('#experience-content-c', '#experience-canvas-c'); 
 		$(this).animateSection('#experience-content-d', '#experience-canvas-d');
-		$(this).animateSection('#experience-title');		 
+		$(this).animateSection('#awards-content', '#awards-canvas');
+						 
+		$(this).animateSection('#experience-title');
 	}, 100);
 
 });
