@@ -260,6 +260,8 @@ footer {
 		width: 40%;
 		height: 340px;
 		float: left;
+		letter-spacing: 10px;
+		text-align: center;
 	}
 
 #contact {
@@ -363,6 +365,14 @@ footer {
 	height: 70px;
 	transition: all .5s;
 	vertical-align: bottom;
+}
+
+.awardsIcon {
+	width: 120px;
+	height: 120px;
+	top: 50px;
+	position: relative;
+	transition: all 1s;
 }
 
 .footerContent {
