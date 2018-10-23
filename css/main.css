@@ -14,7 +14,7 @@ table {
 	vertical-align: middle;
 }
 
-tr { height: 90px; }
+tr { height: 100px; }
 
 td { vertical-align: middle; }
 
@@ -45,9 +45,9 @@ header {
 
 main {
 	width: 96%;
-	max-width: 1600px;
+	max-width: 1800px;
 	margin: auto;
-	background-color: #f8f8f8;
+	background-color: #ffffff;
 	display: table;
 }
 
@@ -64,9 +64,9 @@ footer {
 /********************************* DIV's *******************************/
 
 #menu {
-	width: 96%;
+	width: 94%;
 	height: 100%;
-	padding: 0 2%;
+	padding: 0 3%;
 }
 
 	#menu-name {
@@ -96,7 +96,7 @@ footer {
 		border: none;
 		color: #ffffff;
 		float: left;
-		font-size: 150px;
+		font-size: 200px;
 		text-align: justify;
 		transform-origin: left;
 		transition: all 1s;
@@ -117,53 +117,49 @@ footer {
 
 #intro {
 	width: 100%;
-	height: 270px;
+	height: 489px;
 	border-bottom: 1px solid #b0b0b0;
 	display: inline-block;
 }
 
 	#intro-content {
-		width: 60%;
-		height: 270px;
-		float: left;
+		height: 200px;
 	}
 
 	#intro-canvas {
-		width: 40%;
-		height: 270px;
-		float: right;
+		height: 290px;
 		letter-spacing: 10px;
 		text-align: center;
 	}
 
 #education {
 	width: 100%;
-	height: 440px;
+	height: 500px;
 	display: inline-block;
 }
 
 	#education-content {
 		width: 60%;
-		height: 440px;
+		height: 500px;
 		float: right;
 	}
 
 	#education-canvas {
 		width: 40%;
-		height: 440px;
+		height: 500px;
 		float: left;
 		position: relative;
 	}
 
 #experience {
 	width: 100%;
-	height: 1630px;
+	height: 1810px;
 	display: inline-block;
 }
 
 	#experience-title {
 		width: 100%;
-		height: 150px;
+		height: 169px;
 		border-bottom: 1px dashed #ababab;
 	}
 
@@ -179,14 +175,14 @@ footer {
 
 	#experience-content-a {
 		width: 50%;
-		height: 310px;
+		height: 359px;
 		border-bottom: 1px dashed #ababab;
 		float: left;
 	}
 
 	#experience-canvas-a {
 		width: 50%;
-		height: 310px;
+		height: 359px;
 		border-bottom: 1px dashed #ababab;
 		display: table;
 		float: right;
@@ -194,14 +190,14 @@ footer {
 
 	#experience-content-b {
 		width: 50%;
-		height: 330px;
+		height: 359px;
 		border-bottom: 1px dotted #ababab;
 		float: left;
 	}
 
 	#experience-canvas-b {
 		width: 50%;
-		height: 330px;
+		height: 359px;
 		display: table;
 		border-bottom: 1px dotted #ababab;
 		float: right;
@@ -209,14 +205,14 @@ footer {
 
 	#experience-content-c {
 		width: 50%;
-		height: 310px;
+		height: 359px;
 		border-bottom: 1px dotted #ababab;
 		float: left;
 	}
 
 	#experience-canvas-c {
 		width: 50%;
-		height: 310px;
+		height: 359px;
 		border-bottom: 1px dotted #ababab;
 		display: table;
 		float: right;
@@ -224,20 +220,21 @@ footer {
 
 	#experience-content-d {
 		width: 50%;
-		height: 330px;		
+		height: 359px;		
 		float: left;
 	}
 
 	#experience-canvas-d {
 		width: 50%;
-		height: 330px;
+		height: 359px;
 		display: table;
 		float: right;
 	}
 
 #awards {
 	width: 100%;
-	height: 540px;
+	height: 529px;
+	border-bottom: 1px solid #b0b0b0;
 	display: inline-block;
 }
 
@@ -252,14 +249,30 @@ footer {
 
 	#awards-content {
 		width: 60%;
-		height: 340px;
+		height: 330px;
 		float: right;
 	}
 
 	#awards-canvas {
 		width: 40%;
-		height: 340px;
+		height: 330px;
 		float: left;
+		letter-spacing: 10px;
+		text-align: center;
+	}
+
+#skills {
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+}
+
+	#skills-content {
+		height: 170px;
+	}
+
+	#skills-canvas {
+		height: 220px;
 		letter-spacing: 10px;
 		text-align: center;
 	}
@@ -290,7 +303,7 @@ footer {
 
 .labelTitle {
 	width: 100%;
-	top: 50px;
+	top: 60px;
 	font-size: 48px;
 	font-weight: bold;
 	position: relative;
@@ -299,7 +312,18 @@ footer {
 }
 
 .labelContent {
-	top: 90px;
+	top: 110px;
+	display: block;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
+}
+
+.labelList {
+	top: 110px;
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
@@ -316,17 +340,16 @@ footer {
 }
 
 .introIcon {
-	width: 100px;
-	height: 100px;
-	top: 40px;
+	width: 180px;
+	height: 180px;
 	position: relative;
 	transition: all 1s;
 }
 
 .unespImage {
-	width: 300px;
-	height: 225px;
-	top: 30px;
+	width: 400px;
+	height: 300px;
+	top: 100px;
 	right: 20px;
 	box-shadow: 5px 5px #cecece;
 	position: absolute;
@@ -334,9 +357,9 @@ footer {
 }
 
 .ufscarImage {
-	width: 300px;
-	height: 225px;
-	top: 185px;
+	width: 400px;
+	height: 300px;
+	top: 100px;
 	left: 30px;
 	box-shadow: 5px 5px #cecece;
 	position: absolute;
@@ -345,7 +368,7 @@ footer {
 
 .sublabelTitle {
 	width: 100%;
-	top: 50px;
+	top: 60px;
 	font-size: 36px;
 	font-weight: bold;
 	position: relative;
@@ -361,16 +384,23 @@ footer {
 }
 
 .experienceIcon {
-	width: 70px;
-	height: 70px;
+	width: 85px;
+	height: 85px;
 	transition: all .5s;
 	vertical-align: bottom;
 }
 
 .awardsIcon {
-	width: 120px;
-	height: 120px;
-	top: 50px;
+	width: 140px;
+	height: 140px;
+	top: 60px;
+	position: relative;
+	transition: all 1s;
+}
+
+.skillsIcon {
+	width: 140px;
+	height: 140px;
 	position: relative;
 	transition: all 1s;
 }
@@ -395,9 +425,9 @@ footer {
 	.imageShow:hover { transform: scale(1.05); }
 
 .iconHiddenTop { opacity: 0; }
-.iconShowTop { opacity: 1; margin-top: 50px; }
-	.iconShowTop:hover { transform: scale(1.25); }
+.iconShowTop { opacity: 1; margin-top: 40px; }
+	.iconShowTop:hover { transform: scale(1.1); }
 
 .iconHiddenLeft { opacity: 0; }
 .iconShowLeft { opacity: 1; margin-left: 10px; }
-	.iconShowLeft:hover { transform: scale(1.25); }
+	.iconShowLeft:hover { transform: scale(1.05); }

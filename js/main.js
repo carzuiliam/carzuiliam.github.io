@@ -9,17 +9,21 @@ var ufscarImageY = parseInt($('.ufscarImage').css('top')) ;
 
 /*************************** Loading document **************************/
 
-$(this).scrollTop(0);
+$(document).ready(function () {
 
-setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxLoaded'); }, 0);
-setTimeout(function () { $('#hello-banner').replaceClass('imageHidden', 'imageShow'); }, 1000);
+	$(this).scrollTop(0);
 
-setTimeout(function () { 
-	$('#hello-box').find('.textHidden').replaceClass('textHidden', 'textShow');
-	$('#menu-name').find('.textHidden').replaceClass('textHidden', 'textShow');
-	$('#menu-social').find('.imageHidden').replaceClass('imageHidden', 'imageShow');
-	$('#contact').find('.textHidden').replaceClass('textHidden', 'textShow'); 
-}, 1000);
+	setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxLoaded'); }, 0);
+	setTimeout(function () { $('#hello-banner').replaceClass('imageHidden', 'imageShow'); }, 1000);
+
+	setTimeout(function () { 
+		$('#hello-box').find('.textHidden').replaceClass('textHidden', 'textShow');
+		$('#menu-name').find('.textHidden').replaceClass('textHidden', 'textShow');
+		$('#menu-social').find('.imageHidden').replaceClass('imageHidden', 'imageShow');
+		$('#contact').find('.textHidden').replaceClass('textHidden', 'textShow'); 
+	}, 1000);
+
+});
 
 /************************** Scrolling document *************************/
 
@@ -28,7 +32,7 @@ $(window).on('scroll', function () {
 	setTimeout(function() { 
 		$('#hello-banner').applyParallaxToDiv(.2, helloCanvasY); 
 		$('#experience-banner').applyParallaxToDiv(.2, experienceCanvasY); 
-		$('#awards-banner').applyParallaxToDiv(.2, awardCanvasY); 
+		$('#awards-banner').applyParallaxToDiv(.2, awardCanvasY);
 	}, 0);
 	
 	setTimeout(function() { 
@@ -44,6 +48,7 @@ $(window).on('scroll', function () {
 		$(this).animateSection('#experience-content-c', '#experience-canvas-c'); 
 		$(this).animateSection('#experience-content-d', '#experience-canvas-d');
 		$(this).animateSection('#awards-content', '#awards-canvas');
+		$(this).animateSection('#skills-content', '#skills-canvas');
 						 
 		$(this).animateSection('#experience-title');
 	}, 100);
