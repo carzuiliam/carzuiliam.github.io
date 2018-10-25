@@ -1,11 +1,12 @@
 /***************************** Static values ***************************/
 
-var helloCanvasY = parseInt($('#hello-banner').css('background-position').split(' ')[1]) ;
-var experienceCanvasY = parseInt($('#experience-banner').css('background-position').split(' ')[1]) ;
-var awardCanvasY = parseInt($('#awards-banner').css('background-position').split(' ')[1]) ;
+var helloCvsY = parseInt($('#hello-banner').css('background-position').split(' ')[1]);
+var exprnCvsY = parseInt($('#experience-banner').css('background-position').split(' ')[1]);
+var awrdsCvsY = parseInt($('#awards-banner').css('background-position').split(' ')[1]);
+var cntctCvsY = parseInt($('#contact-banner').css('background-position').split(' ')[1]);
 
-var unespImageY = parseInt($('.unespImage').css('top')) ;
-var ufscarImageY = parseInt($('.ufscarImage').css('top')) ;
+var unespImgY = parseInt($('.unespImage').css('top'));
+var ufscrImgY = parseInt($('.ufscarImage').css('top'));
 
 /*************************** Loading document **************************/
 
@@ -20,7 +21,8 @@ $(document).ready(function () {
 		$('#hello-box').find('.textHidden').replaceClass('textHidden', 'textShow');
 		$('#menu-name').find('.textHidden').replaceClass('textHidden', 'textShow');
 		$('#menu-social').find('.imageHidden').replaceClass('imageHidden', 'imageShow');
-		$('#contact').find('.textHidden').replaceClass('textHidden', 'textShow'); 
+		$('#about-info').find('.textHidden').replaceClass('textHidden', 'textShow');
+		$('#about-validation').find('.imageHidden').replaceClass('imageHidden', 'imageShow'); 
 	}, 1000);
 
 });
@@ -29,28 +31,24 @@ $(document).ready(function () {
 
 $(window).on('scroll', function () {
 
-	setTimeout(function() { 
-		$('#hello-banner').applyParallaxToDiv(.2, helloCanvasY); 
-		$('#experience-banner').applyParallaxToDiv(.2, experienceCanvasY); 
-		$('#awards-banner').applyParallaxToDiv(.2, awardCanvasY);
-	}, 0);
-	
-	setTimeout(function() { 
-		$('.unespImage').applyParallaxToClass(-.04, unespImageY);
-		$('.ufscarImage').applyParallaxToClass(.04, ufscarImageY); 
+	setTimeout(function() {
+		$('#hello-banner').applyParallaxToDiv(.2, helloCvsY); 
+		$('#experience-banner').applyParallaxToDiv(.2, exprnCvsY); 
+		$('#awards-banner').applyParallaxToDiv(.2, awrdsCvsY);
+		$('#contact-banner').applyParallaxToDiv(.2, cntctCvsY);
 	}, 0);
 
 	setTimeout(function() { 
+		$(this).animateSection('#experience-title', null);
 		$(this).animateSection('#intro-content', '#intro-canvas');
 		$(this).animateSection('#education-content', '#education-canvas');
-		$(this).animateSection('#experience-content-a', '#experience-canvas-a'); 
-		$(this).animateSection('#experience-content-b', '#experience-canvas-b'); 
-		$(this).animateSection('#experience-content-c', '#experience-canvas-c'); 
+		$(this).animateSection('#experience-content-a', '#experience-canvas-a');
+		$(this).animateSection('#experience-content-b', '#experience-canvas-b');
+		$(this).animateSection('#experience-content-c', '#experience-canvas-c');
 		$(this).animateSection('#experience-content-d', '#experience-canvas-d');
 		$(this).animateSection('#awards-content', '#awards-canvas');
 		$(this).animateSection('#skills-content', '#skills-canvas');
-						 
-		$(this).animateSection('#experience-title');
+		$(this).animateSection('#contact-content', '#contact-canvas');
 	}, 100);
 
 });

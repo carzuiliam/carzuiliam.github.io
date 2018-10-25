@@ -1,10 +1,10 @@
 /****************************** Components *****************************/
 
+html { font-family: 'Questrial', sans-serif; }
+
 h1, h2, h3, h4 { font-family: 'Amaranth', sans-serif; }
 
-li, p { font-family: 'Questrial', sans-serif; }
-
-strong { font-weight: bold; }
+strong { font-weight: 700; }
 
 table {
 	height: 100%;	
@@ -17,16 +17,14 @@ td { vertical-align: middle; }
 
 ul { list-style-type: circle; }
 
-a:hover {
-	text-decoration: none;
-	opacity: .5;
-}
+a { text-decoration: none; }
+	a:hover { opacity: .8; }
 
 /*************************** Semantic elements *************************/
 
 body {
 	width: 100%;
-	color: #000000;
+	color: #000;
 	margin: auto;
 	transition: all 1s;
 }
@@ -34,8 +32,7 @@ body {
 header {
 	width: 100%;
 	height: 50px;
-	background-color: #ffffff;
-	display: table;
+	background-color: #fff;
 	position: fixed;
 	z-index: 9;
 }
@@ -43,9 +40,9 @@ header {
 main {
 	width: 96%;
 	max-width: 1800px;
-	margin: auto;
-	background-color: #ffffff;
+	background-color: #fff;
 	display: table;
+	margin: auto;
 }
 
 footer {
@@ -53,7 +50,7 @@ footer {
 	height: 50px;
 	left: 0;
 	bottom: 0;
-	background-color: #ffffff;
+	background-color: #fff;
 	position: fixed;
 	z-index: 9;
 }
@@ -61,9 +58,10 @@ footer {
 /********************************* DIV's *******************************/
 
 #menu {
-	width: 94%;
+	width: 96%;
 	height: 100%;
-	padding: 0 3%;
+	max-width: 1800px;
+	margin: 0 auto;
 }
 
 	#menu-name {
@@ -82,7 +80,7 @@ footer {
 
 #hello {
 	width: 100%;
-	height: 92vh;
+	height: 95vh;
 	overflow: hidden;
 }
 
@@ -91,7 +89,7 @@ footer {
 		height: 100%;
 		background-color: #a82747;
 		border: none;
-		color: #ffffff;
+		color: #fff;
 		float: left;
 		font-size: 200px;
 		text-align: justify;
@@ -103,13 +101,13 @@ footer {
 		width: 50%;
 		height: 100%;
 		background-image: url('../img/content-hello.jpg');
-		background-position: center 0px;
+		background-position: center 1px;
 		background-repeat: no-repeat;	
 		border: none;
 		float: right;
 		position: relative;
 		transform-origin: left;
-		transition: background-position 0s, opacity 1s, transform 1s;
+		transition: opacity 1s, transform .5s;
 	}
 
 #intro {
@@ -150,7 +148,7 @@ footer {
 
 #experience {
 	width: 100%;
-	height: 1810px;
+	height: 1910px;
 	display: inline-block;
 }
 
@@ -162,12 +160,11 @@ footer {
 
 	#experience-banner {
 		width: 100%;
-		height: 200px;
+		height: 300px;
 		background-image: url('../img/experience-banner.jpg');
 		background-position: center -200px;
 		background-repeat: no-repeat;
 		position: relative;
-		transition: background-position 0s;
 	}
 
 	#experience-content-a {
@@ -230,18 +227,17 @@ footer {
 
 #awards {
 	width: 100%;
-	height: 529px;
+	height: 629px;
 	border-bottom: 1px solid #b0b0b0;
 	display: inline-block;
 }
 
 	#awards-banner {
 		width: 100%;
-		height: 200px;
+		height: 300px;
 		background-image: url('../img/awards-banner.jpg');
-		background-position: center 0;
+		background-position: center 200px;
 		background-repeat: no-repeat;
-		transition: background-position 0s;		
 	}
 
 	#awards-content {
@@ -260,7 +256,8 @@ footer {
 
 #skills {
 	width: 100%;
-	height: 600px;
+	height: 429px;
+	border-bottom: 1px solid #b0b0b0;
 	display: inline-block;
 }
 
@@ -274,12 +271,44 @@ footer {
 	}
 
 #contact {
+	width: 100%;
+	height: 660px;
+}
+
+	#contact-banner {
+		width: 100%;
+		height: 300px;
+		background-image: url('../img/contact-banner.jpg');
+		background-position: center 200px;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	#contact-content {
+		height: 240px;
+	}
+
+	#contact-canvas {
+		height: 120px;
+		text-align: center;
+	}
+
+#about {
 	width: 96%;
 	height: 100%;
-	display: inline-block;
-	padding: 0 2%;
+	max-width: 1800px;	
+	margin: 0 auto;
 	text-align: center;
 }
+
+	#about-validation {
+		float: left;
+		margin-top: 10px;
+	}
+
+	#about-info {
+		float: right;
+	}
 
 /***************************** Custom classes **************************/
 
@@ -297,7 +326,7 @@ footer {
 	width: 100%;
 	top: 60px;
 	font-size: 48px;
-	font-weight: bold;
+	font-weight: 700;
 	position: relative;
 	text-align: center;
 	transition: all 1s;
@@ -307,7 +336,7 @@ footer {
 		width: 100%;
 		top: 60px;
 		font-size: 36px;
-		font-weight: bold;
+		font-weight: 700;
 		position: relative;
 		text-align: center;
 		transition: all 1s;
@@ -337,7 +366,7 @@ footer {
 
 .canvasContent {
 	font-size: 24px;
-	margin-left: 30px;
+	margin-left: 15px;
 	text-align: left;
 	transition: all 1s;	
 }
@@ -370,21 +399,21 @@ footer {
 	.unespImage {
 		width: 400px;
 		height: 300px;
-		top: 100px;
+		top: 150px;
 		right: 20px;
-		box-shadow: 5px 5px #cecece;
+		box-shadow: 5px 5px #f0f0f0;
 		position: absolute;
-		transition: opacity 1s, transform 1s, top 0s;
+		transition: opacity 1s, transform .5s;
 	}
 
 	.ufscarImage {
 		width: 400px;
 		height: 300px;
-		top: 100px;
+		top: 50px;
 		left: 30px;
-		box-shadow: 5px 5px #cecece;
+		box-shadow: 5px 5px #f0f0f0;
 		position: absolute;
-		transition: opacity 1s, transform 1s, top 0s;
+		transition: opacity 1s, transform .5s;
 	}
 
 	.experienceTable {
@@ -423,11 +452,30 @@ footer {
 		transition: all 1s;
 	}
 
-.footerContent {
+.contactIcon {
+	width: 30px;
+	height: 30px;
+	transition: all 1s;
+	vertical-align: middle;
+}
+
+.aboutContent {
 	color: #727272;
 	font-size: 12px;
 	margin-top: 16px;
 	transition: all 1s;
+}
+
+.smallSpace {
+	font-size: 25px;
+	margin: 0 30px;
+	transition: opacity 1s;
+}
+
+.w3cValidCss {
+	width: 88px;
+	height: 31px;
+	transition: opacity 1s, transform .5s;
 }
 
 /**************************** Effects classes **************************/
@@ -438,9 +486,9 @@ footer {
 .textHidden { opacity: 0; }
 .textShow { opacity: 1; }
 
-.imageHidden { opacity: 0; transform: scale(.95); }
-.imageShow { opacity: 1; transform: scale(1); }
-	.imageShow:hover { transform: scale(1.05); }
+.imageHidden { opacity: 0; }
+.imageShow { opacity: 1; }
+	.imageShow:hover { transform: scale(1.05); z-index: 1; }
 
 .iconHiddenTop { opacity: 0; }
 .iconShowTop { opacity: 1; margin-top: 40px; }
