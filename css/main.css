@@ -148,7 +148,7 @@ footer {
 
 #experience {
 	width: 100%;
-	height: 1910px;
+	height: 1960px;
 	display: inline-block;
 }
 
@@ -160,9 +160,9 @@ footer {
 
 	#experience-banner {
 		width: 100%;
-		height: 300px;
+		height: 350px;
 		background-image: url('../img/experience-banner.jpg');
-		background-position: center -200px;
+		background-position: center 1px;
 		background-repeat: no-repeat;
 		position: relative;
 	}
@@ -227,14 +227,14 @@ footer {
 
 #awards {
 	width: 100%;
-	height: 629px;
+	height: 679px;
 	border-bottom: 1px solid #b0b0b0;
 	display: inline-block;
 }
 
 	#awards-banner {
 		width: 100%;
-		height: 300px;
+		height: 350px;
 		background-image: url('../img/awards-banner.jpg');
 		background-position: center 200px;
 		background-repeat: no-repeat;
@@ -272,14 +272,14 @@ footer {
 
 #contact {
 	width: 100%;
-	height: 660px;
+	height: 710px;
 }
 
 	#contact-banner {
 		width: 100%;
-		height: 300px;
+		height: 350px;
 		background-image: url('../img/contact-banner.jpg');
-		background-position: center 200px;
+		background-position: center 300px;
 		background-repeat: no-repeat;
 		position: relative;
 	}
