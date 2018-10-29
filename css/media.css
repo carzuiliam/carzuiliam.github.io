@@ -4,6 +4,12 @@
 	
 }
 
+/************************** Chromebook Pixel ***************************/
+
+@media screen and (max-width: 1280px) {
+
+}
+
 /******************** Old Default Windows Resolution *******************/
 
 @media screen and (max-width: 1024px) {
