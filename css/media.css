@@ -1,7 +1,14 @@
 /**************************** IPad (default) ***************************/
 
 @media screen and (max-width: 1366px) {
-	
+
+	#hello-box { font-size: 150px; }
+	#intro { height: 479px; }	
+	#intro-content { height: 220px; }
+	#intro-canvas { height: 259px; }
+
+	.introIcon { width: 150px; height: 150px; } 
+
 }
 
 /************************** Chromebook Pixel ***************************/
