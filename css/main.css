@@ -38,7 +38,7 @@ header {
 }
 
 main {
-	width: 96%;
+	width: 100%;
 	max-width: 1800px;
 	background-color: #fff;
 	display: table;
@@ -87,7 +87,7 @@ footer {
 	#hello-box {
 		width: 50%;
 		height: 100%;
-		background-color: #a82747;
+		background-color: #74a8b6;
 		border: none;
 		color: #fff;
 		float: left;
@@ -113,7 +113,7 @@ footer {
 #intro {
 	width: 100%;
 	height: 489px;
-	border-bottom: 1px solid #b0b0b0;
+	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
@@ -155,7 +155,7 @@ footer {
 	#experience-title {
 		width: 100%;
 		height: 169px;
-		border-bottom: 1px dashed #ababab;
+		border-bottom: 1px dashed #cecece;
 	}
 
 	#experience-banner {
@@ -170,14 +170,14 @@ footer {
 	#experience-content-a {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dashed #ababab;
+		border-bottom: 1px dashed #cecece;
 		float: left;
 	}
 
 	#experience-canvas-a {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dashed #ababab;
+		border-bottom: 1px dashed #cecece;
 		display: table;
 		float: right;
 	}
@@ -185,7 +185,7 @@ footer {
 	#experience-content-b {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dotted #ababab;
+		border-bottom: 1px dotted #cecece;
 		float: left;
 	}
 
@@ -193,21 +193,21 @@ footer {
 		width: 50%;
 		height: 359px;
 		display: table;
-		border-bottom: 1px dotted #ababab;
+		border-bottom: 1px dotted #cecece;
 		float: right;
 	}
 
 	#experience-content-c {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dotted #ababab;
+		border-bottom: 1px dotted #cecece;
 		float: left;
 	}
 
 	#experience-canvas-c {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dotted #ababab;
+		border-bottom: 1px dotted #cecece;
 		display: table;
 		float: right;
 	}
@@ -228,7 +228,7 @@ footer {
 #awards {
 	width: 100%;
 	height: 679px;
-	border-bottom: 1px solid #b0b0b0;
+	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
@@ -257,7 +257,7 @@ footer {
 #skills {
 	width: 100%;
 	height: 429px;
-	border-bottom: 1px solid #b0b0b0;
+	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
