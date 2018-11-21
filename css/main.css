@@ -266,7 +266,7 @@ footer {
 	}
 
 	#skills-canvas {
-		height: 230px;
+		height: 310px;
 		text-align: center;
 	}
 
@@ -396,21 +396,21 @@ footer {
 		transition: all 1s;
 	}
 
-	.unespImage {
-		width: 400px;
-		height: 300px;
-		top: 150px;
-		right: 20px;
-		box-shadow: 5px 5px #f0f0f0;
-		position: absolute;
-		transition: opacity 1s, transform .5s;
-	}
-
 	.ufscarImage {
 		width: 400px;
 		height: 300px;
 		top: 50px;
 		left: 30px;
+		box-shadow: 5px 5px #f0f0f0;
+		position: absolute;
+		transition: opacity 1s, transform .5s;
+	}
+
+	.unespImage {
+		width: 400px;
+		height: 300px;
+		top: 150px;
+		right: 20px;
 		box-shadow: 5px 5px #f0f0f0;
 		position: absolute;
 		transition: opacity 1s, transform .5s;
@@ -433,6 +433,7 @@ footer {
 	}
 
 	.skillsTable {
+		height: 245px;
 		margin: 0 auto;
 	}
 		.skillsTableRow {

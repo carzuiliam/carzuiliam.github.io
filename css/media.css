@@ -3,12 +3,30 @@
 @media screen and (max-width: 1366px) {
 
 	#hello-box { font-size: 150px; }
-	#intro { height: 479px; }	
-	#intro-content { height: 220px; }
-	#intro-canvas { height: 259px; }
+	#intro { height: 469px; }	
+		#intro-content { height: 220px; }
+		#intro-canvas { height: 250px; }
+	#education { height: 460px; }
+		#education-content { height: 460px; }
+		#education-canvas { height: 460px; }
+	#experience { height: 1920px; }
+		#experience-content-a { height: 349px; }
+		#experience-canvas-a { height: 349px; }
+		#experience-content-b { height: 349px; }
+		#experience-canvas-b { height: 349px; }
+		#experience-content-c { height: 349px; }
+		#experience-canvas-c { height: 349px; }
+		#experience-content-d { height: 349px; }
+		#experience-canvas-d { height: 349px; }
+	#awards { height: 709px; }
+		#awards-content { height: 360px; }
+		#awards-canvas { height: 360px; }
 
-	.introIcon { width: 150px; height: 150px; }
-	
+	.introIcon { width: 140px; height: 140px; }
+	.ufscarImage { width: 360px; height: 240px; left: 50px; }
+	.unespImage { width: 360px; height: 240px; top: 170px; right: 30px; }
+	.skillsTableCell { width: 210px; }
+	.awardsIcon { top: 70px; }
 }
 
 /************************** Chromebook Pixel ***************************/
