@@ -24,7 +24,7 @@
 
 	.introIcon { width: 140px; height: 140px; }
 	.ufscarImage { width: 360px; height: 240px; left: 50px; }
-	.unespImage { width: 360px; height: 240px; top: 170px; right: 30px; }
+	.unespImage { width: 360px; height: 240px; top: 170px; }
 	.skillsTableCell { width: 210px; }
 	.awardsIcon { top: 70px; }
 }
@@ -33,12 +33,20 @@
 
 @media screen and (max-width: 1280px) {
 
+	.introIcon { width: 130px; height: 130px; }
+	.skillsTableCell { width: 190px; }
+	.awardsIcon { width: 130px; height: 130px; }
 }
 
 /******************** Old Default Windows Resolution *******************/
 
 @media screen and (max-width: 1024px) {
 
+		#hello-box { width: 100%; }
+		#hello-banner { display: none; }
+
+	.ufscarImage { width: 240px; height: 160px; }
+	.unespImage { width: 240px; height: 160px; }
 }
 
 /**************************** IPad (default) ***************************/

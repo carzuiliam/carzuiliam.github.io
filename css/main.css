@@ -312,13 +312,87 @@ footer {
 
 /***************************** Custom classes **************************/
 
-.ownerContent {
+.aboutContent {
+	color: #727272;
+	font-size: 12px;
+	margin-top: 16px;
 	transition: all 1s;
 }
 
-.socialIcon {
+.awardsIcon {
+	width: 140px;
+	height: 140px;
+	top: 60px;
+	position: relative;
+	transition: all 1s;
+}
+
+.boxTitle {
+	top: 50%;
+	left: 50%;	
+	float: left;	
+	line-height: .8em;
+	position: relative;
+	transform: translate(-50%, -50%);
+	transition: all 1s;
+}
+
+.canvasContent {
+	font-size: 24px;
+	margin-left: 15px;
+	text-align: left;
+	transition: all 1s;	
+}
+
+.contactIcon {
 	width: 30px;
 	height: 30px;
+	transition: all 1s;
+	vertical-align: middle;
+}
+
+.experienceIcon {
+	width: 85px;
+	height: 85px;
+	transition: all .5s;
+	vertical-align: bottom;
+}
+
+.experienceTable {
+	display: table-cell;
+}
+
+.experienceTableRow {
+	height: 100px;
+	line-height: 40px;
+}
+
+.introIcon {
+	width: 180px;
+	height: 180px;
+	position: relative;
+	transition: all 1s;
+}
+
+.labelContent {
+	top: 110px;
+	display: block;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
+}
+
+.labelList {
+	top: 110px;
+	display: block;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
+	position: relative;
+	text-align: justify;
 	transition: all 1s;
 }
 
@@ -332,145 +406,72 @@ footer {
 	transition: all 1s;
 }
 
-	.labelSubtitle {
-		width: 100%;
-		top: 60px;
-		font-size: 36px;
-		font-weight: 700;
-		position: relative;
-		text-align: center;
-		transition: all 1s;
-	}
-
-	.labelContent {
-		top: 110px;
-		display: block;
-		font-size: 24px;
-		line-height: 35px;
-		padding: 0 50px;
-		position: relative;
-		text-align: center;
-		transition: all 1s;
-	}
-
-	.labelList {
-		top: 110px;
-		display: block;
-		font-size: 24px;
-		line-height: 35px;
-		padding: 0 50px;
-		position: relative;
-		text-align: justify;
-		transition: all 1s;
-	}
-
-.canvasContent {
-	font-size: 24px;
-	margin-left: 15px;
-	text-align: left;
-	transition: all 1s;	
+.labelSubtitle {
+	width: 100%;
+	top: 60px;
+	font-size: 36px;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
 }
 
-	.boxTitle {
-		top: 50%;
-		left: 50%;	
-		float: left;	
-		line-height: .8em;
-		position: relative;
-		transform: translate(-50%, -50%);
-		transition: all 1s;
-	}
-
-	.introIcon {
-		width: 180px;
-		height: 180px;
-		position: relative;
-		transition: all 1s;
-	}
-
-	.awardsIcon {
-		width: 140px;
-		height: 140px;
-		top: 60px;
-		position: relative;
-		transition: all 1s;
-	}
-
-	.ufscarImage {
-		width: 400px;
-		height: 300px;
-		top: 50px;
-		left: 30px;
-		box-shadow: 5px 5px #f0f0f0;
-		position: absolute;
-		transition: opacity 1s, transform .5s;
-	}
-
-	.unespImage {
-		width: 400px;
-		height: 300px;
-		top: 150px;
-		right: 20px;
-		box-shadow: 5px 5px #f0f0f0;
-		position: absolute;
-		transition: opacity 1s, transform .5s;
-	}
-
-	.experienceTable {
-		display: table-cell;
-	}
-
-		.experienceTableRow {
-			height: 100px;
-			line-height: 40px;
-		}
-
-	.experienceIcon {
-		width: 85px;
-		height: 85px;
-		transition: all .5s;
-		vertical-align: bottom;
-	}
-
-	.skillsTable {
-		height: 245px;
-		margin: 0 auto;
-	}
-		.skillsTableRow {
-			height: 20px;
-			line-height: 20px;
-		}
-
-		.skillsTableCell {
-			width: 220px;
-			font-size: 22px;
-		}
-
-	.skillsIcon {
-		width: 140px;
-		height: 140px;
-		position: relative;
-		transition: all 1s;
-	}
-
-.contactIcon {
-	width: 30px;
-	height: 30px;
+.ownerContent { 
 	transition: all 1s;
-	vertical-align: middle;
 }
 
-.aboutContent {
-	color: #727272;
-	font-size: 12px;
-	margin-top: 16px;
+.skillsIcon {
+	width: 140px;
+	height: 140px;
+	position: relative;
 	transition: all 1s;
+}
+
+.skillsTable {
+	height: 245px;
+	margin: 0 auto;
+}
+
+.skillsTableCell {
+	width: 220px;
+	font-size: 22px;
+}
+
+.skillsTableRow {
+	height: 20px;
+	line-height: 20px;
 }
 
 .smallSpace {
 	font-size: 25px;
 	margin: 0 30px;
 	transition: opacity 1s;
+}
+
+.socialIcon {
+	width: 30px;
+	height: 30px;
+	transition: all 1s;
+}
+
+.ufscarImage {
+	width: 400px;
+	height: 300px;
+	top: 50px;
+	left: 30px;
+	box-shadow: 5px 5px #f0f0f0;
+	position: absolute;
+	transition: opacity 1s, transform .5s;
+}
+
+.unespImage {
+	width: 400px;
+	height: 300px;
+	top: 150px;
+	right: 20px;
+	box-shadow: 5px 5px #f0f0f0;
+	position: absolute;
+	transition: opacity 1s, transform .5s;
 }
 
 .w3cValidCss {
