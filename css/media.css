@@ -22,31 +22,41 @@
 		#awards-content { height: 360px; }
 		#awards-canvas { height: 360px; }
 
+	.awardsIcon { top: 70px; }
 	.introIcon { width: 140px; height: 140px; }
+	.skillsTableCell { width: 210px; }
 	.ufscarImage { width: 360px; height: 240px; left: 50px; }
 	.unespImage { width: 360px; height: 240px; top: 170px; }
-	.skillsTableCell { width: 210px; }
-	.awardsIcon { top: 70px; }
 }
 
 /************************** Chromebook Pixel ***************************/
 
 @media screen and (max-width: 1280px) {
 
+	.awardsIcon { width: 130px; height: 130px; }
 	.introIcon { width: 130px; height: 130px; }
 	.skillsTableCell { width: 190px; }
-	.awardsIcon { width: 130px; height: 130px; }
 }
 
 /******************** Old Default Windows Resolution *******************/
 
 @media screen and (max-width: 1024px) {
 
-		#hello-box { width: 100%; }
-		#hello-banner { display: none; }
+	#hello-box { width: 100%; }
+	#hello-banner { display: none; }
+	#education { height: 530px; }
+		#education-content { height: 530px; }
+		#education-canvas { height: 530px; }
+	#awards { height: 779px; }
+		#awards-content { height: 430px; }
+		#awards-canvas { height: 430px; }
 
-	.ufscarImage { width: 240px; height: 160px; }
-	.unespImage { width: 240px; height: 160px; }
+	.awardsIcon { width: 120px; height: 120px; top: 110px; left: 15px; }
+	.canvasContent { font-size: 20px; }
+	.skillsIcon { width: 120px; height: 120px; }
+	.skillsTableCell { width: 160px; font-size: 18px; }
+	.ufscarImage { width: 320px; height: 240px; }
+	.unespImage { width: 320px; height: 240px; top: 240px; }
 }
 
 /**************************** IPad (default) ***************************/
