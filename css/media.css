@@ -63,6 +63,15 @@
 
 @media screen and (max-width: 768px) {
 
+	#intro { height: 494px; }	
+		#intro-content { height: 255px; }
+		#intro-canvas { height: 240px; }
+	#education { display: block;  height: 760px; }
+		#education-content { width: 100%; height: 470px; }
+		#education-canvas { width: 100%; height: 290px; }
+
+	.ufscarImage { width: 320px; height: 240px; }
+	.unespImage { width: 320px; height: 240px; top: 50px; right: 50px; }
 }
 
 /***************************** Galaxy Tab A ****************************/
