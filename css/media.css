@@ -69,7 +69,17 @@
 	#education { display: block;  height: 760px; }
 		#education-content { width: 100%; height: 470px; }
 		#education-canvas { width: 100%; height: 290px; }
+	#experience { display: block; height: 3105px; }
+		#experience-content-a { width: 100%; height: 260px; border-bottom: none; }
+		#experience-canvas-a { width: 100%; height: 359px; }
+		#experience-content-b { width: 100%; height: 295px; border-bottom: none; }
+		#experience-canvas-b { width: 100%; height: 359px; }
+		#experience-content-c { width: 100%; height: 295px; border-bottom: none; }
+		#experience-canvas-c { width: 100%; height: 359px; }
+		#experience-content-d { width: 100%; height: 295px; border-bottom: none; }
+		#experience-canvas-d { width: 100%; height: 359px; }
 
+	.experienceTable { width: 500px; display: block; margin: 0 auto; }
 	.ufscarImage { width: 320px; height: 240px; }
 	.unespImage { width: 320px; height: 240px; top: 50px; right: 50px; }
 }
