@@ -5,16 +5,13 @@ var exprnCvsY = parseInt($('#experience-banner').css('background-position').spli
 var awrdsCvsY = parseInt($('#awards-banner').css('background-position').split(' ')[1]);
 var cntctCvsY = parseInt($('#contact-banner').css('background-position').split(' ')[1]);
 
-var unespImgY = parseInt($('.unespImage').css('top'));
-var ufscrImgY = parseInt($('.ufscarImage').css('top'));
-
 /*************************** Loading document **************************/
 
 $(document).ready(function () {
 
 	$(this).scrollTop(0);
 
-	setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxLoaded'); }, 0);
+	setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxShow'); }, 0);
 	setTimeout(function () { $('#hello-banner').replaceClass('imageHidden', 'imageShow'); }, 1000);
 
 	setTimeout(function () { 

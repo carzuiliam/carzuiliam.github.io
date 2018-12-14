@@ -6,10 +6,7 @@ h1, h2, h3, h4 { font-family: 'Amaranth', sans-serif; }
 
 strong { font-weight: 700; }
 
-table {
-	height: 100%;	
-	vertical-align: middle;
-}
+table { vertical-align: middle; }
 
 tr { height: 100px; }
 
@@ -68,7 +65,7 @@ footer {
 		color: #727272;
 		float: left;
 		font-size: 14px;
-		margin-top: 15px;
+		margin-top: 18px;
 	}
 
 	#menu-social {
@@ -112,17 +109,17 @@ footer {
 
 #intro {
 	width: 100%;
-	height: 489px;
+	height: 452px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#intro-content {
-		height: 200px;
+		height: 173px;
 	}
 
 	#intro-canvas {
-		height: 290px;
+		height: 280px;
 		letter-spacing: 10px;
 		text-align: center;
 	}
@@ -148,15 +145,9 @@ footer {
 
 #experience {
 	width: 100%;
-	height: 1960px;
+	height: 1939px;
 	display: inline-block;
 }
-
-	#experience-title {
-		width: 100%;
-		height: 169px;
-		border-bottom: 1px dashed #cecece;
-	}
 
 	#experience-banner {
 		width: 100%;
@@ -165,6 +156,12 @@ footer {
 		background-position: center 1px;
 		background-repeat: no-repeat;
 		position: relative;
+	}
+
+	#experience-title {
+		width: 100%;
+		height: 148px;
+		border-bottom: 1px dashed #cecece;
 	}
 
 	#experience-content-a {
@@ -193,21 +190,21 @@ footer {
 		width: 50%;
 		height: 359px;
 		display: table;
-		border-bottom: 1px dotted #cecece;
+		border-bottom: 1px dashed #cecece;
 		float: right;
 	}
 
 	#experience-content-c {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dotted #cecece;
+		border-bottom: 1px dashed #cecece;
 		float: left;
 	}
 
 	#experience-canvas-c {
 		width: 50%;
 		height: 359px;
-		border-bottom: 1px dotted #cecece;
+		border-bottom: 1px dashed #cecece;
 		display: table;
 		float: right;
 	}
@@ -227,7 +224,7 @@ footer {
 
 #awards {
 	width: 100%;
-	height: 679px;
+	height: 642px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
@@ -242,13 +239,13 @@ footer {
 
 	#awards-content {
 		width: 60%;
-		height: 330px;
+		height: 293px;
 		float: right;
 	}
 
 	#awards-canvas {
 		width: 40%;
-		height: 330px;
+		height: 293px;
 		float: left;
 		letter-spacing: 10px;
 		text-align: center;
@@ -256,13 +253,13 @@ footer {
 
 #skills {
 	width: 100%;
-	height: 429px;
+	height: 417px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#skills-content {
-		height: 120px;
+		height: 108px;
 	}
 
 	#skills-canvas {
@@ -272,7 +269,7 @@ footer {
 
 #contact {
 	width: 100%;
-	height: 710px;
+	height: 693px;
 }
 
 	#contact-banner {
@@ -285,11 +282,11 @@ footer {
 	}
 
 	#contact-content {
-		height: 240px;
+		height: 213px;
 	}
 
 	#contact-canvas {
-		height: 120px;
+		height: 130px;
 		text-align: center;
 	}
 
@@ -312,149 +309,61 @@ footer {
 
 /***************************** Custom classes **************************/
 
-.aboutContent {
-	color: #727272;
-	font-size: 12px;
-	margin-top: 16px;
-	transition: all 1s;
+.cellSkills {
+	width: 220px;
+	font-size: 22px;
+	vertical-align: top;
 }
 
-.awardsIcon {
+.emptySpace {
+	font-size: 25px;
+	margin: 0 15px 0 30px;
+	transition: opacity 1s;
+}
+
+.iconAwards {
 	width: 140px;
 	height: 140px;
-	top: 60px;
+	top: 36px;
 	position: relative;
 	transition: all 1s;
 }
 
-.boxTitle {
-	top: 50%;
-	left: 50%;	
-	float: left;	
-	line-height: .8em;
-	position: relative;
-	transform: translate(-50%, -50%);
-	transition: all 1s;
-}
-
-.canvasContent {
-	font-size: 24px;
-	margin-left: 15px;
-	text-align: left;
-	transition: all 1s;	
-}
-
-.contactIcon {
+.iconContact {
 	width: 30px;
 	height: 30px;
 	transition: all 1s;
 	vertical-align: middle;
 }
 
-.experienceIcon {
+.iconExperience {
 	width: 85px;
 	height: 85px;
 	transition: all .5s;
 	vertical-align: bottom;
 }
 
-.experienceTable {
-	display: table-cell;
-}
-
-.experienceTableRow {
-	height: 100px;
-	line-height: 40px;
-}
-
-.introIcon {
+.iconIntro {
 	width: 180px;
 	height: 180px;
 	position: relative;
 	transition: all 1s;
 }
 
-.labelContent {
-	top: 110px;
-	display: block;
-	font-size: 24px;
-	line-height: 35px;
-	padding: 0 50px;
-	position: relative;
-	text-align: center;
-	transition: all 1s;
-}
-
-.labelList {
-	top: 110px;
-	display: block;
-	font-size: 24px;
-	line-height: 35px;
-	padding: 0 50px;
-	position: relative;
-	text-align: justify;
-	transition: all 1s;
-}
-
-.labelTitle {
-	width: 100%;
-	top: 60px;
-	font-size: 48px;
-	font-weight: 700;
-	position: relative;
-	text-align: center;
-	transition: all 1s;
-}
-
-.labelSubtitle {
-	width: 100%;
-	top: 60px;
-	font-size: 36px;
-	font-weight: 700;
-	position: relative;
-	text-align: center;
-	transition: all 1s;
-}
-
-.ownerContent { 
-	transition: all 1s;
-}
-
-.skillsIcon {
+.iconSkills {
 	width: 140px;
 	height: 140px;
 	position: relative;
 	transition: all 1s;
 }
 
-.skillsTable {
-	height: 245px;
-	margin: 0 auto;
-}
-
-.skillsTableCell {
-	width: 220px;
-	font-size: 22px;
-}
-
-.skillsTableRow {
-	height: 20px;
-	line-height: 20px;
-}
-
-.smallSpace {
-	font-size: 25px;
-	margin: 0 30px;
-	transition: opacity 1s;
-}
-
-.socialIcon {
+.iconSocial {
 	width: 30px;
 	height: 30px;
 	transition: all 1s;
 }
 
-.ufscarImage {
+.imageUfscar {
 	width: 400px;
 	height: 300px;
 	top: 50px;
@@ -464,7 +373,7 @@ footer {
 	transition: opacity 1s, transform .5s;
 }
 
-.unespImage {
+.imageUnesp {
 	width: 400px;
 	height: 300px;
 	top: 150px;
@@ -472,6 +381,115 @@ footer {
 	box-shadow: 5px 5px #f0f0f0;
 	position: absolute;
 	transition: opacity 1s, transform .5s;
+}
+
+.labelDefault {
+	width: 100%;
+	top: 45px;
+	font-size: 36px;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
+}
+
+.labelImage {
+	font-size: 24px;
+}
+
+.listDefault {
+	top: 90px;
+	display: block;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
+	position: relative;
+	text-align: justify;
+	transition: all 1s;
+}
+
+.rowExperience {
+	height: 100px;
+	line-height: 40px;
+}
+
+.rowSkills {
+	height: 20px;
+}
+
+.tableExperience {
+	display: table-cell;
+}
+
+.tableSkills {
+	height: 260px;
+	margin: 0 auto;
+}
+
+.textAbout {
+	color: #727272;
+	font-size: 12px;
+	margin-top: 14px;
+	transition: all 1s;
+}
+
+.textCanvas {
+	font-size: 24px;
+	margin-left: 15px;
+	text-align: left;
+	transition: all 1s;	
+}
+
+.textContact {
+	font-size: 18px;
+	margin-left: 10px;
+	transition: all 1s;
+}
+
+.textCentered {
+	top: 90px;
+	display: block;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
+}
+
+.textJustified {
+	top: 90px;
+	display: block;
+	font-size: 24px;
+	line-height: 35px;
+	padding: 0 50px;
+	position: relative;
+	text-align: justify;
+	transition: all 1s;
+}
+
+.textMenu { 
+	transition: all 1s;
+}
+
+.titleBox {
+	top: 50%;
+	left: 50%;	
+	float: left;	
+	line-height: .8em;
+	position: relative;
+	transform: translate(-50%, -50%);
+	transition: all 1s;
+}
+
+.titleDefault {
+	width: 100%;
+	top: 50px;
+	font-size: 48px;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
 }
 
 .w3cValidCss {
@@ -483,14 +501,14 @@ footer {
 /**************************** Effects classes **************************/
 
 .boxHidden { transform: scaleX(0); }
-.boxLoaded { transform: scaleX(1); }
+.boxShow { transform: scaleX(1); }
 
 .textHidden { opacity: 0; }
 .textShow { opacity: 1; }
 
 .imageHidden { opacity: 0; }
 .imageShow { opacity: 1; }
-	.imageShow:hover { transform: scale(1.05); z-index: 1; }
+	/*.imageShow:hover { transform: scale(1.05); z-index: 1; }*/
 
 .iconHiddenTop { opacity: 0; }
 .iconShowTop { opacity: 1; margin-top: 40px; }
