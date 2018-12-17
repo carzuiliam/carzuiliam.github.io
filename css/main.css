@@ -253,13 +253,13 @@ footer {
 
 #skills {
 	width: 100%;
-	height: 417px;
+	height: 407px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#skills-content {
-		height: 108px;
+		height: 98px;
 	}
 
 	#skills-canvas {
@@ -276,7 +276,7 @@ footer {
 		width: 100%;
 		height: 350px;
 		background-image: url('../img/contact-banner.jpg');
-		background-position: center 300px;
+		background-position: center 600px;
 		background-repeat: no-repeat;
 		position: relative;
 	}
@@ -332,6 +332,7 @@ footer {
 .iconContact {
 	width: 30px;
 	height: 30px;
+	margin-left: -10px;
 	transition: all 1s;
 	vertical-align: middle;
 }
@@ -339,6 +340,7 @@ footer {
 .iconExperience {
 	width: 85px;
 	height: 85px;
+	margin-left: -10px;
 	transition: all .5s;
 	vertical-align: bottom;
 }
@@ -395,6 +397,11 @@ footer {
 
 .labelImage {
 	font-size: 24px;
+}
+
+.lineBreak {
+	display: none;
+	line-height: 10px;
 }
 
 .listDefault {
@@ -514,4 +521,4 @@ footer {
 .iconShowTop { opacity: 1; margin-top: 40px; }
 
 .iconHiddenLeft { opacity: 0; }
-.iconShowLeft { opacity: 1; margin-left: 10px; }
+.iconShowLeft { opacity: 1; margin-left: 0; }

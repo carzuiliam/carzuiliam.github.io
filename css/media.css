@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1366px) {
 
-	#intro { height: 487px; }
+	#intro { height: 482px; }
 		#intro-content { height: 203px; }
 
 	#awards { height: 677px; }
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1280px) {
 
-	#intro { height: 457px; }
+	#intro { height: 453px; }
 		#intro-canvas { height: 250px; }
 
 	#education { height: 433px; }
@@ -50,7 +50,7 @@
 		#awards-content { height: 398px; }
 		#awards-canvas { height: 398px; }
 
-	#skills { height: 367px; }
+	#skills { height: 357px; }
 		#skills-canvas { height: 260px; }
 
 	.cellSkills { width: 150px; }
@@ -70,32 +70,163 @@
 
 		#hello-box { width: 100%; }
 		#hello-banner { display: none; }
-	#intro { height: 472px; }
-		#intro-content { height: 238px; }
+	#intro { height: 462px; }
+		#intro-content { height: 233px; }
 		#intro-canvas { height: 230px; }
-	/** TODO **/
+	#education { height: 713px; }
+		#education-content { width: 100%; height: 423px; }
+		#education-canvas { width: 100%; height: 290px; }
+	#experience { height: 2827px; }
+		#experience-content-a { width: 100%; height: 206px; border-bottom: none; }
+		#experience-canvas-a { width: 100%; height: 349px; text-align: center; }
+		#experience-content-b { width: 100%; height: 241px; border-bottom: none; }
+		#experience-canvas-b { width: 100%; height: 349px; text-align: center; }
+		#experience-content-c { width: 100%; height: 241px; border-bottom: none; }
+		#experience-canvas-c { width: 100%; height: 349px; text-align: center; }
+		#experience-content-d { width: 100%; height: 241px; border-bottom: none; }
+		#experience-canvas-d { width: 100%; height: 349px; text-align: center; }
+	#awards { height: 840px; }
+		#awards-content { width: 100%; height: 328px; }
+		#awards-canvas { width: 100%; height: 163px; }
+	#skills { height: 537px; }
+		#skills-canvas { height: 440px; }
+
+	.cellSkills { width: 180px; display: inline-block; }
+	.iconAwards { top: 10px; left: 0; }
+	.imageUfscar { width: 320px; height: 240px; }
+	.imageUnesp { width: 320px; height: 240px; top: 50px; right: 50px; }
+	.tableExperience { width: 500px; display: inherit; margin: 0 auto; }
+	.tableSkills { width: 600px; }
 }
 
 /***************************** Galaxy Tab A ****************************/
 
 @media screen and (max-width: 601px) {
 
+	#intro { height: 442px; }
+		#intro-content { height: 242px; }
+		#intro-canvas { height: 200px; }
+	#education { height: 868px; }
+		#education-content { height: 538px; }
+		#education-canvas { height: 330px; }
+	#experience { height: 2897px; }
+		#experience-content-a { height: 241px; }
+		#experience-content-b { height: 276px; }
+	#awards { height: 905px; }
+		#awards-content { height: 394px; }
+	#contact { height: 693px; }
+		#contact-content { height: 233px; }
+		#contact-canvas { height: 110px; }
+
+	.emptySpace { font-size: 20px; margin: 0 0 0 15px; }
+	.iconContact { width: 20px; height: 20px; }
+	.iconIntro { width: 110px; height: 110px; }
+	.imageUnesp { top: 90px; right: 50px; }
+	.textContact { font-size: 15px; }
 }
 
 /*************************** Iphone 6/7/8 Plus *************************/
 
 @media screen and (max-width: 414px) {
 
+	#intro { height: 508px; }
+		#intro-content { height: 343px; }
+		#intro-canvas { height: 165px; }
+	#education { height: 1086px; }
+		#education-content { height: 786px; }
+		#education-canvas { height: 300px; }
+	#experience { height: 2931px; }
+		#experience-title { height: 196px; }
+		#experience-content-a { height: 268px; }
+		#experience-canvas-a { height: 281px; }
+		#experience-content-b { height: 338px; }
+		#experience-canvas-b { height: 291px; }
+		#experience-content-c { height: 303px; }
+		#experience-canvas-c { height: 281px; }
+		#experience-content-d { height: 338px; }
+		#experience-canvas-d { height: 281px; }
+	#awards { height: 990px; }
+		#awards-content { height: 500px; }
+		#awards-canvas { height: 140px; }
+	#skills { height: 707px; }
+		#skills-canvas { height: 610px; }
+	#contact { height: 403px; }
+		#contact-content { height: 273px; }
+		#contact-canvas { height: 130px; }
+
+	.emptySpace { display: none; }
+	.iconAwards { width: 90px; height: 90px; }
+	.iconExperience { width: 60px; height: 60px; }
+	.iconIntro { width: 70px; height: 70px; }
+	.imageUfscar { width: 240px; height: 160px; }
+	.imageUnesp { width: 240px; height: 160px; top: 140px; }
+	.labelDefault { font-size: 28px; }
+	.lineBreak { display: block; }
+	.rowExperience { height: 80px; line-height: 30px; }
+	.tableExperience { width: 330px; }
+	.tableSkills { width: 400px; }
+	.textCanvas { font-size: 16px; }
+	.textCentered { text-align: justify; }
 }
 
 /**************************** Iphone 6/7/8/X ***************************/
 
 @media screen and (max-width: 375px) {
 
+	#intro { height: 500px; }
+		#intro-content { height: 335px; }
+		#intro-canvas { letter-spacing: 5px; }
+	#education { height: 1097px; }
+		#education-content { height: 797px; }
+	#experience { height: 3095px; }
+		#experience-title { height: 180px; }
+		#experience-content-a { height: 338px; }
+		#experience-content-b { height: 408px; }
+		#experience-content-c { height: 343px; }
+	#awards { height: 972px; }
+		#awards-content { height: 495px; }
+		#awards-canvas { height: 130px; }
+	#contact { height: 395px; }
+		#contact-content { height: 265px; }
+		#contact-canvas { height: 130px; }
+
+	.cellSkills { width: 160px; }
+	.iconAwards { width: 80px; height: 80px; }
+	.iconIntro { width: 65px; height: 65px; }
+	.tableExperience { width: 300px; }
+	.tableSkills { width: 340px; }
+	.titleDefault { font-size: 40px; }
 }
 
 /************************** Iphone 5/5c/5s/SE **************************/
 
 @media screen and (max-width: 320px) {
 
+		#hello-box { font-size: 100px; }
+	#intro { height: 545px; }
+		#intro-content { height: 405px; }
+		#intro-canvas { height: 140px; }
+	#education { height: 1317px; }
+		#education-content { height: 1017px; }
+	#experience { height: 3329px; }
+		#experience-content-a { height: 373px; }
+		#experience-content-b { height: 478px; }
+		#experience-canvas-b { height: 321px; }
+		#experience-content-c { height: 413px; }
+		#experience-content-d { height: 368px; }
+	#awards { height: 1047px; }
+		#awards-content { height: 570px; }
+		#awards-canvas { height: 130px; }
+	#skills { height: 647px; }
+		#skills-canvas { height: 550px; }
+
+	.cellSkills { width: 140px; }
+	.iconIntro { width: 50px; height: 50px; }
+	.iconSkills { width: 90px; height: 90px; }
+	.imageUfscar { width: 200px; height: 150px; }
+	.imageUnesp { width: 200px; height: 150px; top: 150px; }
+	.labelDefault { font-size: 24px; }
+	.tableExperience { width: 230px; }
+	.tableSkills { width: 300px; }
+	.textCanvas { font-size: 14px; }
 }
