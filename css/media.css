@@ -68,6 +68,12 @@
 
 @media screen and (max-width: 768px) {
 
+		#hello-box { width: 100%; }
+		#hello-banner { display: none; }
+	#intro { height: 472px; }
+		#intro-content { height: 238px; }
+		#intro-canvas { height: 230px; }
+	/** TODO **/
 }
 
 /***************************** Galaxy Tab A ****************************/
