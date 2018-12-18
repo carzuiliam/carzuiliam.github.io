@@ -133,6 +133,7 @@
 	.iconIntro { width: 110px; height: 110px; }
 	.imageUnesp { top: 90px; right: 50px; }
 	.textContact { font-size: 15px; }
+	.textFull { display: none; }
 }
 
 /*************************** Iphone 6/7/8 Plus *************************/

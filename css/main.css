@@ -436,7 +436,7 @@ footer {
 .textAbout {
 	color: #727272;
 	font-size: 12px;
-	margin-top: 14px;
+	margin-top: 18px;
 	transition: all 1s;
 }
 
@@ -462,6 +462,10 @@ footer {
 	position: relative;
 	text-align: center;
 	transition: all 1s;
+}
+
+.textFull {
+	display: inline;
 }
 
 .textJustified {
