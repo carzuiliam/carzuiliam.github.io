@@ -2,12 +2,12 @@
 
 @media screen and (max-width: 1366px) {
 
-	#intro { height: 482px; }
-		#intro-content { height: 203px; }
+	#intro { height: 479px; }
+		#intro-content { height: 200px; }
 
-	#awards { height: 677px; }
-		#awards-content { height: 328px; }
-		#awards-canvas { height: 328px; }
+	#awards { height: 679px; }
+		#awards-content { height: 330px; }
+		#awards-canvas { height: 330px; }
 
 	.cellSkills { width: 210px; }
 	.iconAwards { top: 48px; }
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1280px) {
 
-	#intro { height: 453px; }
+	#intro { height: 449px; }
 		#intro-canvas { height: 250px; }
 
 	#education { height: 433px; }
@@ -39,18 +39,18 @@
 
 	#hello-box { font-size: 120px; }
 
-	#intro { height: 437px; }
+	#intro { height: 439px; }
 		#intro-canvas { height: 230px; }
 
 	#education { height: 503px; }
 		#education-content { height: 503px; }
 		#education-canvas { height: 503px; }
 
-	#awards { height: 747px; }
-		#awards-content { height: 398px; }
-		#awards-canvas { height: 398px; }
+	#awards { height: 749px; }
+		#awards-content { height: 400px; }
+		#awards-canvas { height: 400px; }
 
-	#skills { height: 357px; }
+	#skills { height: 359px; }
 		#skills-canvas { height: 260px; }
 
 	.cellSkills { width: 150px; }
@@ -68,14 +68,18 @@
 
 @media screen and (max-width: 768px) {
 
+	/*** #hello ***/
 		#hello-box { width: 100%; }
 		#hello-banner { display: none; }
+
 	#intro { height: 462px; }
 		#intro-content { height: 233px; }
 		#intro-canvas { height: 230px; }
+
 	#education { height: 713px; }
 		#education-content { width: 100%; height: 423px; }
 		#education-canvas { width: 100%; height: 290px; }
+
 	#experience { height: 2827px; }
 		#experience-content-a { width: 100%; height: 206px; border-bottom: none; }
 		#experience-canvas-a { width: 100%; height: 349px; text-align: center; }
@@ -85,10 +89,12 @@
 		#experience-canvas-c { width: 100%; height: 349px; text-align: center; }
 		#experience-content-d { width: 100%; height: 241px; border-bottom: none; }
 		#experience-canvas-d { width: 100%; height: 349px; text-align: center; }
-	#awards { height: 840px; }
-		#awards-content { width: 100%; height: 328px; }
-		#awards-canvas { width: 100%; height: 163px; }
-	#skills { height: 537px; }
+
+	#awards { height: 839px; }
+		#awards-content { width: 100%; height: 330px; }
+		#awards-canvas { width: 100%; height: 160px; }
+
+	#skills { height: 539px; }
 		#skills-canvas { height: 440px; }
 
 	.cellSkills { width: 180px; display: inline-block; }
@@ -103,17 +109,21 @@
 
 @media screen and (max-width: 601px) {
 
-	#intro { height: 442px; }
-		#intro-content { height: 242px; }
+	#intro { height: 439px; }
+		#intro-content { height: 240px; }
 		#intro-canvas { height: 200px; }
-	#education { height: 868px; }
-		#education-content { height: 538px; }
+
+	#education { height: 858px; }
+		#education-content { height: 528px; }
 		#education-canvas { height: 330px; }
+
 	#experience { height: 2897px; }
 		#experience-content-a { height: 241px; }
 		#experience-content-b { height: 276px; }
-	#awards { height: 905px; }
-		#awards-content { height: 394px; }
+
+	#awards { height: 904px; }
+		#awards-content { height: 395px; }
+
 	#contact { height: 693px; }
 		#contact-content { height: 233px; }
 		#contact-canvas { height: 110px; }
@@ -129,12 +139,14 @@
 
 @media screen and (max-width: 414px) {
 
-	#intro { height: 508px; }
-		#intro-content { height: 343px; }
+	#intro { height: 509px; }
+		#intro-content { height: 345px; }
 		#intro-canvas { height: 165px; }
+
 	#education { height: 1086px; }
 		#education-content { height: 786px; }
 		#education-canvas { height: 300px; }
+
 	#experience { height: 2931px; }
 		#experience-title { height: 196px; }
 		#experience-content-a { height: 268px; }
@@ -145,11 +157,14 @@
 		#experience-canvas-c { height: 281px; }
 		#experience-content-d { height: 338px; }
 		#experience-canvas-d { height: 281px; }
-	#awards { height: 990px; }
+
+	#awards { height: 989px; }
 		#awards-content { height: 500px; }
 		#awards-canvas { height: 140px; }
-	#skills { height: 707px; }
+
+	#skills { height: 709px; }
 		#skills-canvas { height: 610px; }
+
 	#contact { height: 403px; }
 		#contact-content { height: 273px; }
 		#contact-canvas { height: 130px; }
@@ -173,19 +188,23 @@
 
 @media screen and (max-width: 375px) {
 
-	#intro { height: 500px; }
+	#intro { height: 499px; }
 		#intro-content { height: 335px; }
 		#intro-canvas { letter-spacing: 5px; }
+
 	#education { height: 1097px; }
 		#education-content { height: 797px; }
-	#experience { height: 3095px; }
+
+	#experience { height: 3101px; }
 		#experience-title { height: 180px; }
 		#experience-content-a { height: 338px; }
 		#experience-content-b { height: 408px; }
 		#experience-content-c { height: 343px; }
+
 	#awards { height: 972px; }
 		#awards-content { height: 495px; }
 		#awards-canvas { height: 130px; }
+
 	#contact { height: 395px; }
 		#contact-content { height: 265px; }
 		#contact-canvas { height: 130px; }
@@ -202,22 +221,28 @@
 
 @media screen and (max-width: 320px) {
 
+	/*** #hello ***/
 		#hello-box { font-size: 100px; }
-	#intro { height: 545px; }
+
+	#intro { height: 554px; }
 		#intro-content { height: 405px; }
-		#intro-canvas { height: 140px; }
+		#intro-canvas { height: 150px; }
+
 	#education { height: 1317px; }
 		#education-content { height: 1017px; }
+
 	#experience { height: 3329px; }
 		#experience-content-a { height: 373px; }
 		#experience-content-b { height: 478px; }
 		#experience-canvas-b { height: 321px; }
 		#experience-content-c { height: 413px; }
 		#experience-content-d { height: 368px; }
-	#awards { height: 1047px; }
+
+	#awards { height: 1049px; }
 		#awards-content { height: 570px; }
 		#awards-canvas { height: 130px; }
-	#skills { height: 647px; }
+
+	#skills { height: 649px; }
 		#skills-canvas { height: 550px; }
 
 	.cellSkills { width: 140px; }

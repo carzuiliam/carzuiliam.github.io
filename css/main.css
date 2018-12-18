@@ -109,13 +109,13 @@ footer {
 
 #intro {
 	width: 100%;
-	height: 452px;
+	height: 449px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#intro-content {
-		height: 173px;
+		height: 170px;
 	}
 
 	#intro-canvas {
@@ -145,7 +145,7 @@ footer {
 
 #experience {
 	width: 100%;
-	height: 1939px;
+	height: 1938px;
 	display: inline-block;
 }
 
@@ -160,7 +160,7 @@ footer {
 
 	#experience-title {
 		width: 100%;
-		height: 148px;
+		height: 147px;
 		border-bottom: 1px dashed #cecece;
 	}
 
@@ -224,7 +224,7 @@ footer {
 
 #awards {
 	width: 100%;
-	height: 642px;
+	height: 644px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
@@ -239,13 +239,13 @@ footer {
 
 	#awards-content {
 		width: 60%;
-		height: 293px;
+		height: 295px;
 		float: right;
 	}
 
 	#awards-canvas {
 		width: 40%;
-		height: 293px;
+		height: 295px;
 		float: left;
 		letter-spacing: 10px;
 		text-align: center;
@@ -253,13 +253,13 @@ footer {
 
 #skills {
 	width: 100%;
-	height: 407px;
+	height: 409px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#skills-content {
-		height: 98px;
+		height: 100px;
 	}
 
 	#skills-canvas {
@@ -515,7 +515,7 @@ footer {
 
 .imageHidden { opacity: 0; }
 .imageShow { opacity: 1; }
-	/*.imageShow:hover { transform: scale(1.05); z-index: 1; }*/
+	.imageShow:hover { transform: scale(1.05); z-index: 1; }
 
 .iconHiddenTop { opacity: 0; }
 .iconShowTop { opacity: 1; margin-top: 40px; }
