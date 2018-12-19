@@ -166,7 +166,7 @@
 	#skills { height: 709px; }
 		#skills-canvas { height: 610px; }
 
-	#contact { height: 403px; }
+	#contact { height: 753px; }
 		#contact-content { height: 273px; }
 		#contact-canvas { height: 130px; }
 
@@ -196,25 +196,26 @@
 	#education { height: 1097px; }
 		#education-content { height: 797px; }
 
-	#experience { height: 3101px; }
+	#experience { height: 2926px; }
 		#experience-title { height: 180px; }
-		#experience-content-a { height: 338px; }
-		#experience-content-b { height: 408px; }
-		#experience-content-c { height: 343px; }
+		#experience-content-a { height: 268px; }
+		#experience-content-b { height: 338px; }
+		#experience-content-c { height: 308px; }
 
 	#awards { height: 972px; }
 		#awards-content { height: 495px; }
 		#awards-canvas { height: 130px; }
 
-	#contact { height: 395px; }
+	#contact { height: 745px; }
 		#contact-content { height: 265px; }
-		#contact-canvas { height: 130px; }
 
 	.cellSkills { width: 160px; }
 	.iconAwards { width: 80px; height: 80px; }
 	.iconIntro { width: 65px; height: 65px; }
-	.tableExperience { width: 300px; }
+	.tableExperience { width: 320px; }
 	.tableSkills { width: 340px; }
+	.textCentered { padding: 0 30px; }
+	.textJustified { padding: 0 30px; }
 	.titleDefault { font-size: 40px; }
 }
 
@@ -225,22 +226,22 @@
 	/*** #hello ***/
 		#hello-box { font-size: 100px; }
 
-	#intro { height: 554px; }
-		#intro-content { height: 405px; }
+	#intro { height: 484px; }
+		#intro-content { height: 335px; }
 		#intro-canvas { height: 150px; }
 
 	#education { height: 1317px; }
 		#education-content { height: 1017px; }
 
-	#experience { height: 3329px; }
-		#experience-content-a { height: 373px; }
-		#experience-content-b { height: 478px; }
+	#experience { height: 3119px; }
+		#experience-content-a { height: 338px; }
+		#experience-content-b { height: 408px; }
 		#experience-canvas-b { height: 321px; }
-		#experience-content-c { height: 413px; }
-		#experience-content-d { height: 368px; }
+		#experience-content-c { height: 343px; }
+		#experience-content-d { height: 333px; }
 
-	#awards { height: 1049px; }
-		#awards-content { height: 570px; }
+	#awards { height: 1039px; }
+		#awards-content { height: 560px; }
 		#awards-canvas { height: 130px; }
 
 	#skills { height: 649px; }
@@ -252,7 +253,9 @@
 	.imageUfscar { width: 200px; height: 150px; }
 	.imageUnesp { width: 200px; height: 150px; top: 150px; }
 	.labelDefault { font-size: 24px; }
+	.listDefault { text-align: left; }
 	.tableExperience { width: 230px; }
 	.tableSkills { width: 300px; }
+	.textJustified { text-align: center; }
 	.textCanvas { font-size: 14px; }
 }
