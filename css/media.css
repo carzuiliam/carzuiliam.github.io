@@ -253,9 +253,9 @@
 	.imageUfscar { width: 200px; height: 150px; }
 	.imageUnesp { width: 200px; height: 150px; top: 150px; }
 	.labelDefault { font-size: 24px; }
-	.listDefault { text-align: left; }
+	.listDefault { padding: 0 48px; text-align: left; }
 	.tableExperience { width: 230px; }
 	.tableSkills { width: 300px; }
-	.textJustified { text-align: center; }
+	.textJustified {  padding: 0 25px; text-align: center; }
 	.textCanvas { font-size: 14px; }
 }
