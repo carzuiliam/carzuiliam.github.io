@@ -132,6 +132,7 @@
 	.iconContact { width: 20px; height: 20px; }
 	.iconIntro { width: 110px; height: 110px; }
 	.imageUnesp { top: 90px; right: 50px; }
+	.listDefault { padding: 0 60px; }
 	.textContact { font-size: 15px; }
 	.textFull { display: none; }
 }
@@ -178,6 +179,7 @@
 	.imageUnesp { width: 240px; height: 160px; top: 140px; }
 	.labelDefault { font-size: 28px; }
 	.lineBreak { display: block; }
+	.listDefault { padding: 0 55px; }
 	.rowExperience { height: 80px; line-height: 30px; }
 	.tableExperience { width: 330px; }
 	.tableSkills { width: 400px; }
@@ -212,6 +214,7 @@
 	.cellSkills { width: 160px; }
 	.iconAwards { width: 80px; height: 80px; }
 	.iconIntro { width: 65px; height: 65px; }
+	.listDefault { padding: 0 50px; }
 	.tableExperience { width: 320px; }
 	.tableSkills { width: 340px; }
 	.textCentered { padding: 0 30px; }
