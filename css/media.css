@@ -124,10 +124,10 @@
 
 	.emptySpace { display: none; }
 	.iconIntro { width: 120px; height: 120px; }
-	.listDefault { padding: 0 40px; }
+	.listDefault { padding: 0 35px; }
 	.lineBreak { display: block; }
-	.textCentered { padding: 0 40px; }
-	.textJustified { padding: 0 40px; }
+	.textCentered { padding: 0 35px; }
+	.textJustified { padding: 0 35px; }
 }
 
 /*************************** Iphone 6/7/8 Plus *************************/
