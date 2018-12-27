@@ -71,9 +71,9 @@
 	#hello-box { width: 100%; }
 	#hello-banner { display: none; }
 
-	#intro { height: 462px; }
+	#intro { height: 472px; }
 	#intro-content { height: 233px; }
-	#intro-canvas { height: 230px; }
+	#intro-canvas { height: 240px; }
 
 	#education { height: 713px; }
 	#education-content { width: 100%; height: 423px; }
@@ -89,8 +89,8 @@
 	#experience-content-d { width: 100%; height: 241px; border-bottom: none; }
 	#experience-canvas-d { width: 100%; height: 349px; text-align: center; }
 
-	#awards { height: 839px; }
-	#awards-content { width: 100%; height: 330px; }
+	#awards { height: 834px; }
+	#awards-content { width: 100%; height: 325px; }
 	#awards-canvas { width: 100%; height: 160px; }
 
 	#skills { height: 539px; }
@@ -100,14 +100,34 @@
 	.iconAwards { top: 10px; left: 0; }
 	.imageUfscar { width: 320px; height: 240px; }
 	.imageUnesp { width: 320px; height: 240px; top: 50px; right: 50px; }
+	.listDefault { text-align: left; }
 	.tableExperience { width: 500px; display: inherit; margin: 0 auto; }
 	.tableSkills { width: 600px; }
+	.textFull { display: none; }
 }
 
 /***************************** Galaxy Tab A ****************************/
 
 @media screen and (max-width: 601px) {
 
+	#intro { height: 452px; }
+	#intro-canvas { height: 220px; }
+
+	#education { height: 788px; }
+	#education-content { width: 100%; height: 498px; }
+
+	#awards { height: 904px; }
+	#awards-content { width: 100%; height: 395px; }
+
+	#contact { height: 718px; }
+	#contact-content { height: 238px; }
+
+	.emptySpace { display: none; }
+	.iconIntro { width: 120px; height: 120px; }
+	.listDefault { padding: 0 45px; }
+	.lineBreak { display: block; }
+	.textCentered { padding: 0 45px; }
+	.textJustified { padding: 0 45px; }
 }
 
 /*************************** Iphone 6/7/8 Plus *************************/
@@ -116,9 +136,21 @@
 
 }
 
+/*************************** Galaxy S9 Plus ****************************/
+
+@media screen and (max-width: 412px) {
+
+}
+
 /**************************** Iphone 6/7/8/X ***************************/
 
 @media screen and (max-width: 375px) {
+
+}
+
+/***************************** Galaxy S9/S9 *****************************/
+
+@media screen and (max-width: 360px) {
 
 }
 

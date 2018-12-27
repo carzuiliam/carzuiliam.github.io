@@ -294,7 +294,7 @@ footer {
 	}
 
 #about {
-	width: 96%;
+	width: 97%;
 	height: 100%;
 	max-width: 1800px;	
 	margin: 0 auto;
@@ -404,7 +404,7 @@ footer {
 
 .lineBreak {
 	display: none;
-	line-height: 10px;
+	line-height: 5px;
 }
 
 .listDefault {
