@@ -127,9 +127,13 @@
 	#awards { height: 904px; }
 	#awards-content { height: 395px; }
 
+	#skills { height: 709px; }
+	#skills-canvas { height: 610px; }
+
 	#contact { height: 718px; }
 	#contact-content { height: 238px; }
 
+	.cellSkills { width: 230px; }
 	.emptySpace { display: none; }
 	.iconIntro { width: 120px; height: 120px; }
 	.lineBreak { display: block; }
@@ -162,11 +166,9 @@
 	#awards { height: 939px; }
 	#awards-content { height: 430px; }
 
-	#skills { height: 709px; }
-	#skills-canvas { height: 610px; }
-
 	#about { width: 96%; }
 
+	.cellSkills { width: 180px; }
 	.iconExperience { width: 70px; height: 70px; }
 	.iconIntro { width: 90px; height: 90px; }
 	.imageUfscar { width: 240px; height: 160px; }
