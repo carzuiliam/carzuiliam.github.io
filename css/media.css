@@ -68,6 +68,8 @@
 
 @media screen and (max-width: 768px) {
 
+	strong { font-weight: 400; text-shadow: 0 0 1px #000; }
+
 	#hello-box { width: 100%; }
 	#hello-banner { display: none; }
 
@@ -207,6 +209,7 @@
 	#contact { height: 733px; }
 	#contact-canvas { height: 145px; }
 
+	.cellSkills { width: 160px; }
 	.iconAwards { width: 100px; height: 100px; }
 	.iconIntro { width: 80px; height: 80px; }
 	.tableExperience { width: 360px; }
