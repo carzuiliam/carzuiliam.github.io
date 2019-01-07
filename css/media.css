@@ -186,6 +186,33 @@
 
 @media screen and (max-width: 375px) {
 
+	#hello-box { font-size: 100px; }
+
+	#intro { height: 482px; }
+	#intro-content { height: 303px; }
+	#intro-canvas { height: 180px; }
+
+	#education { height: 1033px; }
+	#education-content { height: 723px; }
+	#education-canvas { height: 310px; }
+
+	#experience { height: 2869px; }
+	#experience-content-c { height: 306px; }
+	#experience-content-d { height: 306px; }
+
+	#awards { height: 964px; }
+	#awards-content { height: 465px; }
+	#awards-canvas { height: 150px; }
+	
+	#contact { height: 733px; }
+	#contact-canvas { height: 145px; }
+
+	.iconAwards { width: 100px; height: 100px; }
+	.iconIntro { width: 80px; height: 80px; }
+	.tableExperience { width: 360px; }
+	.tableSkills { width: 360px; }
+	.textCanvas { font-size: 14px; }
+	.textCentered { padding: 0 15px; }
 }
 
 /***************************** Galaxy S9/S9 *****************************/
