@@ -1,7 +1,8 @@
 /****************************** Components *****************************/
 
 html { 
-	font-family: 'Questrial', sans-serif; 
+	font-family: 'Questrial', sans-serif;
+	font-weight: 400;
 	letter-spacing: 0;
 }
 
