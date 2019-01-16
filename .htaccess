@@ -1,0 +1,22 @@
+## ----------------- EXPIRES CACHING ----------------- ##
+<IfModule mod_expires.c>
+
+# Enables expiration
+ExpiresActive	On
+
+# Expires font after one year of last user's access
+ExpiresByType	font/woff2 		"now plus 1 year"
+
+# Expires images after three days from the user's access date
+ExpiresByType	image/jpg 		"now plus 3 days"
+ExpiresByType	image/svg+xml	"now plus 3 days"
+
+ExpiresByType	text/css		"now plus 12 hours"
+ExpiresByType	text/html		"now plus 12 hours"
+ExpiresByType	text/javascript	"now plus 12 hours"
+
+# Default expiration date (three days from user's access)
+ExpiresDefault					"now plus 3 days"
+
+</IfModule>
+## --------------------------------------------------- ##
