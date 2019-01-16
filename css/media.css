@@ -18,6 +18,8 @@
 
 @media screen and (max-width: 1280px) {
 
+	#hello-box { font-size: 150px; }
+
 	#intro { height: 449px; }
 	#intro-canvas { height: 250px; }
 
@@ -25,8 +27,12 @@
 	#education-content { height: 433px; }
 	#education-canvas { height: 433px; }
 
+	#awards { height: 714px; }
+	#awards-content { height: 365px; }
+	#awards-canvas { height: 365px; }
+
 	.cellSkills { width: 190px; }
-	.iconAwards { left: 20px; }
+	.iconAwards { left: 15px; top: 65px; }
 	.iconIntro { width: 160px; height: 160px; }
 	.imageUfscar { width: 360px; height: 240px; }
 	.imageUnesp { width: 360px; height: 240px; top: 143px; }
