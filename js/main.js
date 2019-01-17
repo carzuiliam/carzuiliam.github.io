@@ -14,10 +14,11 @@ $(document).ready(function () {
 	setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxShow'); }, 0);
 	setTimeout(function () { $('#hello-banner').replaceClass('imageHidden', 'imageShow'); }, 1000);
 
-	setTimeout(function () { 
+	setTimeout(function () {
+
 		$('#hello-box').find('.textHidden').replaceClass('textHidden', 'textShow');
 		$('#menu-name').find('.textHidden').replaceClass('textHidden', 'textShow');
-		$('#menu-social').find('.imageHidden').replaceClass('imageHidden', 'imageShow');
+		$('#menu-social').find('.iconHidden').replaceClass('iconHidden', 'iconShow');
 		$('#about-info').find('.textHidden').replaceClass('textHidden', 'textShow');
 		$('#about-validation').find('.imageHidden').replaceClass('imageHidden', 'imageShow'); 
 	}, 1000);

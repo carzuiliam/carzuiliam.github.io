@@ -525,6 +525,9 @@ footer {
 .imageShow { opacity: 1; }
 	.imageShow:hover { transform: scale(1.05); z-index: 1; }
 
+.iconHidden { opacity: 0; }
+.iconShow { opacity: 1; }
+
 .iconHiddenTop { opacity: 0; }
 .iconShowTop { opacity: 1; margin-top: 40px; }
 

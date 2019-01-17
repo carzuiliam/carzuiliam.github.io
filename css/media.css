@@ -2,6 +2,8 @@
 
 @media screen and (max-width: 1366px) {
 
+	#hello-box { font-size: 150px; }
+
 	#intro { height: 479px; }
 	#intro-content { height: 200px; }
 
@@ -18,10 +20,10 @@
 
 @media screen and (max-width: 1280px) {
 
-	#hello-box { font-size: 150px; }
+	#hello-box { font-size: 140px; }
 
-	#intro { height: 449px; }
-	#intro-canvas { height: 250px; }
+	#intro { height: 459px; }
+	#intro-canvas { height: 260px; }
 
 	#education { height: 433px; }
 	#education-content { height: 433px; }
@@ -76,7 +78,7 @@
 
 	strong { font-weight: 400; text-shadow: 0 0 1px #000; }
 
-	#hello-box { width: 100%; }
+	#hello-box { width: 100%; font-size: 150px; }
 	#hello-banner { display: none; }
 
 	#intro { height: 472px; }
@@ -112,13 +114,14 @@
 	.tableExperience { width: 500px; display: inherit; margin: 0 auto; }
 	.tableSkills { width: 600px; }
 	.textCentered { padding: 0 35px; }
-	.textFull { display: none; }
 	.textJustified { padding: 0 35px; }
 }
 
 /***************************** Galaxy Tab A ****************************/
 
 @media screen and (max-width: 601px) {
+
+	#hello-box { font-size: 140px; }
 
 	#intro { height: 452px; }
 	#intro-canvas { height: 220px; }
@@ -146,11 +149,14 @@
 	.iconIntro { width: 120px; height: 120px; }
 	.lineBreak { display: block; }
 	.tableSkills { width: 500px; }
+	.textFull { display: none; }
 }
 
 /****************** Iphone 6/7/8 Plus, Galaxy S9 Plus ******************/
 
 @media screen and (max-width: 414px) {
+
+	#hello-box { font-size: 120px; }
 
 	#intro { height: 457px; }
 	#intro-content { height: 268px; }
@@ -194,7 +200,7 @@
 
 @media screen and (max-width: 375px) {
 
-	#hello-box { font-size: 100px; }
+	#hello-box { font-size: 110px; }
 
 	#intro { height: 482px; }
 	#intro-content { height: 303px; }
@@ -233,6 +239,8 @@
 
 @media screen and (max-width: 360px) {
 
+	#hello-box { font-size: 100px; }
+
 	#intro { height: 512px; }
 	#intro-content { height: 338px; }
 	#intro-canvas { height: 175px; }
@@ -250,6 +258,8 @@
 /************************** Iphone 5/5c/5s/SE **************************/
 
 @media screen and (max-width: 320px) {
+
+	#hello-box { font-size: 90px; }
 
 	#intro { height: 502px; }
 	#intro-canvas { height: 165px; }
