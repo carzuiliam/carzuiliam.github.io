@@ -59,7 +59,6 @@ footer {
 /********************************* DIV's *******************************/
 
 #menu {
-	width: 96%;
 	height: 100%;
 	max-width: 1800px;
 	margin: 0 auto;
@@ -69,14 +68,14 @@ footer {
 		color: #727272;
 		float: left;
 		font-size: 14px;
-		margin-top: 18px;
+		margin: 18px 0 0 10px;
 	}
 
 	#menu-social {
 		color: #727272;
 		float: right;
 		font-size: 14px;
-		margin-top: 10px;
+		margin: 10px 10px 0 0;
 	}
 
 #hello {
@@ -295,7 +294,6 @@ footer {
 	}
 
 #about {
-	width: 97%;
 	height: 100%;
 	max-width: 1800px;	
 	margin: 0 auto;
@@ -304,11 +302,12 @@ footer {
 
 	#about-validation {
 		float: left;
-		margin-top: 10px;
+		margin: 10px 0 0 8px;
 	}
 
 	#about-info {
 		float: right;
+		margin-right: 10px; 
 	}
 
 /***************************** Custom classes **************************/
