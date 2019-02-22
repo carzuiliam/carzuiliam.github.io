@@ -112,13 +112,13 @@ footer {
 
 #intro {
 	width: 100%;
-	height: 449px;
+	height: 484px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#intro-content {
-		height: 170px;
+		height: 205px;
 	}
 
 	#intro-canvas {
@@ -256,13 +256,13 @@ footer {
 
 #skills {
 	width: 100%;
-	height: 409px;
+	height: 479px;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
 }
 
 	#skills-content {
-		height: 100px;
+		height: 170px;
 	}
 
 	#skills-canvas {
