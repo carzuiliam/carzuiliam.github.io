@@ -1,7 +1,7 @@
 /****************************** Functions ******************************/
 
 // Applies the parallax effect to a DIV.
-$.fn.applyParallaxToDiv = function (_rate, _offset) {
+$.fn.applyParallaxToDiv = function(_rate, _offset) {
     
     var parallax = _offset - ($(window).scrollTop() * _rate);
 
@@ -10,7 +10,7 @@ $.fn.applyParallaxToDiv = function (_rate, _offset) {
 }
 
 // Verifies if the element (DIV) is visible on screen.
-$.fn.isHalfVisible = function () {
+$.fn.isHalfVisible = function() {
 
     var divTop = $(this).offset().top;
     var divBottom = $(this).offset().top + $(this).height();
@@ -21,14 +21,14 @@ $.fn.isHalfVisible = function () {
 }
 
 // Replaces a class in an element.
-$.fn.replaceClass = function (_old, _new) { 
+$.fn.replaceClass = function(_old, _new) { 
 
     $(this).removeClass(_old).addClass(_new);
 
 }
 
 // Shows an content if it appears on screen.
-$.fn.animateSection = function (_content, _canvas) {
+$.fn.animateSection = function(_content, _canvas) {
 
     if ($(_content).isHalfVisible()) {
 

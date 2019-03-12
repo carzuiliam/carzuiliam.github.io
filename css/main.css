@@ -68,14 +68,14 @@ footer {
 		color: #727272;
 		float: left;
 		font-size: 14px;
-		margin: 18px 0 0 10px;
+		margin-top: 18px;
 	}
 
 	#menu-social {
 		color: #727272;
 		float: right;
 		font-size: 14px;
-		margin: 10px 10px 0 0;
+		margin-top: 10px;
 	}
 
 #hello {
@@ -302,12 +302,11 @@ footer {
 
 	#about-validation {
 		float: left;
-		margin: 10px 0 0 8px;
+		margin-top: 10px;
 	}
 
 	#about-info {
 		float: right;
-		margin-right: 10px; 
 	}
 
 /***************************** Custom classes **************************/

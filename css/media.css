@@ -2,6 +2,9 @@
 
 @media screen and (max-width: 1366px) {
 
+	#menu-name { margin-left: 10px; }
+	#menu-social { margin-right: 10px; }
+
 	#hello-box { font-size: 150px; }
 
 	#intro { height: 514px; }
@@ -10,6 +13,9 @@
 	#awards { height: 679px; }
 	#awards-content { height: 330px; }
 	#awards-canvas { height: 330px; }
+
+	#about-validation { margin-left: 10px; }
+	#about-info { margin-right: 10px; }
 
 	.cellSkills { width: 210px; }
 	.iconAwards { top: 48px; }
