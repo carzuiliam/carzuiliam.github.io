@@ -1,52 +1,60 @@
 /***************************** Static values ***************************/
 
-var helloCvsY = parseInt($('#hello-banner').css('background-position').split(' ')[1]);
-var exprnCvsY = parseInt($('#experience-banner').css('background-position').split(' ')[1]);
-var awrdsCvsY = parseInt($('#awards-banner').css('background-position').split(' ')[1]);
-var cntctCvsY = parseInt($('#contact-banner').css('background-position').split(' ')[1]);
+var helloCvsY = $('#hello-banner').backgroundPosition()[1];
+var exprnCvsY = $('#experience-banner').backgroundPosition()[1];
+var awrdsCvsY = $('#awards-banner').backgroundPosition()[1];
+var cntctCvsY = $('#contact-banner').backgroundPosition()[1];
 
 /*************************** Loading document **************************/
 
-$(document).ready(function () {
+window.onload = function () {
 
-	$(this).scrollTop(0);
+	document.documentElement.scrollTop = 0;
 
 	setTimeout(function () { $('#hello-box').replaceClass('boxHidden', 'boxShow'); }, 0);
 	setTimeout(function () { $('#hello-banner').replaceClass('imageHidden', 'imageShow'); }, 1000);
 
 	setTimeout(function () {
-
-		$('#hello-box').find('.textHidden').replaceClass('textHidden', 'textShow');
-		$('#menu-name').find('.textHidden').replaceClass('textHidden', 'textShow');
-		$('#menu-social').find('.iconHidden').replaceClass('iconHidden', 'iconShow');
-		$('#about-info').find('.textHidden').replaceClass('textHidden', 'textShow');
-		$('#about-validation').find('.imageHidden').replaceClass('imageHidden', 'imageShow'); 
+		$('#hello-box').replaceClass('textHidden', 'textShow');
+		$('#menu-name').replaceClass('textHidden', 'textShow');
+		$('#menu-social').replaceClass('iconHidden', 'iconShow');
+		$('#about-info').replaceClass('textHidden', 'textShow');
+		$('#about-validation').replaceClass('imageHidden', 'imageShow'); 
 	}, 1000);
 
-});
+};
 
 /************************** Scrolling document *************************/
 
-$(window).on('scroll', function () {
+window.onscroll = function () {
 
 	setTimeout(function() {
-		$('#hello-banner').applyParallaxToDiv(.2, helloCvsY); 
-		$('#experience-banner').applyParallaxToDiv(.2, exprnCvsY); 
-		$('#awards-banner').applyParallaxToDiv(.2, awrdsCvsY);
-		$('#contact-banner').applyParallaxToDiv(.2, cntctCvsY);
+		$('#hello-banner').applyParallaxToDiv(.2, parseInt(helloCvsY));
+		$('#experience-banner').applyParallaxToDiv(.2, parseInt(exprnCvsY)); 
+		$('#awards-banner').applyParallaxToDiv(.2, parseInt(awrdsCvsY));
+		$('#contact-banner').applyParallaxToDiv(.2, parseInt(cntctCvsY));
 	}, 0);
 
 	setTimeout(function() { 
-		$(this).animateSection('#experience-title', null);
-		$(this).animateSection('#intro-content', '#intro-canvas');
-		$(this).animateSection('#education-content', '#education-canvas');
-		$(this).animateSection('#experience-content-a', '#experience-canvas-a');
-		$(this).animateSection('#experience-content-b', '#experience-canvas-b');
-		$(this).animateSection('#experience-content-c', '#experience-canvas-c');
-		$(this).animateSection('#experience-content-d', '#experience-canvas-d');
-		$(this).animateSection('#awards-content', '#awards-canvas');
-		$(this).animateSection('#skills-content', '#skills-canvas');
-		$(this).animateSection('#contact-content', '#contact-canvas');
+		$('#intro-content').animateSection();
+		$('#intro-canvas').animateSection();
+		$('#education-content').animateSection();
+		$('#education-canvas').animateSection();
+		$('#experience-title').animateSection();
+		$('#experience-content-a').animateSection();
+		$('#experience-canvas-a').animateSection();
+		$('#experience-content-b').animateSection();
+		$('#experience-canvas-b').animateSection();
+		$('#experience-content-c').animateSection();
+		$('#experience-canvas-c').animateSection();
+		$('#experience-content-d').animateSection();
+		$('#experience-canvas-d').animateSection();
+		$('#awards-content').animateSection();
+		$('#awards-canvas').animateSection();
+		$('#skills-content').animateSection();
+		$('#skills-canvas').animateSection();
+		$('#contact-content').animateSection();
+		$('#contact-canvas').animateSection();
 	}, 100);
 
-});
+};

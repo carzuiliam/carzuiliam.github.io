@@ -6,7 +6,7 @@ This is a project of my **personal website**, developed like a curriculum/portfo
 
 - **HTML5**, used as the basis for construction of the page, including tags such as `header`, `main`, `section`and `footer`;
 - **CSS3**, including transictions and animations;
-- **Javascript (jQuery)**, in order to simulate the parallax effect inside the page banners.
+- **Javascript**, in order to simulate the parallax effect inside the page banners.
 
 ## License
 
