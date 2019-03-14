@@ -35,7 +35,7 @@ HtmlElement.prototype.isOnScreen = function() {
     var div = this.element.getBoundingClientRect();
     var doc = (window.innerHeight || document.documentElement.clientHeight);
 
-    return (div.top <= (doc * .55) || div.bottom <= doc);
+    return (div.top <= (doc * .4) || (div.bottom * .9) <= doc);
 }
 
 HtmlElement.prototype.animateSection = function() {
