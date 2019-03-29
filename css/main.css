@@ -407,12 +407,11 @@ footer {
 }
 
 .listDefault {
-	top: 90px;
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
+	margin-top: 90px;
 	padding: 0 50px;
-	position: relative;
 	text-align: justify;
 	transition: all 1s;
 }
@@ -456,12 +455,11 @@ footer {
 }
 
 .textCentered {
-	top: 90px;
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
+	margin-top: 90px;
 	padding: 0 50px;
-	position: relative;
 	text-align: center;
 	transition: all 1s;
 }
@@ -471,12 +469,11 @@ footer {
 }
 
 .textJustified {
-	top: 90px;
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
+	margin-top: 90px;
 	padding: 0 50px;
-	position: relative;
 	text-align: justify;
 	transition: all 1s;
 }

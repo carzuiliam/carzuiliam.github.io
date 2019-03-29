@@ -95,14 +95,14 @@
 	#education-content { width: 100%; height: 423px; }
 	#education-canvas { width: 100%; height: 290px; }
 
-	#experience { height: 2722px; }
-	#experience-content-a { width: 100%; height: 206px; border-bottom: none; }
+	#experience { height: 2802px; }
+	#experience-content-a { width: 100%; height: 226px; border-bottom: none; }
 	#experience-canvas-a { width: 100%; height: 349px; text-align: center; }
-	#experience-content-b { width: 100%; height: 206px; border-bottom: none; }
+	#experience-content-b { width: 100%; height: 226px; border-bottom: none; }
 	#experience-canvas-b { width: 100%; height: 349px; text-align: center; }
-	#experience-content-c { width: 100%; height: 206px; border-bottom: none; }
+	#experience-content-c { width: 100%; height: 226px; border-bottom: none; }
 	#experience-canvas-c { width: 100%; height: 349px; text-align: center; }
-	#experience-content-d { width: 100%; height: 206px; border-bottom: none; }
+	#experience-content-d { width: 100%; height: 226px; border-bottom: none; }
 	#experience-canvas-d { width: 100%; height: 349px; text-align: center; }
 
 	#awards { height: 834px; }
@@ -134,14 +134,14 @@
 	#intro-content { height: 345px; }
 	#intro-canvas { height: 220px; }
 
-	#education { height: 788px; }
-	#education-content { height: 498px; }
+	#education { height: 753px; }
+	#education-content { height: 463px; }
 
-	#experience { height: 2862px; }
-	#experience-content-a { height: 241px; }
-	#experience-content-b { height: 241px; }
-	#experience-content-c { height: 241px; }
-	#experience-content-d { height: 241px; }
+	#experience { height: 2942px; }
+	#experience-content-a { height: 261px; }
+	#experience-content-b { height: 261px; }
+	#experience-content-c { height: 261px; }
+	#experience-content-d { height: 261px; }
 
 	#awards { height: 904px; }
 	#awards-content { height: 395px; }
@@ -171,19 +171,19 @@
 	#intro-content { height: 373px; }
 	#intro-canvas { height: 190px; letter-spacing: 5px; }
 
-	#education { height: 993px; }
-	#education-content { height: 723px; }
+	#education { height: 963px; }
+	#education-content { height: 653px; }
 	#education-canvas { height: 310px; }
 
-	#experience { height: 2810px; }
+	#experience { height: 2890px; }
 	#experience-title { height: 196px; }
-	#experience-content-a { height: 276px; }
+	#experience-content-a { height: 296px; }
 	#experience-canvas-a { height: 289px; }
-	#experience-content-b { height: 276px; }
+	#experience-content-b { height: 296px; }
 	#experience-canvas-b { height: 289px; }
-	#experience-content-c { height: 276px; }
+	#experience-content-c { height: 296px; }
 	#experience-canvas-c { height: 289px; }
-	#experience-content-d { height: 276px; }
+	#experience-content-d { height: 296px; }
 	#experience-canvas-d { height: 289px; }
 
 	#awards { height: 974px; }
@@ -220,11 +220,11 @@
 	#education-content { height: 723px; }
 	#education-canvas { height: 310px; }
 
-	#experience { height: 2854px; }
-	#experience-content-a { height: 272px; }
-	#experience-content-b { height: 272px; }
-	#experience-content-c { height: 302px; }
-	#experience-content-d { height: 302px; }
+	#experience { height: 2934px; }
+	#experience-content-a { height: 292px; }
+	#experience-content-b { height: 292px; }
+	#experience-content-c { height: 322px; }
+	#experience-content-d { height: 322px; }
 
 	#awards { height: 999px; }
 	#awards-content { height: 500px; }
@@ -255,8 +255,8 @@
 	#intro-content { height: 478px; }
 	#intro-canvas { height: 175px; }
 
-	#education { height: 1093px; }
-	#education-content { height: 780px; }
+	#education { height: 1058px; }
+	#education-content { height: 745px; }
 
 	#awards { height: 1029px; }
 	#awards-content { height: 535px; }
@@ -278,15 +278,15 @@
 	#intro-content { height: 520px; }
 	#intro-canvas { height: 165px; }
 
-	#education { height: 1153px; }
-	#education-content { height: 853px; }
+	#education { height: 1118px; }
+	#education-content { height: 818px; }
 	#education-canvas { height: 300px; }
 
-	#experience { height: 2952px; }
-	#experience-content-a { height: 303px; }
-	#experience-content-b { height: 303px; }
-	#experience-content-c { height: 303px; }
-	#experience-content-d { height: 338px; }
+	#experience { height: 3032px; }
+	#experience-content-a { height: 323px; }
+	#experience-content-b { height: 323px; }
+	#experience-content-c { height: 323px; }
+	#experience-content-d { height: 358px; }
 
 	#awards { height: 1019px; }
 	#awards-content { height: 525px; }
