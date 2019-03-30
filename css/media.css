@@ -7,7 +7,7 @@
 
 	#hello-box { font-size: 150px; }
 
-	#intro { height: 514px; }
+	#intro { height: 474px; }
 	#intro-content { height: 235px; }
 
 	#awards { height: 679px; }
@@ -28,8 +28,8 @@
 
 	#hello-box { font-size: 140px; }
 
-	#intro { height: 494px; }
-	#intro-canvas { height: 260px; }
+	#intro { height: 474px; }
+	#intro-canvas { height: 240px; }
 
 	#education { height: 433px; }
 	#education-content { height: 433px; }
@@ -41,7 +41,6 @@
 
 	.cellSkills { width: 190px; }
 	.iconAwards { left: 15px; top: 65px; }
-	.iconIntro { width: 160px; height: 160px; }
 	.imageUfscar { width: 360px; height: 240px; }
 	.imageUnesp { width: 360px; height: 240px; top: 143px; }
 	.labelImage { font-size: 20px; }
@@ -69,7 +68,6 @@
 
 	.cellSkills { width: 150px; }
 	.iconAwards { width: 110px; height: 110px; top: 104px; }
-	.iconIntro { width: 140px; height: 140px; }
 	.iconSkills { width: 110px; height: 110px; }
 	.imageUfscar { width: 300px; height: 225px; }
 	.imageUnesp { width: 300px; height: 225px; top: 228px; }
@@ -95,15 +93,15 @@
 	#education-content { width: 100%; height: 423px; }
 	#education-canvas { width: 100%; height: 290px; }
 
-	#experience { height: 2802px; }
+	#experience { height: 2762px; }
 	#experience-content-a { width: 100%; height: 226px; border-bottom: none; }
-	#experience-canvas-a { width: 100%; height: 349px; text-align: center; }
+	#experience-canvas-a { width: 100%; height: 339px; text-align: center; }
 	#experience-content-b { width: 100%; height: 226px; border-bottom: none; }
-	#experience-canvas-b { width: 100%; height: 349px; text-align: center; }
+	#experience-canvas-b { width: 100%; height: 339px; text-align: center; }
 	#experience-content-c { width: 100%; height: 226px; border-bottom: none; }
-	#experience-canvas-c { width: 100%; height: 349px; text-align: center; }
+	#experience-canvas-c { width: 100%; height: 339px; text-align: center; }
 	#experience-content-d { width: 100%; height: 226px; border-bottom: none; }
-	#experience-canvas-d { width: 100%; height: 349px; text-align: center; }
+	#experience-canvas-d { width: 100%; height: 339px; text-align: center; }
 
 	#awards { height: 834px; }
 	#awards-content { width: 100%; height: 325px; }
@@ -171,20 +169,20 @@
 	#intro-content { height: 373px; }
 	#intro-canvas { height: 190px; letter-spacing: 5px; }
 
-	#education { height: 963px; }
-	#education-content { height: 653px; }
+	#education { height: 908px; }
+	#education-content { height: 608px; }
 	#education-canvas { height: 310px; }
 
-	#experience { height: 2890px; }
+	#experience { height: 2850px; }
 	#experience-title { height: 196px; }
 	#experience-content-a { height: 296px; }
-	#experience-canvas-a { height: 289px; }
+	#experience-canvas-a { height: 279px; }
 	#experience-content-b { height: 296px; }
-	#experience-canvas-b { height: 289px; }
+	#experience-canvas-b { height: 279px; }
 	#experience-content-c { height: 296px; }
-	#experience-canvas-c { height: 289px; }
+	#experience-canvas-c { height: 279px; }
 	#experience-content-d { height: 296px; }
-	#experience-canvas-d { height: 289px; }
+	#experience-canvas-d { height: 279px; }
 
 	#awards { height: 974px; }
 	#awards-content { height: 465px; }
@@ -216,8 +214,8 @@
 	#intro-content { height: 443px; }
 	#intro-canvas { height: 180px; }
 
-	#education { height: 1033px; }
-	#education-content { height: 723px; }
+	#education { height: 983px; }
+	#education-content { height: 673px; }
 	#education-canvas { height: 310px; }
 
 	#experience { height: 2934px; }
@@ -255,8 +253,8 @@
 	#intro-content { height: 478px; }
 	#intro-canvas { height: 175px; }
 
-	#education { height: 1058px; }
-	#education-content { height: 745px; }
+	#education { height: 1013px; }
+	#education-content { height: 700px; }
 
 	#awards { height: 1029px; }
 	#awards-content { height: 535px; }
