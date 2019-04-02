@@ -2,7 +2,7 @@
 
 var helloCvsY = $('#hello-banner').backgroundPosition()[1];
 var exprnCvsY = $('#experience-banner').backgroundPosition()[1];
-var awrdsCvsY = $('#awards-banner').backgroundPosition()[1];
+var awrdsCvsY = $('#certifications-banner').backgroundPosition()[1];
 var cntctCvsY = $('#contact-banner').backgroundPosition()[1];
 
 /*************************** Loading document **************************/
@@ -31,14 +31,16 @@ window.onscroll = function () {
 	setTimeout(function() {
 		$('#hello-banner').applyParallaxToDiv(.2, parseInt(helloCvsY));
 		$('#experience-banner').applyParallaxToDiv(.2, parseInt(exprnCvsY)); 
-		$('#awards-banner').applyParallaxToDiv(.2, parseInt(awrdsCvsY));
+		$('#certifications-banner').applyParallaxToDiv(.2, parseInt(awrdsCvsY));
 		$('#contact-banner').applyParallaxToDiv(.2, parseInt(cntctCvsY));
 	}, 0);
 
 	setTimeout(function() { 
 		$('#intro-content').animateSection();
 		$('#intro-canvas').animateSection();
-		$('#education-content').animateSection();
+		$('#education-title').animateSection();
+		$('#education-content-a').animateSection();
+		$('#education-content-b').animateSection();
 		$('#education-canvas').animateSection();
 		$('#experience-title').animateSection();
 		$('#experience-content-a').animateSection();
@@ -49,8 +51,9 @@ window.onscroll = function () {
 		$('#experience-canvas-c').animateSection();
 		$('#experience-content-d').animateSection();
 		$('#experience-canvas-d').animateSection();
-		$('#awards-content').animateSection();
-		$('#awards-canvas').animateSection();
+		$('#certifications-title').animateSection();
+		$('#certifications-content').animateSection();
+		$('#certifications-canvas').animateSection();
 		$('#skills-content').animateSection();
 		$('#skills-canvas').animateSection();
 		$('#contact-content').animateSection();
