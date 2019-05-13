@@ -1,6 +1,6 @@
 # Personal Site
 
-This project contains my _site_, which works like my personal page and as a portfolio, since it contains info about my professional career.
+This project contains my site, which works like my personal page and as a portfolio, since it contains info about my professional career.
 
 ## Utilized Material
 
