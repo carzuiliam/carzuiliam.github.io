@@ -10,7 +10,7 @@ This project contains my site, which works like my personal page and as a portfo
 
 ## Additional Info
 
-This project always be under construction. Don't worry if thing on it changes. 😅
+This project always be under construction. Don't worry if anything on it changes. 😅
 
 ## License
 
