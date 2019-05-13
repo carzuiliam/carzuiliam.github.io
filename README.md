@@ -1,12 +1,16 @@
-# My Personal Site
+# Personal Site
 
-This is a project of my **personal website**, developed like a curriculum/portfolio model.
+This project contains my _site_, which works like my personal page and as a portfolio, since it contains info about my professional career.
 
-## Utilized Technologies
+## Utilized Material
 
-- **HTML5**, used as the basis for construction of the page, including tags such as `header`, `main`, `section`and `footer`;
-- **CSS3**, including transictions and animations;
-- **Javascript**, in order to simulate the parallax effect inside the page banners.
+- **HTML5**, used as the site base, including tags like `header`, `main`, `section` and `footer`;
+- **CSS3**, including aspects like transitions and animations;
+- Pure **Javascript**, used to simulate the parallax effect on the page _banners_.
+
+## Additional Info
+
+This project always be under construction. Don't worry if thing on it changes. 😅
 
 ## License
 

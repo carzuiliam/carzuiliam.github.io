@@ -1,13 +1,17 @@
-# Meu Site Pessoal
+# Site Pessoal
 
-Este é um projeto do meu **site pessoal**, que desenvolvi como se fosse uma espécie de currículo/portifólio.
+Este projeto contém o meu _site_, que serve tanto como uma página pessoal quando como um portfólio, uma vez que ele contém informações sobre minha carreira profissional.
 
-## Tecnologias Utilizadas
+## Materiais Utilizados
 
-- **HTML5**, usado como base na construção da página,incluindo tags como `header`, `main`, `section`and `footer`;
-- **CSS3**, incluindo transações e animações;
-- **Javascript**, para simular o efeito de paralaxe nos _banners_ da página.
+- **HTML5**, usado como base na construção da página, incluindo o uso de _tags_ como `header`, `main`, `section` e `footer`;
+- **CSS3**, incluindo aspectos como transições e animações;
+- **Javascript** puro, utilizado para simular o efeito de paralaxe nos _banners_ da página.
+
+## Informações Adicionais
+
+Este projeto encontra-se eternamente em construção. Não se preocupe se as coisas mudarem muito nele. 😅
 
 ## Licença de Uso
 
-Os códigos disponibilizados aqui estão sob a GNU General Public License, versão 3.0 (veja o arquivo `LICENSE` em anexo para mais detalhes). Dúvidas sobre a biblioteca podem ser enviadas para o meu e-mail: carloswdecarvalho@outlook.com.
+Os códigos disponibilizados aqui estão sob a GNU General Public License, versão 3.0 (veja o arquivo `LICENSE` em anexo para mais detalhes). Dúvidas podem ser enviadas para o meu e-mail: carloswdecarvalho@outlook.com.
