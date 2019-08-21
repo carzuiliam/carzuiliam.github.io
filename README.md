@@ -14,4 +14,4 @@ This project always be under construction. Don't worry if anything on it changes
 
 ## License
 
-The available source codes here are under the GNU General Public License, version 3.0 (see the attached `LICENSE` file for more details). Any questions can be submitted to my email: carloswdecarvalho@outlook.com.
+The available source codes here are under the Apache License, version 2.0 (see the attached `LICENSE` file for more details). Any questions can be submitted to my email: carloswdecarvalho@outlook.com.
