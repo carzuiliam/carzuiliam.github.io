@@ -7,7 +7,6 @@
 
 	#hello-box { font-size: 180px; }
 
-	#education { height: 681px; }
 	#education-content-a { height: 292px; }
 	#education-content-b { height: 241px; }
 	#education-canvas { height: 533px; }
@@ -25,9 +24,7 @@
 
 	#hello-box { font-size: 160px; }
 
-	#intro { height: 479px; }
 	#intro-content { height: 240px; }
-
 }
 
 /************************** Chromebook Pixel ***************************/
@@ -36,7 +33,6 @@
 
 	#hello-box { font-size: 140px; }
 
-	#certifications { height: 804px; }
 	#certifications-content { height: 307px; }
 	#certifications-canvas { height: 307px; }
 
@@ -53,18 +49,14 @@
 
 	#hello-box { font-size: 120px; }
 
-	#intro { height: 459px; }
 	#intro-canvas { height: 220px; }
 
-	#education { height: 716px; }
 	#education-content-a { height: 327px; }
 	#education-canvas { height: 568px; }
 
-	#certifications { height: 839px; }
 	#certifications-content { height: 342px; }
 	#certifications-canvas { height: 342px; }
 
-	#skills { height: 429px; }
 	#skills-canvas { height: 260px; }
 
 	.cellSkills { width: 150px; }
@@ -87,16 +79,13 @@
 	#hello-box { width: 100%; font-size: 150px; }
 	#hello-banner { display: none; }
 
-	#intro { height: 494px; }
 	#intro-content { height: 275px; }
 	#intro-canvas { height: 220px; }
 
-	#education { height: 980px; }
 	#education-content-a { width: 100%; height: 292px; float: left; }
 	#education-content-b { width: 100%; height: 241px; float: left; }
 	#education-canvas { width: 100%; height: 300px; }
 
-	#experience { height: 2882px; }
 	#experience-content-a { width: 100%; height: 196px; border-bottom: none; }
 	#experience-canvas-a { width: 100%; height: 399px; text-align: center; }
 	#experience-content-b { width: 100%; height: 196px; border-bottom: none; }
@@ -106,11 +95,9 @@
 	#experience-content-d { width: 100%; height: 196px; border-bottom: none; }
 	#experience-canvas-d { width: 100%; height: 399px; text-align: center; }
 
-	#certifications { height: 943px; }
 	#certifications-content { width: 100%; height: 275px; }
 	#certifications-canvas { width: 100%; height: 170px; }
 
-	#skills { height: 659px; }
 	#skills-content { height: 205px; }
 	#skills-canvas { height: 454px; }
 
@@ -131,26 +118,20 @@
 
 	#hello-box { font-size: 140px; }
 
-	#intro { height: 529px; }
-	#intro-content { height: 310px; }
+	#intro-content { height: 345px; }
 	#intro-canvas { height: 220px; }
 
-	#education { height: 1015px; }
 	#education-content-a { height: 327px; }
 
-	#experience { height: 3022px; }
 	#experience-content-a { height: 231px; }
 	#experience-content-b { height: 231px; }
 	#experience-content-c { height: 231px; }
 	#experience-content-d { height: 231px; }
 
-	#certifications { height: 1018px; }
 	#certifications-content { height: 350px; }
 
-	#skills { height: 856px; }
 	#skills-canvas { height: 651px; }
 
-	#contact { height: 748px; }
 	#contact-content { height: 268px; }
 
 	.cellSkills { width: 230px; }
@@ -167,16 +148,13 @@
 
 	#hello-box { font-size: 120px; }
 
-	#intro { height: 564px; }
 	#intro-content { height: 380px; }
 	#intro-canvas { height: 185px; }
 
-	#education { height: 1202px; }
 	#education-title { height: 195px; }
 	#education-content-a { height: 432px; }
 	#education-content-b { height: 276px; }
 
-	#experience { height: 2949px; }
 	#experience-title { height: 195px; }
 	#experience-content-a { height: 261px; }
 	#experience-canvas-a { height: 339px; }
@@ -187,10 +165,8 @@
 	#experience-content-d { height: 261px; }
 	#experience-canvas-d { height: 339px; }
 
-	#certifications { height: 1088px; }
 	#certifications-content { height: 420px; }
 
-	#skills { height: 891px; }
 	#skills-content { height: 240px; }
 
 	.cellSkills { width: 180px; }
@@ -213,21 +189,17 @@
 
 	#hello-box { font-size: 110px; }
 
-	#intro { height: 624px; }
 	#intro-content { height: 450px; }
 	#intro-canvas { height: 175px; }
 
-	#education { height: 1270px; }
 	#education-content-a { height: 465px; }
 	#education-content-b { height: 309px; }
 
-	#experience { height: 3031px; }
 	#experience-content-a { height: 264px; }
 	#experience-content-b { height: 264px; }
 	#experience-content-c { height: 299px; }
 	#experience-content-d { height: 299px; }
 
-	#certifications { height: 1113px; }
 	#certifications-content { height: 445px; }
 
 	.cellSkills { width: 160px; }
@@ -242,16 +214,14 @@
 	.textCentered { padding: 0 15px; }
 }
 
-/***************************** Galaxy S9/S9 *****************************/
+/*************************** Galaxy S9/S9+ *****************************/
 
 @media screen and (max-width: 360px) {
 
 	#hello-box { font-size: 100px; }
 
-	#intro { height: 659px; }
 	#intro-content { height: 485px; }
 
-	#education { height: 1305px; }
 	#education-content-a { height: 500px; }
 
 	.iconIntro { width: 75px; height: 75px; }
@@ -264,24 +234,19 @@
 
 	#hello-box { font-size: 90px; }
 
-	#intro { height: 679px; }
 	#intro-content { height: 520px; }
 	#intro-canvas { height: 160px; }
 
-	#education { height: 1371px; }
 	#education-content-a { height: 566px; }
 	#education-content-b { height: 309px; }
 
-	#experience { height: 3120px; }
 	#experience-content-a { height: 295px; }
 	#experience-content-b { height: 295px; }
 	#experience-content-c { height: 295px; }
 	#experience-content-d { height: 330px; }
 
-	#certifications { height: 1148px; }
 	#certifications-content { height: 480px; }
 
-	#contact { height: 813px; }
 	#contact-content { height: 333px; }
 
 	.cellSkills { width: 145px; }
