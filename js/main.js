@@ -51,6 +51,8 @@ window.onscroll = function () {
 		$('#experience-canvas-c').animateSection();
 		$('#experience-content-d').animateSection();
 		$('#experience-canvas-d').animateSection();
+		$('#experience-content-e').animateSection();
+		$('#experience-canvas-e').animateSection();
 		$('#certifications-title').animateSection();
 		$('#certifications-content').animateSection();
 		$('#certifications-canvas').animateSection();

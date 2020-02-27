@@ -182,7 +182,8 @@ footer {
 	#experience-content-a,
 	#experience-content-b,
 	#experience-content-c,
-	#experience-content-d {
+	#experience-content-d,
+	#experience-content-e {
 		width: 50%;
 		height: 359px;
 		border-bottom: 1px dashed #cecece;
@@ -192,7 +193,8 @@ footer {
 	#experience-canvas-a,
 	#experience-canvas-b,
 	#experience-canvas-c,
-	#experience-canvas-d {
+	#experience-canvas-d,
+	#experience-canvas-e {
 		width: 50%;
 		height: 359px;
 		border-bottom: 1px dashed #cecece;
@@ -223,13 +225,13 @@ footer {
 
 	#certifications-content {
 		width: 60%;
-		height: 272px;
+		height: 307px;
 		float: right;
 	}
 
 	#certifications-canvas {
 		width: 40%;
-		height: 272px;
+		height: 307px;
 		float: left;
 		letter-spacing: 10px;
 		text-align: center;
@@ -307,7 +309,7 @@ footer {
 .iconCertifications {
 	width: 140px;
 	height: 140px;
-	top: 20px;
+	top: 35px;
 	position: relative;
 	transition: all 1s;
 }
