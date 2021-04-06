@@ -183,7 +183,8 @@ footer {
 	#experience-content-b,
 	#experience-content-c,
 	#experience-content-d,
-	#experience-content-e {
+	#experience-content-e,
+	#experience-content-f {
 		width: 50%;
 		height: 359px;
 		border-bottom: 1px dashed #cecece;
@@ -194,7 +195,8 @@ footer {
 	#experience-canvas-b,
 	#experience-canvas-c,
 	#experience-canvas-d,
-	#experience-canvas-e {
+	#experience-canvas-e,
+	#experience-canvas-f {
 		width: 50%;
 		height: 359px;
 		border-bottom: 1px dashed #cecece;
@@ -225,13 +227,13 @@ footer {
 
 	#certifications-content {
 		width: 60%;
-		height: 307px;
+		height: 342px;
 		float: right;
 	}
 
 	#certifications-canvas {
 		width: 40%;
-		height: 307px;
+		height: 342px;
 		float: left;
 		letter-spacing: 10px;
 		text-align: center;
@@ -309,7 +311,7 @@ footer {
 .iconCertifications {
 	width: 140px;
 	height: 140px;
-	top: 35px;
+	top: 60px;
 	position: relative;
 	transition: all 1s;
 }
@@ -389,6 +391,10 @@ footer {
 	line-height: 5px;
 }
 
+.deprecated {
+	color: rgb(180, 180, 180);
+}
+
 .listDefault {
 	display: block;
 	font-size: 24px;
@@ -397,15 +403,6 @@ footer {
 	padding: 0 50px;
 	text-align: justify;
 	transition: all 1s;
-}
-
-.rowExperience {
-	height: 100px;
-	line-height: 40px;
-}
-
-.rowSkills {
-	height: 20px;
 }
 
 .tableExperience {
@@ -483,6 +480,15 @@ footer {
 	position: relative;
 	text-align: center;
 	transition: all 1s;
+}
+
+.rowExperience {
+	height: 100px;
+	line-height: 40px;
+}
+
+.rowSkills {
+	height: 20px;
 }
 
 .w3cValidCss {
