@@ -4,18 +4,19 @@
 # Enables expiration
 ExpiresActive	On
 
-# Expires font after one year of last user's access
+# Expires fonts after one year from the user's last access
 ExpiresByType	font/woff2 		"now plus 1 year"
 
-# Expires images after three days from the user's access date
+# Expires images after three days from the user's last access
 ExpiresByType	image/jpg 		"now plus 3 days"
 ExpiresByType	image/svg+xml	"now plus 3 days"
 
+# Expires content after 12 hours from the user's last access
 ExpiresByType	text/css		"now plus 12 hours"
 ExpiresByType	text/html		"now plus 12 hours"
 ExpiresByType	text/javascript	"now plus 12 hours"
 
-# Default expiration date (three days from user's access)
+# Default expiration date (three days from the user's last access)
 ExpiresDefault					"now plus 3 days"
 
 </IfModule>
