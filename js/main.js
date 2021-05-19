@@ -29,10 +29,10 @@ window.onload = function () {
 window.onscroll = function () {
 
 	setTimeout(function() {
-		$('#hello-banner').applyParallaxToDiv(.2, parseInt(helloCvsY));
-		$('#experience-banner').applyParallaxToDiv(.2, parseInt(exprnCvsY)); 
-		$('#certifications-banner').applyParallaxToDiv(.2, parseInt(awrdsCvsY));
-		$('#contact-banner').applyParallaxToDiv(.2, parseInt(cntctCvsY));
+		$('#hello-banner').applyParallaxToDiv(.15, parseInt(helloCvsY));
+		$('#experience-banner').applyParallaxToDiv(.15, parseInt(exprnCvsY)); 
+		$('#certifications-banner').applyParallaxToDiv(.15, parseInt(awrdsCvsY));
+		$('#contact-banner').applyParallaxToDiv(.15, parseInt(cntctCvsY));
 	}, 0);
 
 	setTimeout(function() { 
