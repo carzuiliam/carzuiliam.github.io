@@ -1,9 +1,9 @@
 /***************************** Static values ***************************/
 
-var helloCvsY = $('#hello-banner').backgroundPosition()[1];
-var exprnCvsY = $('#experience-banner').backgroundPosition()[1];
-var awrdsCvsY = $('#certifications-banner').backgroundPosition()[1];
-var cntctCvsY = $('#contact-banner').backgroundPosition()[1];
+var helloCvsY = $('#hello-banner').getBackgroundPosition()[1];
+var exprnCvsY = $('#experience-banner').getBackgroundPosition()[1];
+var awrdsCvsY = $('#certifications-banner').getBackgroundPosition()[1];
+var cntctCvsY = $('#contact-banner').getBackgroundPosition()[1];
 
 /*************************** Loading document **************************/
 
@@ -22,6 +22,7 @@ window.onload = function () {
 		$('#about-validation').replaceClass('imageHidden', 'imageShow'); 
 	}, 1000);
 
+	$('.currentYear').setInnerText(new Date().getFullYear());	
 };
 
 /************************** Scrolling document *************************/
@@ -39,24 +40,24 @@ window.onscroll = function () {
 		$('#intro-content').animateSection();
 		$('#intro-canvas').animateSection();
 		$('#education-title').animateSection();
-		$('#education-content-a').animateSection();
-		$('#education-content-b').animateSection();
+		$('#education-section-a').animateSection();
+		$('#education-section-b').animateSection();
 		$('#education-canvas').animateSection();
 		$('#experience-title').animateSection();
-		$('#experience-content-a').animateSection();
+		$('#experience-section-a').animateSection();
 		$('#experience-canvas-a').animateSection();
-		$('#experience-content-b').animateSection();
+		$('#experience-section-b').animateSection();
 		$('#experience-canvas-b').animateSection();
-		$('#experience-content-c').animateSection();
+		$('#experience-section-c').animateSection();
 		$('#experience-canvas-c').animateSection();
-		$('#experience-content-d').animateSection();
+		$('#experience-section-d').animateSection();
 		$('#experience-canvas-d').animateSection();
-		$('#experience-content-e').animateSection();
+		$('#experience-section-e').animateSection();
 		$('#experience-canvas-e').animateSection();
-		$('#experience-content-f').animateSection();
+		$('#experience-section-f').animateSection();
 		$('#experience-canvas-f').animateSection();
 		$('#certifications-title').animateSection();
-		$('#certifications-content').animateSection();
+		$('#certifications-section').animateSection();
 		$('#certifications-canvas').animateSection();
 		$('#skills-content').animateSection();
 		$('#skills-canvas').animateSection();

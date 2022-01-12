@@ -8,7 +8,7 @@ html {
 
 h1, h2, h3, h4 { font-family: 'Amaranth', sans-serif; }
 
-strong { font-weight: 600; }
+strong { font-weight: bold; }
 
 table { vertical-align: middle; }
 
@@ -60,8 +60,9 @@ footer {
 
 #menu {
 	height: 100%;
-	max-width: 1800px;
 	margin: 0 auto;
+	box-shadow: 0px 1px 20px gray;
+	padding: 0 10px;
 }
 
 	#menu-name {
@@ -115,15 +116,17 @@ footer {
 	height: auto;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
+	padding: 50px 0;
 }
 
 	#intro-content {
-		height: 205px;
+		height: auto;
 	}
 
 	#intro-canvas {
-		height: 240px;
+		height: auto;
 		letter-spacing: 10px;
+		margin-top: 50px;
 		text-align: center;
 	}
 
@@ -135,25 +138,37 @@ footer {
 
 	#education-title {
 		width: 100%;
-		height: 147px;
+		height: auto;
 		border-bottom: 1px dashed #cecece;
+		padding: 50px 0;
 	}
 
-	#education-content-a {
-		width: 60%;
-		height: 222px;
-		float: right;
+	#education-content {
+		height: auto;
+		padding: 50px 0;
 	}
 
-	#education-content-b {
-		width: 60%;
-		height: 206px;
-		float: right;
+	#education-content:after {
+		clear: both;
+		content: " "; 
+		display: block;
 	}
+
+		#education-section-a {
+			width: 60%;
+			height: auto;
+			float: right;
+		}
+
+		#education-section-b {
+			width: 60%;
+			height: auto;
+			float: right;
+		}
 
 	#education-canvas {
 		width: 40%;
-		height: 428px;
+		height: auto;
 		float: left;
 		position: relative;
 	}
@@ -175,34 +190,45 @@ footer {
 
 	#experience-title {
 		width: 100%;
-		height: 147px;
+		height: auto;
+		border-bottom: 1px dashed #cecece;
+		padding: 50px 0;
+	}
+
+	#experience-content {
+		height: auto;
+		padding: 50px 0;		
 		border-bottom: 1px dashed #cecece;
 	}
 
-	#experience-content-a,
-	#experience-content-b,
-	#experience-content-c,
-	#experience-content-d,
-	#experience-content-e,
-	#experience-content-f {
-		width: 50%;
-		height: 359px;
-		border-bottom: 1px dashed #cecece;
-		float: left;
+	#experience-content:after {
+		clear: both;
+		content: " "; 
+		display: block;
 	}
 
-	#experience-canvas-a,
-	#experience-canvas-b,
-	#experience-canvas-c,
-	#experience-canvas-d,
-	#experience-canvas-e,
-	#experience-canvas-f {
-		width: 50%;
-		height: 359px;
-		border-bottom: 1px dashed #cecece;
-		display: table;
-		float: right;
-	}
+		#experience-section-a,
+		#experience-section-b,
+		#experience-section-c,
+		#experience-section-d,
+		#experience-section-e,
+		#experience-section-f {
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+
+		#experience-canvas-a,
+		#experience-canvas-b,
+		#experience-canvas-c,
+		#experience-canvas-d,
+		#experience-canvas-e,
+		#experience-canvas-f {
+			width: 50%;
+			height: auto;
+			display: table;
+			float: right;
+		}
 
 #certifications {
 	width: 100%;
@@ -221,19 +247,30 @@ footer {
 
 	#certifications-title {
 		width: 100%;
-		height: 147px;
+		height: auto;
 		border-bottom: 1px dashed #cecece;
+		padding: 50px 0;
 	}
 
 	#certifications-content {
+		height: auto;
+		padding: 50px 0;
+	}
+
+	#certifications-content:after {
+		clear: both;
+		content: " "; 
+		display: block;
+	}
+
+	#certifications-section {
 		width: 60%;
-		height: 342px;
+		height: auto;
 		float: right;
 	}
 
 	#certifications-canvas {
 		width: 40%;
-		height: 342px;
 		float: left;
 		letter-spacing: 10px;
 		text-align: center;
@@ -244,14 +281,16 @@ footer {
 	height: auto;
 	border-bottom: 1px solid #dadada;
 	display: inline-block;
+	padding: 50px 0;	
 }
 
 	#skills-content {
-		height: 170px;
+		height: auto;
 	}
 
 	#skills-canvas {
-		height: 310px;
+		height: auto;
+		margin-top: 50px;
 		text-align: center;
 	}
 
@@ -270,19 +309,21 @@ footer {
 	}
 
 	#contact-content {
-		height: 233px;
+		height: auto;
+		padding: 50px 0;
 	}
 
 	#contact-canvas {
-		height: 130px;
+		height: auto;
+		margin-bottom: 100px;
 		text-align: center;
 	}
 
 #about {
 	height: 100%;
-	max-width: 1800px;	
 	margin: 0 auto;
-	text-align: center;
+	box-shadow: 0px 1px 20px gray;
+	padding: 0 10px;
 }
 
 	#about-validation {
@@ -365,16 +406,15 @@ footer {
 .imageUnesp {
 	width: 400px;
 	height: 300px;
-	top: 78px;
+	top: 100px;
 	right: 20px;
 	box-shadow: 5px 5px #f0f0f0;
 	position: absolute;
 	transition: opacity 1s, transform .5s;
 }
 
-.labelDefault {
+.labelDefault, .labelDefaultFirst {
 	width: 100%;
-	top: 45px;
 	font-size: 36px;
 	font-weight: 700;
 	position: relative;
@@ -399,7 +439,7 @@ footer {
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
-	margin-top: 81px;
+	margin-top: 50px;
 	padding: 0 50px;
 	text-align: justify;
 	transition: all 1s;
@@ -410,7 +450,6 @@ footer {
 }
 
 .tableSkills {
-	height: 260px;
 	margin: 0 auto;
 }
 
@@ -438,7 +477,7 @@ footer {
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
-	margin-top: 87px;
+	margin-top: 50px;
 	padding: 0 50px;
 	text-align: center;
 	transition: all 1s;
@@ -452,7 +491,7 @@ footer {
 	display: block;
 	font-size: 24px;
 	line-height: 35px;
-	margin-top: 90px;
+	margin-top: 50px;
 	padding: 0 50px;
 	text-align: justify;
 	transition: all 1s;
@@ -474,7 +513,6 @@ footer {
 
 .titleDefault {
 	width: 100%;
-	top: 50px;
 	font-size: 48px;
 	font-weight: 700;
 	position: relative;
@@ -512,8 +550,8 @@ footer {
 .iconHidden { opacity: 0; }
 .iconShow { opacity: 1; }
 
-.iconHiddenTop { opacity: 0; }
-.iconShowTop { opacity: 1; margin-top: 40px; }
+.iconHiddenTop { opacity: 0; margin-top: -40px; }
+.iconShowTop { opacity: 1; margin-top: 0; }
 
 .iconHiddenLeft { opacity: 0; }
 .iconShowLeft { opacity: 1; margin-left: 0; }
