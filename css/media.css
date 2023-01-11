@@ -7,7 +7,7 @@
 	.cellSkills { width: 200px; }
 	.iconCertifications { width: 130px; height: 130px; top: 55px; }
 	.iconIntro { width: 120px; height: 120px; }
-	.imageUnesp { top: 160px; }
+	.imageUnesp { top: 300px; }
 	.labelImage { font-size: 23px; }
 }
 
@@ -46,7 +46,7 @@
 	.iconCertifications { width: 100px; height: 100px; top: 160px; }
 	.iconIntro { width: 90px; height: 90px; }
 	.imageUfscar { width: 300px; height: 200px; top: 100px; }
-	.imageUnesp { width: 300px; height: 200px; top: 250px; }
+	.imageUnesp { width: 300px; height: 200px; top: 270px; }
 	.labelImage { font-size: 20px; }
 }
 
@@ -66,6 +66,7 @@
 	#education-section-a,
 	#education-section-b {
 		width: 100%;
+		margin-top: 0;
 		padding-top: 50px;
 	}
 
