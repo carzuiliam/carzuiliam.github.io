@@ -5,7 +5,7 @@
 	#hello-box { font-size: 180px; }
 
 	.cellSkills { width: 200px; }
-	.iconCertifications { width: 130px; height: 130px; top: 55px; }
+	.iconCertifications { width: 130px; height: 130px; }
 	.iconIntro { width: 120px; height: 120px; }
 	.imageUnesp { top: 300px; }
 	.labelImage { font-size: 23px; }
@@ -18,7 +18,7 @@
 	#hello-box { font-size: 170px; }
 
 	.cellSkills { width: 190px; }
-	.iconCertifications { width: 120px; height: 120px; top: 120px; }
+	.iconCertifications { width: 120px; height: 120px; top: 60px; }
 	.iconIntro { width: 110px; height: 110px; }
 	.imageUfscar { left: 50px; }
 	.labelImage { font-size: 22px; }
@@ -31,7 +31,7 @@
 	#hello-box { font-size: 160px; }
 
 	.cellSkills { width: 180px; }
-	.iconCertifications { width: 110px; height: 110px; top: 140px; }
+	.iconCertifications { width: 110px; height: 110px; top: 80px; }
 	.iconIntro { width: 100px; height: 100px; }
 	.labelImage { font-size: 21px; }
 }
@@ -43,7 +43,7 @@
 	#hello-box { font-size: 150px; }
 
 	.cellSkills { width: 170px; }
-	.iconCertifications { width: 100px; height: 100px; top: 160px; }
+	.iconCertifications { width: 100px; height: 100px; top: 90px; }
 	.iconIntro { width: 90px; height: 90px; }
 	.imageUfscar { width: 300px; height: 200px; top: 100px; }
 	.imageUnesp { width: 300px; height: 200px; top: 270px; }
