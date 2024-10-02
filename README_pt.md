@@ -6,7 +6,7 @@ Este projeto contém o meu _site_, que serve tanto como uma página pessoal quan
 
 - **HTML5**, usado como base na construção da página, incluindo o uso de _tags_ como `header`, `main`, `section` e `footer`;
 - **CSS3**, incluindo aspectos como transições e animações;
-- **Javascript** puro, utilizado para simular o efeito de paralaxe nos _banners_ da página.
+- **Javascript** puro, utilizado para adicionar efeitos na página.
 
 ## Informações Adicionais
 

@@ -6,7 +6,7 @@ This project contains my site, which works like my personal page and as a portfo
 
 - **HTML5**, used as the site base, including tags like `header`, `main`, `section` and `footer`;
 - **CSS3**, including aspects like transitions and animations;
-- Pure **Javascript**, used to simulate the parallax effect on the page _banners_.
+- Pure **Javascript**, used to add effects to the page.
 
 ## Additional Info
 
