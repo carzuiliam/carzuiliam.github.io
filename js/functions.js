@@ -1,13 +1,27 @@
-/****************************** Prototype ******************************/
+/*************************** Custom Functions **************************/
 
-$ = function(_element, _position = 0) {
-        
-    if (_element.charAt(0) === '#') { 
-       return new HtmlElement(document.getElementById(_element.substring(1, _element.length)));
-    }
-    else if (_element.charAt(0) === '.') {
-        return new HtmlElement(document.getElementsByClassName(_element.substring(1, _element.length))[_position]);
-    }
+runTypingEffect = (_htmlElement, _str) => {
+  let n = 0;
 
-    return new HtmlElement(document.getElementsByTagName(_element)[_position]);
+  let timer = setInterval(() => {
+    n = n + 1;    
+    _htmlElement.setHtml(_str.slice(0, n) + '|');
+
+    if (n === _str.length) {
+      clearInterval(timer);
+
+      _htmlElement.setHtml(_str + '&nbsp;');
+      n = 0;
+      
+      setInterval(() => {  
+        if (n === 0) {
+          _htmlElement.setHtml(_str + '|');
+          n = 1;
+        } else {
+          _htmlElement.setHtml(_str + '&nbsp;');
+          n = 0;
+        };
+      }, 500);
+    };
+  }, 60);
 }

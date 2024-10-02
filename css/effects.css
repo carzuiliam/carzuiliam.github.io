@@ -1,0 +1,14 @@
+/**************************** Effects classes **************************/
+
+.hiddenElem { opacity: 0; }
+.visibleElem { opacity: 1; }
+
+.slideHidden { transform: scaleX(0); }
+.slideShow { transform: scaleX(1); }
+
+.normalLabel { font-weight: normal; }
+.selectedLabel { 
+    font-weight: bold;
+    opacity: 1;
+    text-transform: uppercase;
+}

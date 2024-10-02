@@ -1,558 +1,420 @@
 /**************************** Main components **************************/
 
-html { 
-	font-family: 'Questrial', sans-serif;
-	font-weight: 400;
-	letter-spacing: 0;
+html {
+  background-color: rgb(25, 25, 25); 
+  color: rgb(255, 255, 255);
+  font-family: 'Albert Sans', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 20px;
 }
 
-h1, h2, h3, h4 { font-family: 'Amaranth', sans-serif; }
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-strong { font-weight: bold; }
-
-table { vertical-align: middle; }
-
-tr { height: 100px; }
-
-td { vertical-align: middle; }
-
-ul { list-style-type: circle; }
-
-a { text-decoration: none; }
-	a:hover { opacity: .8; }
+a:hover {
+  text-decoration: underline;
+}
 
 /*************************** Semantic elements *************************/
 
 body {
-	width: 100%;
-	color: #000;
-	margin: auto;
-	transition: all 1s;
+  background-color: rgb(0, 0, 0); 
+  margin: 0;
 }
 
 header {
-	width: 100%;
-	height: 50px;
-	background-color: #fff;
-	position: fixed;
-	z-index: 9;
+  max-width: 1024px;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
 }
 
 main {
-	width: 100%;
-	max-width: 1800px;
-	background-color: #fff;
-	display: table;
-	margin: auto;
+  max-width: 1024px;
+  display: flex;
+  margin: 0 auto;
+}
+
+article {
+  width: 100%;
+  padding: 0 0 50px;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 footer {
-	width: 100%;
-	height: 50px;
-	left: 0;
-	bottom: 0;
-	background-color: #fff;
-	position: fixed;
-	z-index: 9;
+  max-width: 1024px;
+  height: 79px;
+  display: block;
+  border-top: 1px solid rgb(25, 25, 25);
+  margin: 0 auto;
 }
 
 /********************************* DIV's *******************************/
 
-#menu {
-	height: 100%;
-	margin: 0 auto;
-	box-shadow: 0px 1px 20px gray;
-	padding: 0 10px;
+#banner {
+  height: calc(100vh - 200px);
+  padding: 100px 0;
 }
 
-	#menu-name {
-		color: #727272;
-		float: left;
-		font-size: 14px;
-		margin-top: 18px;
-	}
-
-	#menu-social {
-		color: #727272;
-		float: right;
-		font-size: 14px;
-		margin-top: 10px;
-	}
-
-#hello {
-	width: 100%;
-	height: 95vh;
-	overflow: hidden;
+#projects {
+  display: flow-root;
 }
-
-	#hello-box {
-		width: 50%;
-		height: 100%;
-		background-color: #74a8b6;
-		border: none;
-		color: #fff;
-		float: left;
-		font-size: 200px;
-		text-align: justify;
-		transform-origin: left;
-		transition: all 1s;
-	}
-
-	#hello-banner {
-		width: 50%;
-		height: 100%;
-		background-image: url('../img/content-hello.jpg');
-		background-position: center 1px;
-		background-repeat: no-repeat;	
-		border: none;
-		float: right;
-		position: relative;
-		transform-origin: left;
-		transition: opacity 1s, transform .5s;
-	}
-
-#intro {
-	width: 100%;
-	height: auto;
-	border-bottom: 1px solid #dadada;
-	display: inline-block;
-	padding: 50px 0;
-}
-
-	#intro-content {
-		height: auto;
-	}
-
-	#intro-canvas {
-		height: auto;
-		letter-spacing: 10px;
-		margin-top: 50px;
-		text-align: center;
-	}
-
-#education {
-	width: 100%;
-	height: auto;
-	display: inline-block;
-}
-
-	#education-title {
-		width: 100%;
-		height: auto;
-		border-bottom: 1px dashed #cecece;
-		padding: 50px 0;
-	}
-
-	#education-content {
-		height: auto;
-		padding: 50px 0;
-	}
-
-	#education-content:after {
-		clear: both;
-		content: " "; 
-		display: block;
-	}
-
-		#education-section-a {
-			width: 60%;
-			height: auto;
-			float: right;
-		}
-
-		#education-section-b {
-			width: 60%;
-			height: auto;
-			float: right;
-			margin-top: 35px;
-		}
-
-	#education-canvas {
-		width: 40%;
-		height: auto;
-		float: left;
-		position: relative;
-	}
-
-#experience {
-	width: 100%;
-	height: auto;
-	display: inline-block;
-}
-
-	#experience-banner {
-		width: 100%;
-		height: 350px;
-		background-image: url('../img/experience-banner.jpg');
-		background-position: center 1px;
-		background-repeat: no-repeat;
-		position: relative;
-	}
-
-	#experience-title {
-		width: 100%;
-		height: auto;
-		border-bottom: 1px dashed #cecece;
-		padding: 50px 0;
-	}
-
-	#experience-content {
-		height: auto;
-		padding: 50px 0;		
-		border-bottom: 1px dashed #cecece;
-	}
-
-	#experience-content:after {
-		clear: both;
-		content: " "; 
-		display: block;
-	}
-
-		#experience-section-a,
-		#experience-section-b,
-		#experience-section-c,
-		#experience-section-d,
-		#experience-section-e,
-		#experience-section-f {
-			width: 50%;
-			height: 100%;
-			float: left;
-		}
-
-		#experience-canvas-a,
-		#experience-canvas-b,
-		#experience-canvas-c,
-		#experience-canvas-d,
-		#experience-canvas-e,
-		#experience-canvas-f {
-			width: 50%;
-			height: auto;
-			display: table;
-			float: right;
-		}
-
-#certifications {
-	width: 100%;
-	height: auto;
-	border-bottom: 1px solid #dadada;
-	display: inline-block;
-}
-
-	#certifications-banner {
-		width: 100%;
-		height: 350px;
-		background-image: url('../img/certifications-banner.jpg');
-		background-position: center 200px;
-		background-repeat: no-repeat;
-	}
-
-	#certifications-title {
-		width: 100%;
-		height: auto;
-		border-bottom: 1px dashed #cecece;
-		padding: 50px 0;
-	}
-
-	#certifications-content {
-		height: auto;
-		padding: 50px 0;
-	}
-
-	#certifications-content:after {
-		clear: both;
-		content: " "; 
-		display: block;
-	}
-
-	#certifications-section {
-		width: 60%;
-		height: auto;
-		float: right;
-	}
-
-	#certifications-canvas {
-		width: 40%;
-		float: left;
-		letter-spacing: 10px;
-		text-align: center;
-	}
-
-#skills {
-	width: 100%;
-	height: auto;
-	border-bottom: 1px solid #dadada;
-	display: inline-block;
-	padding: 50px 0;	
-}
-
-	#skills-content {
-		height: auto;
-	}
-
-	#skills-canvas {
-		height: auto;
-		margin-top: 50px;
-		text-align: center;
-	}
-
-#contact {
-	width: 100%;
-	height: auto;
-}
-
-	#contact-banner {
-		width: 100%;
-		height: 350px;
-		background-image: url('../img/contact-banner.jpg');
-		background-position: center 600px;
-		background-repeat: no-repeat;
-		position: relative;
-	}
-
-	#contact-content {
-		height: auto;
-		padding: 50px 0;
-	}
-
-	#contact-canvas {
-		height: auto;
-		margin-bottom: 100px;
-		text-align: center;
-	}
-
-#about {
-	height: 100%;
-	margin: 0 auto;
-	box-shadow: 0px 1px 20px gray;
-	padding: 0 10px;
-}
-
-	#about-validation {
-		float: left;
-		margin-top: 10px;
-	}
-
-	#about-info {
-		float: right;
-	}
 
 /***************************** Custom classes **************************/
 
-.cellSkills {
-	width: 220px;
-	font-size: 22px;
-	vertical-align: top;
+.bannerBlocks {
+  height: 30px;
 }
 
-.emptySpace {
-	font-size: 25px;
-	margin: 0 15px 0 30px;
-	transition: opacity 1s;
+  .bannerBlock1 {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 126, 167);
+    transform-origin: left;
+    transition: .5s;
+  }
+
+  .bannerBlock2 {
+    width: 80%;
+    height: 10px;
+    background-color: rgb(0, 168, 232);
+    transform-origin: left;
+    transition: .5s;
+  }
+
+  .bannerBlock3 {
+    width: 60%;
+    height: 10px;
+    background-color: rgb(0, 105, 85);
+    transform-origin: left;
+    transition: .5s;
+  }
+
+  .bannerBlock4 {
+    width: 60%;
+    height: 10px;
+    background-color: rgb(0, 105, 85);
+    float: right;
+    transform-origin: right;
+    transition: .5s;
+  }
+
+  .bannerBlock5 {
+    width: 80%;
+    height: 10px;
+    background-color: rgb(0, 168, 232);
+    float: right;
+    transform-origin: right;
+    transition: .5s;
+  }
+
+  .bannerBlock6 {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 126, 167);
+    float: right;
+    transform-origin: right;
+    transition: .5s;
+  }
+
+.bannerContent {
+  height: calc(100% - 60px);
+  display: flex;
 }
 
-.iconCertifications {
-	width: 140px;
-	height: 140px;
-	top: 25px;
-	position: relative;
-	transition: all 1s;
+  .bannerCanvas {
+    width: 100%;
+    height: 80%;
+    margin: auto 0;
+  }
+  
+    .bannerImages {
+      width: 100%;
+      height: 70%;
+      margin: 0 auto;
+      position: relative;        
+    }
+
+      .bannerImage1 {
+        position: absolute;
+        top: 45%;
+        left: 24%;
+      }
+
+      .bannerImage2 {
+        position: absolute;
+        top: 5%;
+        left: 5%;          
+      }
+
+      .bannerImage3 {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 90px);
+      }
+
+      .bannerImage4 {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+      }
+
+      .bannerImage5 {
+        position: absolute;
+        top: 45%;
+        right: 24%;
+      }
+
+        .bannerImage {
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+        }
+
+    .bannerName {
+      height: 25%;
+      font-size: 120px;
+      font-weight: 300;
+      letter-spacing: 0;
+      text-align: center;
+      transition: 1s;
+    }
+
+    .bannerText {
+      font-family: 'Courier New', Courier, monospace;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+.introBlock {
+  width: 100%;
+  line-height: 30px;
+  transition: 1s;
 }
 
-.iconContact {
-	width: 30px;
-	height: 30px;
-	margin-left: -10px;
-	transition: all 1s;
-	vertical-align: middle;
+.sectionTitle {
+  width: 100%;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  transition: 1s;
 }
 
-.iconExperience {
-	width: 85px;
-	height: 85px;
-	margin-left: -10px;
-	transition: all .5s;
-	vertical-align: bottom;
+  .sectionTitleText {
+    width: 100%;
+  }
+
+  .sectionTitleBar {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(0, 105, 85);
+    transform-origin: left;
+    transition: .5s;
+  }
+
+.expBlock,
+.eduBlock {
+  width: calc(100% - 40px);
+  display: flex;
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: .5s;
 }
 
-.iconIntro {
-	width: 140px;
-	height: 140px;
-	position: relative;
-	transition: all 1s;
+  .expBlock:hover,
+  .eduBlock:hover {
+    background-color: rgb(40, 42, 49);
+  }
+
+  .expBlockPeriod,
+  .eduBlockPeriod {
+    width: 25%;
+    text-transform: uppercase;
+  }
+
+  .expBlockContent,
+  .eduBlockContent {
+    width: 75%;
+  }
+
+    .expBlockPosition,
+    .eduBlockCourse {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .expBlockPosition:hover,
+    .eduBlockCourse:hover {
+      color: rgb(0, 168, 232);
+    } 
+
+    .expBlockText,
+    .eduBlockCollege {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    .expBlockTags,
+    .eduBlockTags {
+      display: inline;
+      padding-top: 15px;
+      font-size: 15px;
+    }
+
+      .expBlockTag,
+      .eduBlockTag {
+        display: inline-flex;
+        color: rgb(94, 234, 212);
+        background-color: rgb(0, 50, 65);
+        border: 1px solid rgb(0, 126, 167);
+        margin-top: 10px;
+        padding: 5px 10px;
+      }
+
+.projBlock {
+  width: 49%;
+  height: 250px;
+  display: inline-flex;
+  background-color: rgb(10, 10, 10);
+  background-position: center;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: .5s;
 }
 
-.iconSkills {
-	width: 140px;
-	height: 140px;
-	position: relative;
-	transition: all 1s;
+  .projBlock1 {
+    background-image: url('../img/project1.jpg');    
+  }
+
+  .projBlock2 {
+    background-image: url('../img/project2.jpg');
+  }
+
+  .projBlock3 {
+    background-image: url('../img/project3.jpg');
+  }
+
+  .projBlock4 {
+    background-image: url('../img/project4.jpg');
+  }
+
+  .projBlock5 {
+    background-image: url('../img/project5.jpg');
+  }
+
+  .projBlock6 {
+    background-image: url('../img/project6.jpg');
+  }
+
+  .projBlock1:hover,
+  .projBlock2:hover,
+  .projBlock3:hover,
+  .projBlock4:hover,
+  .projBlock5:hover,
+  .projBlock6:hover {
+    transform: scale(1.05);
+  }
+
+    .projBlockContent {
+      margin: auto 0;
+    }
+
+      .projBlockTitle {
+        font-weight: bold;
+      }
+
+      .projBlockDescription {
+        margin: 20px 0;
+        padding: 0 20px;
+      }
+
+      .projBlockLink {
+        display: inline-flex;
+        background-color: rgb(0, 50, 65, .7);
+        border: 1px solid rgb(0, 126, 167);
+        padding: 5px 10px;
+      }
+
+.contact {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
 }
 
-.iconSocial {
-	width: 30px;
-	height: 30px;
-	transition: all 1s;
+  .contactButton {
+    display: inline-flex;
+    background-color: rgb(0, 50, 65, .7);
+    border: 1px solid rgb(0, 126, 167);
+    font-size: 40px;
+    padding: 20px 40px;
+    transition: .5s;
+  }
+
+.network {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.imageUfscar {
-	width: 400px;
-	height: 300px;
-	top: 50px;
-	left: 30px;
-	box-shadow: 5px 5px #f0f0f0;
-	position: absolute;
-	transition: opacity 1s, transform .5s;
+  .socialMedia {
+    margin: 0 15px;
+    transition: .5s;
+  }
+
+    .socialMedia:hover {
+      transform: scale(1.05);
+    }
+
+    .iconSocial {
+      width: 67px;
+      height: 67px;
+    }
+
+.footnote {
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: center;
 }
 
-.imageUnesp {
-	width: 400px;
-	height: 300px;
-	top: 270px;
-	right: 20px;
-	box-shadow: 5px 5px #f0f0f0;
-	position: absolute;
-	transition: opacity 1s, transform .5s;
+.iconArrow {
+  margin-left: 0;
+  margin-right: 3px;
+  padding-bottom: 2px;
+  transition: .1s;
+  vertical-align: middle;
 }
 
-.labelDefault, .labelDefaultFirst {
-	width: 100%;
-	font-size: 36px;
-	font-weight: 700;
-	position: relative;
-	text-align: center;
-	transition: all 1s;
+  a:hover > .iconArrow {
+    margin-left: 3px;
+    margin-right: 0;
+  }
+
+  .projBlockLink:hover > .iconArrow {
+    margin-left: 3px;
+    margin-right: 0;
+  }
+
+.iconEmail {
+  margin-left: 0;
+  margin-right: 5px;
+  padding-bottom: 2px;
+  transition: .1s;
+  vertical-align: middle;
 }
 
-.labelImage {
-	font-size: 24px;
-}
+  a:hover > .iconEmail {
+    margin-left: 5px;
+    margin-right: 0;  
+  }
 
-.lineBreak {
-	display: none;
-	line-height: 5px;
-}
-
-.deprecated {
-	color: rgb(180, 180, 180);
-}
-
-.listDefault {
-	display: block;
-	font-size: 24px;
-	line-height: 35px;
-	margin-top: 50px;
-	padding: 0 50px;
-	text-align: justify;
-	transition: all 1s;
-}
-
-.tableExperience {
-	display: table-cell;
-}
-
-.tableSkills {
-	margin: 0 auto;
-}
-
-.textAbout {
-	color: #727272;
-	font-size: 12px;
-	margin-top: 18px;
-	transition: all 1s;
-}
-
-.textCanvas {
-	font-size: 24px;
-	margin-left: 15px;
-	text-align: left;
-	transition: all 1s;	
-}
-
-.textContact {
-	font-size: 18px;
-	margin-left: 10px;
-	transition: all 1s;
-}
-
-.textCentered {
-	display: block;
-	font-size: 24px;
-	line-height: 35px;
-	margin-top: 50px;
-	padding: 0 50px;
-	text-align: center;
-	transition: all 1s;
-}
-
-.textFull {
-	display: inline;
-}
-
-.textJustified {
-	display: block;
-	font-size: 24px;
-	line-height: 35px;
-	margin-top: 50px;
-	padding: 0 50px;
-	text-align: justify;
-	transition: all 1s;
-}
-
-.textMenu { 
-	transition: all 1s;
-}
-
-.titleBox {
-	top: 50%;
-	left: 50%;	
-	float: left;	
-	line-height: .8em;
-	position: relative;
-	transform: translate(-50%, -50%);
-	transition: all 1s;
-}
-
-.titleDefault {
-	width: 100%;
-	font-size: 48px;
-	font-weight: 700;
-	position: relative;
-	text-align: center;
-	transition: all 1s;
-}
-
-.rowExperience {
-	height: 100px;
-	line-height: 40px;
-}
-
-.rowSkills {
-	height: 20px;
-}
-
-.w3cValidCss {
-	width: 88px;
-	height: 31px;
-	transition: opacity 1s, transform .5s;
-}
-
-/**************************** Effects classes **************************/
-
-.boxHidden { transform: scaleX(0); }
-.boxShow { transform: scaleX(1); }
-
-.textHidden { opacity: 0; }
-.textShow { opacity: 1; }
-
-.imageHidden { opacity: 0; }
-.imageShow { opacity: 1; }
-	.imageShow:hover { transform: scale(1.05); z-index: 1; }
-
-.iconHidden { opacity: 0; }
-.iconShow { opacity: 1; }
-
-.iconHiddenTop { opacity: 0; margin-top: -40px; }
-.iconShowTop { opacity: 1; margin-top: 0; }
-
-.iconHiddenLeft { opacity: 0; }
-.iconShowLeft { opacity: 1; margin-left: 0; }
+  .contactButton:hover > .iconEmail {
+    margin-left: 5px;
+    margin-right: 0;
+  }

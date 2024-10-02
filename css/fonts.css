@@ -1,11 +1,6 @@
 /******************************** Fonts ********************************/
 
 @font-face {
-  font-family: 'Amaranth';
-  src:  url('../fonts/Amaranth.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Questrial';
-  src:  url('../fonts/Questrial.woff2') format('woff2');
+  font-family: 'Albert Sans';
+  src:  url('../fonts/AlbertSans.ttf');
 }
