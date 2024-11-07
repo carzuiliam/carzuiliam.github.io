@@ -1,6 +1,6 @@
 /*************************** Custom Functions **************************/
 
-runTypingEffect = (_htmlElement, _str) => {
+const runTypingEffect = (_htmlElement, _str) => {
   let n = 0;
 
   let timer = setInterval(() => {

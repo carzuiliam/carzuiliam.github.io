@@ -1,6 +1,6 @@
 /****************************** Prototype ******************************/
 
-$ = (_element, _position = 0) => {        
+const $ = (_element, _position = 0) => {        
   if (_element.charAt(0) === '#') { 
      return new HtmlElement(document.getElementById(_element.substring(1, _element.length)));
   }
