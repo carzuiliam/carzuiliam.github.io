@@ -21,8 +21,10 @@ const experienceData = [
       'HTML5/CSS3',
       'JavaScript',
       'TypeScript',
+      'ArcGIS',
       'SQL',
       'Git',
+      'Docker',
       ],
   ),
   new ProfessionalExperience(
@@ -37,6 +39,7 @@ const experienceData = [
       'HTML5/CSS3',
       'JavaScript',
       'TypeScript',
+      'ArcGIS',
       'SQL',
       'Git',
     ],
@@ -100,7 +103,7 @@ const experienceData = [
   ),
 ];
 
-const dumpExperience = () => {
+const myTechStack = () => {
 	const yearDuration = 1000 * 60 * 60 * 24 * 365;
 	const techSkills = new Map();
 
@@ -121,10 +124,6 @@ const dumpExperience = () => {
   console.log('===== Stack Usage by Years (Descending Order) =====');
 
 	sortedTechUsage.forEach(([skill, years]) => {
-    if (years > 5.0) {
-    	console.log(`-- ${skill}: 5+ year(s)`);
-    } else {
-    	console.log(`-- ${skill}: ${Math.floor(years)} year(s)`);
-    }
+    console.log(`-- ${skill}: ${Math.floor(years)} year(s)`);    
   });
 };
