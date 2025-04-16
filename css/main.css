@@ -234,13 +234,13 @@ footer {
 
   .expBlockPeriod,
   .eduBlockPeriod {
-    width: 25%;
+    width: 22%;
     text-transform: uppercase;
   }
 
   .expBlockContent,
   .eduBlockContent {
-    width: 75%;
+    width: 78%;
   }
 
     .expBlockPosition,
@@ -255,7 +255,7 @@ footer {
     } 
 
     .expBlockText,
-    .eduBlockCollege {
+    .eduBlockField {
       font-size: 15px;
       line-height: 22px;
     }
@@ -340,6 +340,41 @@ footer {
         border: 1px solid rgb(0, 126, 167);
         padding: 5px 10px;
       }
+
+.pubBlock {
+  width: calc(100% - 40px);
+  display: flex;
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: .5s;
+}
+
+  .pubBlock:hover {
+    background-color: rgb(40, 42, 49);
+  }
+
+  .pubBlockYear {
+    width: 22%;
+    text-transform: uppercase;
+  }
+
+  .pubBlockContent {
+    width: 78%;
+  }
+
+    .pubBlockName {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .pubBlockName:hover {
+      color: rgb(0, 168, 232);
+    } 
+
+    .pubBlockJournal {
+      font-size: 15px;
+      line-height: 22px;
+    }
 
 .contact {
   width: 100%;

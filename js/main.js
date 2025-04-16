@@ -49,6 +49,11 @@ const sections = [
     text: $('.sectionTitleText', 3),
     bar: $('.sectionTitleBar', 3),
   },
+  {
+    title: $('.sectionTitle', 4),
+    text: $('.sectionTitleText', 4),
+    bar: $('.sectionTitleBar', 4),
+  },
 ];
 
 const experiences = [
@@ -73,6 +78,11 @@ const projects = [
   $('.projBlock', 3),
   $('.projBlock', 4),
   $('.projBlock', 5),
+];
+
+const publications = [
+  $('.pubBlock', 0),
+  $('.pubBlock', 1),
 ];
 
 const contactButton = $('.contactButton');
@@ -163,6 +173,12 @@ window.onscroll = () => {
   projects.forEach((project) => {
     if (project.isOnScreen()) {
       project.replaceClass('hiddenElem', 'visibleElem');
+    }
+  });
+
+  publications.forEach((publication) => {
+    if (publication.isOnScreen()) {
+      publication.replaceClass('hiddenElem', 'visibleElem');
     }
   });
 
