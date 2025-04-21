@@ -23,8 +23,9 @@ const experienceData = [
       'TypeScript',
       'ArcGIS',
       'SQL',
-      'Git',
+      'RabbitMQ',
       'Docker',
+      'Git',
       ],
   ),
   new ProfessionalExperience(
