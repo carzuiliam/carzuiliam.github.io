@@ -69,6 +69,7 @@ const experiences = [
 const educations = [
   $('.eduBlock', 0),
   $('.eduBlock', 1),
+  $('.eduBlock', 2),
 ];
 
 const projects = [
