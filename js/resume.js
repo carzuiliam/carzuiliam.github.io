@@ -26,6 +26,7 @@ const experienceData = [
       'RabbitMQ',
       'Docker',
       'Git',
+      'Elastic Stack (ELK)',
       ],
   ),
   new ProfessionalExperience(
@@ -56,6 +57,7 @@ const experienceData = [
       'jQuery',
       'SQL',
       'Git',
+      'Elastic Stack (ELK)',
     ],
   ),
   new ProfessionalExperience(
