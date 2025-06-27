@@ -56,7 +56,7 @@
         font-size: 65px;
       }
 
-  .expBlock, .eduBlock {    
+  .expBlock, .eduBlock, .pubBlock {    
     width: 100%;
     display: block;
     padding: 15px 0;
@@ -67,18 +67,18 @@
       background-color: inherit;
     }
 
-    .expBlockPeriod, .eduBlockPeriod {
+    .expBlockPeriod, .eduBlockPeriod, .pubBlockYear {
       width: 100%;
       margin-bottom: 10px;
     }
 
-    .expBlockContent, .eduBlockContent {
+    .expBlockContent, .eduBlockContent, .pubBlockContent {
       width: 100%;
       margin-bottom: 10px;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   footer {
     height: 139px;
   }

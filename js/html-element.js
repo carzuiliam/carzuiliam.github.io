@@ -35,8 +35,14 @@ class HtmlElement {
 
   //  Element events 
   onMouseMove = (_function) => {
-    this.element.addEventListener('mousemove', (event) => {
-      _function(event);
-    });
+    this.element.addEventListener('mousemove', _function);
+  }
+
+  onMouseOver = (_function) => {
+    this.element.addEventListener('mouseover', _function);
+  }
+
+  onMouseOut = (_function) => {
+    this.element.addEventListener('mouseout', _function);
   }
 }

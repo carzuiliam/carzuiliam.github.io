@@ -1,8 +1,9 @@
-/************************** Resume Generator ***************************/
+/************************* Resume information **************************/
 
-class ProfessionalExperience {
-  constructor(_name, _startPeriod, _endPeriod, _stack) {
+class TechExperience {
+  constructor(_name, _isProfessional, _startPeriod, _endPeriod, _stack, ) {
     this.name = _name;
+    this.isProfessional = _isProfessional;
     this.startPeriod = _startPeriod;  
     this.endPeriod = _endPeriod;      
     this.stack = _stack;
@@ -10,123 +11,170 @@ class ProfessionalExperience {
 }
 
 const experienceData = [
-  new ProfessionalExperience(
-    "xmobots",    
+  // Professional
+  new TechExperience(
+    "XMOBOTS",
+    true,
     new Date('2024-02-01'),
     new Date(),
     [ 
     	'Java',
-      'Spring Boot',
+      'SpringBoot',
       'React',
-      'HTML5/CSS3',
-      'JavaScript',
-      'TypeScript',
+      'HtmlCss',
+      'Javascript',
+      'Typescript',
       'ArcGIS',
       'SQL',
       'RabbitMQ',
       'Docker',
       'Git',
-      'Elastic Stack (ELK)',
-      ],
+      'ElasticStack',
+    ],
   ),
-  new ProfessionalExperience(
-    "codex",
+  new TechExperience(
+    "Codex",
+    true,
     new Date('2020-11-01'),
     new Date('2023-11-30'),
     [
     	'Java',
       'Kotlin',
-      'Spring Boot',
+      'SpringBoot',
       'React',
-      'HTML5/CSS3',
-      'JavaScript',
-      'TypeScript',
+      'HtmlCss',
+      'Javascript',
+      'Typescript',
       'ArcGIS',
       'SQL',
       'Git',
     ],
   ),
-  new ProfessionalExperience(
-    "cobmais",
+  new TechExperience(
+    "Cobmais",
+    true,
     new Date('2019-10-01'),
     new Date('2020-11-30'),
     [
-    	'C#',
-      'HTML5/CSS3',
-      'JavaScript',
-      'jQuery',
+    	'CSharp',
+      'HtmlCss',
+      'Javascript',
+      'JQuery',
       'SQL',
       'Git',
-      'Elastic Stack (ELK)',
+      'ElasticStack',
     ],
   ),
-  new ProfessionalExperience(
-    "expert",
+  new TechExperience(
+    "Expert",
+    true,
     new Date('2018-10-01'),
     new Date('2019-09-30'),
     [
-    	'C#',
+    	'CSharp',
       'Java',
       'Kotlin',
       'SQL',
       'Git',
     ],
   ),
-  new ProfessionalExperience(
-    "cebrac",
+  new TechExperience(
+    "CEBRAC",
+    true,
     new Date('2017-06-01'),
     new Date('2018-04-30'),
     [
-    	'HTML5/CSS3',
+    	'HtmlCss',
       'Java',
-      'JavaScript',
+      'Javascript',
     ],
-  ),
-  new ProfessionalExperience(
-    "ufscar",
+  ),  
+  new TechExperience(
+    "UFSCar",
+    true,
     new Date('2014-03-01'),
-    new Date('2017-02-28'),
+    new Date('2017-02-17'),
     [
-    	'MATLAB',
-      'Digital Image Processing',
+    	'Matlab',
+      'Skill',
     ],
   ),
-  new ProfessionalExperience(
-    "codex",
+  new TechExperience(
+    "LuzPropria360",
+    true,
     new Date('2012-10-01'),
     new Date('2014-02-28'),
     [
-    	'HTML5/CSS3',
-      'JavaScript',
-      'jQuery',
+    	'HtmlCss',
+      'Javascript',
+      'JQuery',
       'PHP',
       'WordPress',
       'SQL',
     ],
   ),
+  // Education
+  new TechExperience(
+    "PUCMinas",
+    false,
+    new Date('2025-06-01'),
+    new Date(),
+    [
+    	'Skill',
+      'AWS',
+      'Azure',
+      'GCP',
+    ],
+  ),
+  new TechExperience(
+    "UNESP",
+    false,
+    new Date('2009-03-01'),
+    new Date('2013-12-10'),
+    [
+      'C',
+      'Java',
+      'SQL',
+      'Skill',
+    	'Skill',
+    ],
+  ),
 ];
 
-const myTechStack = () => {
-	const yearDuration = 1000 * 60 * 60 * 24 * 365;
-	const techSkills = new Map();
+/*************************** Resume mapping ****************************/
 
-  experienceData.forEach((experience) => {
-    const yearsSpent = (experience.endPeriod - experience.startPeriod) / yearDuration;
+const getResumeMap = () => {
+  const yearDuration = 1000 * 60 * 60 * 24 * 365;
+  const techSkillsMap = new Map();
+  const formattedMap = new Map();
 
-		experience.stack.forEach((tech) => {
-      if (techSkills.has(tech)) {
-      	techSkills.set(tech, techSkills.get(tech) + yearsSpent);
+  experienceData.forEach((experience) => {    
+    const yearsSpent = experience.isProfessional ?
+      (experience.endPeriod - experience.startPeriod) / yearDuration :
+      0;
+
+    experience.stack.forEach((tech) => {
+      if (techSkillsMap.has(tech)) {
+        techSkillsMap.set(tech, techSkillsMap.get(tech) + yearsSpent);
       } else {
-      	techSkills.set(tech, yearsSpent);
+        techSkillsMap.set(tech, yearsSpent);
       }
-    });
+    }); 
   });
 
-	const sortedTechUsage = Array.from(techSkills.entries()).sort((a, b) => b[1] - a[1]);
+  techSkillsMap.forEach((years, tech) => {
+    const wholeYears = Math.floor(years);
 
-  console.log('===== Stack Usage by Years (Descending Order) =====');
-
-	sortedTechUsage.forEach(([skill, years]) => {
-    console.log(`-- ${skill}: ${Math.floor(years)} year(s)`);    
+    if (tech === 'Skill') {
+      formattedMap.set(tech, 'Soft Skill');
+    } else if (wholeYears == 0) {
+      formattedMap.set(tech, 'Hands-on Experience');
+    } else if (wholeYears <= 1) {
+      formattedMap.set(tech, '1 year');
+    } else {
+      formattedMap.set(tech, `${wholeYears} years`);
+    }    
   });
+
+  return formattedMap;
 };

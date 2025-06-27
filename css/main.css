@@ -260,22 +260,59 @@ footer {
       line-height: 22px;
     }
 
-    .expBlockTags,
-    .eduBlockTags {
-      display: inline;
-      padding-top: 15px;
-      font-size: 15px;
-    }
+.tagList {
+  display: inline;
+  padding-top: 15px;
+  font-size: 15px;
+}
 
-      .expBlockTag,
-      .eduBlockTag {
-        display: inline-flex;
-        color: rgb(94, 234, 212);
-        background-color: rgb(0, 50, 65);
-        border: 1px solid rgb(0, 126, 167);
-        margin-top: 10px;
-        padding: 5px 10px;
-      }
+  .tagBlock {
+    display: inline-flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    transition: .2s all;
+  }
+
+  .tagArcGIS { background-color: rgba(150, 195, 98, .3); border: 1px solid rgb(110, 155, 58); color: rgb(255, 255, 255); }
+  .tagAWS { background-color: rgba(255, 153, 0, .3); border: 1px solid rgb(215, 113, 0); color: rgb(255, 255, 255); }
+  .tagAzure { background-color: rgba(0, 120, 212, .3); border: 1px solid rgb(0, 80, 172); color: rgb(255, 255, 255); }
+  .tagC { background-color: rgba(0, 122, 204, .3); border: 1px solid rgb(0, 82, 164); color: rgb(255, 255, 255); }
+  .tagCSharp { background-color: rgba(145, 121, 228, .3); border: 1px solid rgba(145, 121, 228); color: rgb(255, 255, 255); }
+  .tagDocker { background-color: rgba(36, 150, 237, .3); border: 1px solid rgb(0, 110, 193); color: rgb(255, 255, 255); }
+  .tagElasticStack { background-color: rgb(0, 85, 113, .3); border: 1px solid rgb(0, 45, 73); color: rgb(255, 255, 255); }
+  .tagGCP { background-color: rgba(66, 133, 244, .3); border: 1px solid rgb(26, 93, 204); color: rgb(255, 255, 255); }
+  .tagGit { background-color: rgba(240, 80, 50, .3); border: 1px solid rgb(200, 40, 10); color: rgb(255, 255, 255); }
+  .tagHtmlCss { background-color: rgba(227, 79, 38, .3); border: 1px solid rgb(187, 39, 0); color: rgb(255, 255, 255); }
+  .tagJava { background-color: rgba(237, 139, 0, .3); border: 1px solid rgb(197, 99, 0); color: rgb(255, 255, 255); }
+  .tagJavascript { background-color: rgba(247, 223, 30, .3); border: 1px solid rgb(207, 183, 00); color: rgb(255, 255, 255); }
+  .tagJQuery { background-color: rgba(7, 105, 173, .3); border: 1px solid rgb(0, 65, 133); color: rgb(255, 255, 255); }
+  .tagKotlin { background-color: rgba(0, 149, 213, .3); border: 1px solid rgb(0, 109, 173); color: rgb(255, 255, 255); }
+  .tagMatlab { background-color: rgba(0, 118, 168, .3); border: 1px solid rgb(0, 78, 128); color: rgb(255, 255, 255); }
+  .tagPHP { background-color: rgba(119, 123, 180, .3); border: 1px solid rgb(79, 83, 140); color: rgb(255, 255, 255); }
+  .tagRabbitMQ { background-color: rgba(255, 102, 0, .3); border: 1px solid rgb(215, 62, 0); color: rgb(255, 255, 255); }
+  .tagReact { background-color: rgba(57, 193, 215, .3); border: 1px solid rgb(17, 153, 175); color: rgb(255, 255, 255); }
+  .tagSpringBoot { background-color: rgba(109, 179, 63, .3); border: 1px solid rgb(79, 139, 63); color: rgb(255, 255, 255); }
+  .tagSQL { background-color: rgba(68, 121, 161, .3); border: 1px solid rgb(28, 81, 121); color: rgb(255, 255, 255); }
+  .tagTypescript { background-color: rgba(0, 122, 204, .3); border: 1px solid rgb(0, 82, 164); color: rgb(255, 255, 255); }
+  .tagWordPress { background-color: rgba(33, 117, 155, .3); border: 1px solid rgb(0, 77, 115); color: rgb(255, 255, 255); }
+  
+  .tagSkill { background-color: rgba(176, 176, 176, .3); border: 1px solid rgb(136, 136, 136); color: rgb(255, 255, 255); }  
+  
+  .tooltipPopup {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    user-select: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    pointer-events: 'none';
+    z-index: 1000;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
 
 .projBlock {
   width: 49%;
@@ -340,6 +377,12 @@ footer {
         border: 1px solid rgb(0, 126, 167);
         padding: 5px 10px;
       }
+
+.projViewMore {
+  margin-top: 20px;
+  text-align: center;
+  transition: .5s;
+}
 
 .pubBlock {
   width: calc(100% - 40px);

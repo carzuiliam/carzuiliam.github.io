@@ -25,3 +25,28 @@ const runTypingEffect = (_htmlElement, _str) => {
     };
   }, 60);
 }
+
+const buildToolTip = (_text, _event) => {
+  const tooltip = document.createElement('div');
+
+  tooltip.className = 'tooltipPopup';
+  tooltip.innerText = _text;
+  tooltip.style.top = `${_event.pageY + 10}px`;
+  tooltip.style.left = `${_event.pageX + 10}px`;
+  
+  document.body.appendChild(tooltip);
+
+  requestAnimationFrame(() => {
+    tooltip.style.opacity = '1';
+  });
+
+  return {
+    remove() {
+      tooltip.style.opacity = '0';
+
+      setTimeout(() => {
+        if (tooltip.parentNode) tooltip.parentNode.removeChild(tooltip);
+      }, 200);
+    }
+  };
+}

@@ -28,73 +28,29 @@ const banner = {
 
 const introBlock = $('.introBlock');
 
-const sections = [
-  {
-    title: $('.sectionTitle', 0),
-    text: $('.sectionTitleText', 0),
-    bar: $('.sectionTitleBar', 0),
-  },
-  {
-    title: $('.sectionTitle', 1),
-    text: $('.sectionTitleText', 1),
-    bar: $('.sectionTitleBar', 1),
-  },
-  {
-    title: $('.sectionTitle', 2),
-    text: $('.sectionTitleText', 2),
-    bar: $('.sectionTitleBar', 2),
-  },
-  {
-    title: $('.sectionTitle', 3),
-    text: $('.sectionTitleText', 3),
-    bar: $('.sectionTitleBar', 3),
-  },
-  {
-    title: $('.sectionTitle', 4),
-    text: $('.sectionTitleText', 4),
-    bar: $('.sectionTitleBar', 4),
-  },
-];
+const sectionTitles = $$('.sectionTitle');
+const sectionTexts = $$('.sectionTitleText');
+const sectionBars = $$('.sectionTitleBar');
+const sections = [];
 
-const experiences = [
-  $('.expBlock', 0),
-  $('.expBlock', 1),
-  $('.expBlock', 2),
-  $('.expBlock', 3),
-  $('.expBlock', 4),
-  $('.expBlock', 5),
-  $('.expBlock', 6),
-];
+for (let i = 0; i < sectionTitles.length; i++) {
+  sections.push({
+    title: sectionTitles[i],
+    text: sectionTexts[i],
+    bar: sectionBars[i],
+  })
+}
 
-const educations = [
-  $('.eduBlock', 0),
-  $('.eduBlock', 1),
-  $('.eduBlock', 2),
-];
-
-const projects = [
-  $('.projBlock', 0),
-  $('.projBlock', 1),
-  $('.projBlock', 2),
-  $('.projBlock', 3),
-  $('.projBlock', 4),
-  $('.projBlock', 5),
-];
-
-const publications = [
-  $('.pubBlock', 0),
-  $('.pubBlock', 1),
-];
+const experiences = $$('.expBlock');
+const educations = $$('.eduBlock');
+const publications = $$('.pubBlock');
+const projects = [...$$('.projBlock'), $('.projViewMore')];
 
 const contactButton = $('.contactButton');
+const socialMedias = $$('.socialMedia');
 
-const socialMedias = [
-  $('.socialMedia', 0),
-  $('.socialMedia', 1),
-  $('.socialMedia', 2),
-  $('.socialMedia', 3),
-  $('.socialMedia', 4),
-];
+const skillsTags = $$('.tagBlock');
+const techSkillsMap = getResumeMap();
 
 /**************************** Window events ****************************/
 
@@ -209,3 +165,45 @@ banner.content.onMouseMove((event) => {
     image.getCssStyle().transform = `translate3d(${value1X}px, ${value1Y}px, 0)`;
   });
 });
+
+skillsTags.forEach((tag) => {
+  tag.onMouseOver((event) => {
+    const classes = tag.element.className.split(' ');
+    const techClass = classes.find(c => c.startsWith('tag') && c !== 'tagBlock');
+    
+    if (!techClass) {
+      return;
+    }
+
+    const techName = techClass.replace('tag', '');
+
+    if (!techSkillsMap.has(techName)) {
+      return;
+    }
+
+    tag._tooltip = buildToolTip(techSkillsMap.get(techName), event);
+
+    skillsTags.forEach((other) => {
+      const otherClasses = other.element.className.split(' ');
+      const otherTechClass = otherClasses.find(c => c.startsWith('tag') && c !== 'tagBlock');
+      const otherTechName = otherTechClass ? otherTechClass.replace('tag', '') : '';
+
+      if (otherTechName !== techName) {
+        other.element.style.opacity = '0.2';
+      }
+    });
+  });
+
+  tag.onMouseOut(() => {
+    if (tag._tooltip) {
+      tag._tooltip.remove();
+      tag._tooltip = null;
+    }
+
+    skillsTags.forEach((other) => {
+      other.element.style.opacity = '1';
+    });
+  });
+});
+
+
