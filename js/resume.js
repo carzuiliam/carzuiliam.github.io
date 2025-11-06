@@ -1,14 +1,44 @@
 /************************* Resume information **************************/
 
+const Stacks = Object.freeze({
+  ARCGIS: 'ArcGIS',
+  AZURE: 'Azure',
+  GCP: 'GCP',
+  AWS: 'AWS',
+  C: 'C',
+  CSHARP: 'CSharp',
+  DOCKER: 'Docker',
+  ELASTIC_STACK: 'ElasticStack',
+  GIT: 'Git',
+  HTML_CSS: 'HtmlCss',
+  JAVA: 'Java',
+  JAVASCRIPT: 'Javascript',
+  JQUERY: 'JQuery',
+  KOTLIN: 'Kotlin',
+  MATLAB: 'Matlab',
+  PHP: 'PHP',
+  RABBITMQ: 'RabbitMQ',
+  REACT: 'React',
+  SPRING_BOOT: 'SpringBoot',
+  SQL: 'SQL',
+  TYPESCRIPT: 'Typescript',
+  WORDPRESS: 'WordPress',
+  SKILL: 'Skill',
+});
+
+/************************** Data Classes **************************/
+
 class TechExperience {
-  constructor(_name, _isProfessional, _startPeriod, _endPeriod, _stack, ) {
+  constructor(_name, _isProfessional, _startPeriod, _endPeriod, _stack) {
     this.name = _name;
     this.isProfessional = _isProfessional;
-    this.startPeriod = _startPeriod;  
-    this.endPeriod = _endPeriod;      
+    this.startPeriod = _startPeriod;
+    this.endPeriod = _endPeriod;
     this.stack = _stack;
   }
 }
+
+/*************************** Experience Data ****************************/
 
 const experienceData = [
   // Professional
@@ -16,20 +46,20 @@ const experienceData = [
     "XMOBOTS",
     true,
     new Date('2024-02-01'),
-    new Date(),
-    [ 
-    	'Java',
-      'SpringBoot',
-      'React',
-      'HtmlCss',
-      'Javascript',
-      'Typescript',
-      'ArcGIS',
-      'SQL',
-      'RabbitMQ',
-      'Docker',
-      'Git',
-      'ElasticStack',
+    new Date('2025-10-20'),
+    [
+      Stacks.JAVA,
+      Stacks.SPRING_BOOT,
+      Stacks.REACT,
+      Stacks.HTML_CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.TYPESCRIPT,
+      Stacks.ARCGIS,
+      Stacks.SQL,
+      Stacks.RABBITMQ,
+      Stacks.DOCKER,
+      Stacks.GIT,
+      Stacks.ELASTIC_STACK,
     ],
   ),
   new TechExperience(
@@ -38,16 +68,16 @@ const experienceData = [
     new Date('2020-11-01'),
     new Date('2023-11-30'),
     [
-    	'Java',
-      'Kotlin',
-      'SpringBoot',
-      'React',
-      'HtmlCss',
-      'Javascript',
-      'Typescript',
-      'ArcGIS',
-      'SQL',
-      'Git',
+      Stacks.JAVA,
+      Stacks.KOTLIN,
+      Stacks.SPRING_BOOT,
+      Stacks.REACT,
+      Stacks.HTML_CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.TYPESCRIPT,
+      Stacks.ARCGIS,
+      Stacks.SQL,
+      Stacks.GIT,
     ],
   ),
   new TechExperience(
@@ -56,13 +86,13 @@ const experienceData = [
     new Date('2019-10-01'),
     new Date('2020-11-30'),
     [
-    	'CSharp',
-      'HtmlCss',
-      'Javascript',
-      'JQuery',
-      'SQL',
-      'Git',
-      'ElasticStack',
+      Stacks.CSHARP,
+      Stacks.HTML_CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.JQUERY,
+      Stacks.SQL,
+      Stacks.GIT,
+      Stacks.ELASTIC_STACK,
     ],
   ),
   new TechExperience(
@@ -71,11 +101,11 @@ const experienceData = [
     new Date('2018-10-01'),
     new Date('2019-09-30'),
     [
-    	'CSharp',
-      'Java',
-      'Kotlin',
-      'SQL',
-      'Git',
+      Stacks.CSHARP,
+      Stacks.JAVA,
+      Stacks.KOTLIN,
+      Stacks.SQL,
+      Stacks.GIT,
     ],
   ),
   new TechExperience(
@@ -84,19 +114,19 @@ const experienceData = [
     new Date('2017-06-01'),
     new Date('2018-04-30'),
     [
-    	'HtmlCss',
-      'Java',
-      'Javascript',
+      Stacks.HTML_CSS,
+      Stacks.JAVA,
+      Stacks.JAVASCRIPT,
     ],
-  ),  
+  ),
   new TechExperience(
     "UFSCar",
     true,
     new Date('2014-03-01'),
     new Date('2017-02-17'),
     [
-    	'Matlab',
-      'Skill',
+      Stacks.MATLAB,
+      Stacks.SKILL,
     ],
   ),
   new TechExperience(
@@ -105,12 +135,12 @@ const experienceData = [
     new Date('2012-10-01'),
     new Date('2014-02-28'),
     [
-    	'HtmlCss',
-      'Javascript',
-      'JQuery',
-      'PHP',
-      'WordPress',
-      'SQL',
+      Stacks.HTML_CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.JQUERY,
+      Stacks.PHP,
+      Stacks.WORDPRESS,
+      Stacks.SQL,
     ],
   ),
   // Education
@@ -120,10 +150,10 @@ const experienceData = [
     new Date('2025-06-01'),
     new Date(),
     [
-    	'Skill',
-      'AWS',
-      'Azure',
-      'GCP',
+      Stacks.SKILL,
+      Stacks.AWS,
+      Stacks.AZURE,
+      Stacks.GCP,
     ],
   ),
   new TechExperience(
@@ -132,11 +162,10 @@ const experienceData = [
     new Date('2009-03-01'),
     new Date('2013-12-10'),
     [
-      'C',
-      'Java',
-      'SQL',
-      'Skill',
-    	'Skill',
+      Stacks.C,
+      Stacks.JAVA,
+      Stacks.SQL,
+      Stacks.SKILL,
     ],
   ),
 ];
@@ -148,32 +177,27 @@ const getResumeMap = () => {
   const techSkillsMap = new Map();
   const formattedMap = new Map();
 
-  experienceData.forEach((experience) => {    
-    const yearsSpent = experience.isProfessional ?
-      (experience.endPeriod - experience.startPeriod) / yearDuration :
-      0;
+  experienceData.forEach((experience) => {
+    const yearsSpent = experience.isProfessional
+      ? (experience.endPeriod - experience.startPeriod) / yearDuration
+      : 0;
 
     experience.stack.forEach((tech) => {
-      if (techSkillsMap.has(tech)) {
-        techSkillsMap.set(tech, techSkillsMap.get(tech) + yearsSpent);
-      } else {
-        techSkillsMap.set(tech, yearsSpent);
-      }
-    }); 
+      techSkillsMap.set(tech, (techSkillsMap.get(tech) || 0) + yearsSpent);
+    });
   });
 
   techSkillsMap.forEach((years, tech) => {
     const wholeYears = Math.floor(years);
-
-    if (tech === 'Skill') {
+    if (tech === Stacks.SKILL) {
       formattedMap.set(tech, 'Soft Skill');
-    } else if (wholeYears == 0) {
+    } else if (wholeYears === 0) {
       formattedMap.set(tech, 'Hands-on Experience');
-    } else if (wholeYears <= 1) {
+    } else if (wholeYears === 1) {
       formattedMap.set(tech, '1 year');
     } else {
       formattedMap.set(tech, `${wholeYears} years`);
-    }    
+    }
   });
 
   return formattedMap;
