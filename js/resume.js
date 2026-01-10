@@ -43,6 +43,24 @@ class TechExperience {
 const experienceData = [
   // Professional
   new TechExperience(
+    "First Factory",
+    true,
+    new Date('2026-01-02'),
+    new Date(),
+    [
+      Stacks.JAVA,
+      Stacks.SPRING_BOOT,
+      Stacks.REACT,
+      Stacks.HTML_CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.TYPESCRIPT,
+      Stacks.SQL,
+      Stacks.DOCKER,
+      Stacks.GIT,
+      Stacks.AWS,
+    ],
+  ),
+  new TechExperience(
     "XMOBOTS",
     true,
     new Date('2024-02-01'),
