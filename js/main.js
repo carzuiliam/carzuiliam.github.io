@@ -5,7 +5,6 @@ const introText =
   'Nice to meet you! 😀';
 
 const banner = {
-  art: $('.bannerArt'),
   content: $('.bannerContent'),
   name: $('.bannerName'),
   text: $('.bannerText'),

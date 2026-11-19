@@ -306,7 +306,7 @@ footer {
     color: #fff;
     padding: 6px 10px;
     border-radius: 4px;
-    pointer-events: 'none';
+    pointer-events: none;
     z-index: 1000;
     white-space: nowrap;
     font-size: 14px;
