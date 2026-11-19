@@ -180,6 +180,7 @@ footer {
 
     .bannerName {
       height: 25%;
+      margin: 0;
       font-size: 120px;
       font-weight: 300;
       letter-spacing: 0;
@@ -208,6 +209,9 @@ footer {
 
   .sectionTitleText {
     width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
   }
 
   .sectionTitleBar {

@@ -141,7 +141,13 @@ sections.forEach((section) => {
 
 /************************** Components events **************************/
 
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
 banner.content.onMouseMove((event) => {
+  if (reducedMotion.matches) {
+    return;
+  }
+
   banner.images.forEach((image, index) => {    
     const factorX = (index + 1) * 60;
     const factorY = (index + 1) * 80;

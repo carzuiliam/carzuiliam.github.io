@@ -12,3 +12,9 @@
     opacity: 1;
     text-transform: uppercase;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+  }
+}
