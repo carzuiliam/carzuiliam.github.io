@@ -6,15 +6,7 @@ class HtmlElement {
     this.element = _element;
   }
 
-  //  Element behavior
-  isOnScreen = () => {
-    var div = this.element.getBoundingClientRect();
-    var doc = (window.innerHeight || document.documentElement.clientHeight);
-
-    return (div.top <= (doc * .8));
-  }
-
-  // DOM actions 
+  // DOM actions
   setHtml = (_innerHtml) => {
     this.element.innerHTML = _innerHtml;
   }

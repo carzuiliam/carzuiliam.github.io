@@ -102,52 +102,42 @@ window.onload = () => {
   }, 1500);
 };
 
-window.onscroll = () => {
-  sections.forEach((section) => {
-    if (section.title.isOnScreen()) {
-      section.text.replaceClass('hiddenElem', 'visibleElem');
-      section.bar.replaceClass('slideHidden', 'slideShow');
+/************************** Reveal on scroll ***************************/
+
+const revealActions = new Map();
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      revealActions.get(entry.target)();
+      revealObserver.unobserve(entry.target);
     }
   });
+}, { rootMargin: '0px 0px -20% 0px' });
 
-  if (introBlock.isOnScreen()) {
-    introBlock.replaceClass('hiddenElem', 'visibleElem');
-  }
-
-  experiences.forEach((experience) => {
-    if (experience.isOnScreen()) {
-      experience.replaceClass('hiddenElem', 'visibleElem');
-    }
-  });
-
-  educations.forEach((education) => {
-    if (education.isOnScreen()) {
-      education.replaceClass('hiddenElem', 'visibleElem');
-    }
-  });
-
-  projects.forEach((project) => {
-    if (project.isOnScreen()) {
-      project.replaceClass('hiddenElem', 'visibleElem');
-    }
-  });
-
-  publications.forEach((publication) => {
-    if (publication.isOnScreen()) {
-      publication.replaceClass('hiddenElem', 'visibleElem');
-    }
-  });
-
-  if (contactButton.isOnScreen()) {
-    contactButton.replaceClass('hiddenElem', 'visibleElem');
-  }
-
-  socialMedias.forEach((socialMedia) => {
-    if (socialMedia.isOnScreen()) {
-      socialMedia.replaceClass('hiddenElem', 'visibleElem');
-    }
-  });
+const observeReveal = (_htmlElement, _action) => {
+  revealActions.set(_htmlElement.element, _action);
+  revealObserver.observe(_htmlElement.element);
 };
+
+sections.forEach((section) => {
+  observeReveal(section.title, () => {
+    section.text.replaceClass('hiddenElem', 'visibleElem');
+    section.bar.replaceClass('slideHidden', 'slideShow');
+  });
+});
+
+[
+  introBlock,
+  ...experiences,
+  ...educations,
+  ...projects,
+  ...publications,
+  contactButton,
+  ...socialMedias,
+].forEach((item) => {
+  observeReveal(item, () => item.replaceClass('hiddenElem', 'visibleElem'));
+});
 
 /************************** Components events **************************/
 
