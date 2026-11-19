@@ -38,10 +38,6 @@
 }
 
 @media screen and (max-width: 601px) {
-  footer {
-    height: 140px;
-  }
-
         .bannerImage3 {
           left: calc(50% - 70px);
         }
@@ -79,10 +75,6 @@
 }
 
 @media screen and (max-width: 428px) {
-  footer {
-    height: 189px;
-  }
-
         .bannerImage3 {
           left: calc(50% - 50px);
         }
@@ -125,10 +117,6 @@
 }
 
 @media screen and (max-width: 360px) {
-  footer {
-    height: 219px;
-  }
-
         .bannerImage3 {
           left: calc(50% - 40px);
         }

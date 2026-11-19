@@ -165,8 +165,8 @@ const experienceData = [
   new TechExperience(
     "PUCMinas",
     false,
-    new Date('2025-06-01'),
-    new Date(),
+    new Date('2025-05-01'),
+    new Date('2026-07-31'),
     [
       Stacks.SKILL,
       Stacks.AWS,
